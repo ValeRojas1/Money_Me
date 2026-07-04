@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Money Me - Carga de documentos</title>
+  <style>
+    :root {
+      /* Deep slate and emerald green for a professional, financial SaaS feel */
+      --bg:      oklch(98% 0.005 250);
+      --surface: oklch(100% 0 0);
+      --fg:      oklch(22% 0.02 240);
+      --muted:   oklch(50% 0.018 240);
+      --border:  oklch(90% 0.008 240);
+      --accent:  oklch(55% 0.12 150); /* Emerald Green */
+      --accent-muted: oklch(55% 0.12 150 / 0.08);
+
+      --font-display: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Display', system-ui, sans-serif;
+      --font-body:    -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Text', system-ui, sans-serif;
+      --font-mono:    'JetBrains Mono', 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+      
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 16px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--font-body);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Typography */
+    h1, h2, h3, .nav-brand {
+      font-family: var(--font-display);
+      letter-spacing: -0.02em;
+      font-weight: 600;
+    }
+
+    /* Navigation */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      padding: 0 24px;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-brand {
+      font-size: 1.125rem;
+      color: var(--fg);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .nav-brand svg {
+      width: 20px;
+      height: 20px;
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .nav-link {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: color 0.15s ease;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--fg);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--border);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--fg);
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    /* Main Content */
+    .main-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 64px 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .header-text {
+      text-align: center;
+      margin-bottom: 48px;
+      animation: fadeUp 0.6s ease-out forwards;
+    }
+
+    .header-text h1 {
+      font-size: 2.25rem;
+      margin-bottom: 12px;
+      color: var(--fg);
+    }
+
+    .header-text p {
+      color: var(--muted);
+      font-size: 1.125rem;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* Dropzone */
+    .dropzone-wrapper {
+      width: 100%;
+      max-width: 640px;
+      animation: fadeUp 0.6s ease-out 0.1s forwards;
+      opacity: 0;
+    }
+
+    .dropzone-container {
+      width: 100%;
+      aspect-ratio: 16/9;
+      min-height: 300px;
+      background: var(--surface);
+      border: 1.5px dashed var(--border);
+      border-radius: var(--radius-lg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    }
+
+    .dropzone-container:hover, .dropzone-container.dragover {
+      border-color: var(--accent);
+      background: var(--accent-muted);
+    }
+
+    .drop-icon {
+      width: 56px;
+      height: 56px;
+      color: var(--accent);
+      background: var(--surface);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      margin-bottom: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .dropzone-container:hover .drop-icon, .dropzone-container.dragover .drop-icon {
+      transform: translateY(-4px) scale(1.05);
+    }
+
+    .drop-text-primary {
+      font-size: 1.125rem;
+      font-weight: 500;
+      color: var(--fg);
+    }
+
+    .drop-text-secondary {
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+
+    .upload-btn {
+      margin-top: 16px;
+      padding: 10px 20px;
+      background: var(--fg);
+      color: var(--bg);
+      border: none;
+      border-radius: var(--radius-sm);
+      font-weight: 500;
+      font-size: 0.875rem;
+      cursor: pointer;
+      pointer-events: none;
+      transition: background 0.15s ease;
+    }
+
+    input[type="file"] {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    /* File List Preview */
+    .file-list {
+      margin-top: 24px;
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .file-item {
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      gap: 16px;
+      animation: slideIn 0.3s ease-out forwards;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+    }
+
+    .file-icon {
+      width: 40px;
+      height: 40px;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      border-radius: var(--radius-sm);
+    }
+
+    .file-details {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .file-name {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--fg);
+      margin-bottom: 4px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .file-meta {
+      font-size: 0.75rem;
+      color: var(--muted);
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      font-family: var(--font-mono);
+    }
+
+    .file-status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .progress-bar {
+      width: 100px;
+      height: 4px;
+      background: var(--border);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--accent);
+      width: 100%;
+      border-radius: 2px;
+      animation: progress 1.5s ease-out forwards;
+    }
+    
+    .remove-btn {
+      background: none;
+      border: none;
+      color: var(--muted);
+      cursor: pointer;
+      padding: 6px;
+      border-radius: var(--radius-sm);
+      transition: all 0.15s ease;
+    }
+    
+    .remove-btn:hover {
+      background: var(--bg);
+      color: var(--fg);
+    }
+
+    /* Animations */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-8px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    
+    @keyframes progress {
+      from { width: 0%; }
+      to { width: 100%; }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .mobile-menu-btn {
+        display: block;
+      }
+      .header-text h1 {
+        font-size: 1.75rem;
+      }
+      .dropzone-container {
+        aspect-ratio: auto;
+        min-height: 260px;
+        padding: 32px 24px;
+      }
+      .main-container {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#" class="nav-brand">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+        <line x1="2" y1="10" x2="22" y2="10"></line>
+      </svg>
+      Money Me
+    </a>
+
+    <div class="nav-links">
+      <a href="#" class="nav-link active">Cargar</a>
+      <a href="#" class="nav-link">Métricas</a>
+      <a href="#" class="nav-link">Historial</a>
+      <a href="#" class="nav-link">Perfil</a>
+    </div>
+
+    <div class="nav-actions">
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <div class="avatar" title="Perfil de usuario">
+        RO
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-container">
+    <div class="header-text">
+      <h1>Carga tus documentos financieros</h1>
+      <p>Arrastra tus facturas, recibos o reportes al área central. Procesamos tu información de forma segura para actualizar tus métricas.</p>
+    </div>
+
+    <div class="dropzone-wrapper">
+      <div class="dropzone-container" id="dropzone">
+        <input type="file" id="file-input" multiple aria-label="Seleccionar archivos" />
+        <div class="drop-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="12" y1="18" x2="12" y2="12"></line>
+            <line x1="9" y1="15" x2="15" y2="15"></line>
+          </svg>
+        </div>
+        <div class="drop-text-primary">Arrastra y suelta tus documentos aquí</div>
+        <div class="drop-text-secondary">PDF, CSV, XLS, JPG o PNG (max. 50MB)</div>
+        <button class="upload-btn">Explorar archivos</button>
+      </div>
+
+      <div class="file-list" id="file-list">
+        <!-- Archivos subidos se insertan aquí vía JS -->
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const dropzone = document.getElementById('dropzone');
+    const fileInput = document.getElementById('file-input');
+    const fileList = document.getElementById('file-list');
+
+    // Drag and drop events
+    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+      dropzone.addEventListener(eventName, preventDefaults, false);
+    });
+
+    function preventDefaults(e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+
+    ['dragenter', 'dragover'].forEach(eventName => {
+      dropzone.addEventListener(eventName, () => dropzone.classList.add('dragover'), false);
+    });
+
+    ['dragleave', 'drop'].forEach(eventName => {
+      dropzone.addEventListener(eventName, () => dropzone.classList.remove('dragover'), false);
+    });
+
+    dropzone.addEventListener('drop', handleDrop, false);
+    fileInput.addEventListener('change', handleFiles, false);
+
+    function handleDrop(e) {
+      const dt = e.dataTransfer;
+      const files = dt.files;
+      handleFiles({ target: { files } });
+    }
+
+    function handleFiles(e) {
+      const files = [...e.target.files];
+      if (files.length > 0) {
+        fileList.style.display = 'flex';
+        files.forEach(previewFile);
+      }
+    }
+
+    function formatBytes(bytes, decimals = 2) {
+      if (!+bytes) return '0 Bytes';
+      const k = 1024;
+      const dm = decimals < 0 ? 0 : decimals;
+      const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+      const i = Math.floor(Math.log(bytes) / Math.log(k));
+      return `${parseFloat((bytes / Math.pow(k, i)).toFixed(dm))} ${sizes[i]}`;
+    }
+
+    function previewFile(file) {
+      const fileId = Math.random().toString(36).substring(7);
+      const isImage = file.type.startsWith('image/');
+      
+      // Determine icon based on file type
+      let iconSvg = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>`;
+      
+      if (isImage) {
+        iconSvg = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>`;
+      }
+
+      const itemHtml = `
+        <div class="file-item" id="file-${fileId}">
+          <div class="file-icon">
+            ${iconSvg}
+          </div>
+          <div class="file-details">
+            <div class="file-name">${file.name}</div>
+            <div class="file-meta">
+              <span>${formatBytes(file.size)}</span>
+              <span class="file-status">
+                <div class="progress-bar"><div class="progress-fill"></div></div>
+                Subiendo...
+              </span>
+            </div>
+          </div>
+          <button class="remove-btn" onclick="document.getElementById('file-${fileId}').remove()" aria-label="Eliminar archivo">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      `;
+
+      fileList.insertAdjacentHTML('beforeend', itemHtml);
+
+      // Simulate upload completion
+      setTimeout(() => {
+        const fileEl = document.getElementById(`file-${fileId}`);
+        if(fileEl) {
+          const statusEl = fileEl.querySelector('.file-status');
+          statusEl.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Completado`;
+        }
+      }, 1500);
+    }
+    
+    // Tab Interaction (visual only for prototype)
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        navLinks.forEach(l => l.classList.remove('active'));
+        e.target.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

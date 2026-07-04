@@ -1,0 +1,104 @@
+# Fuente 28
+
+**Author(s):** Maryam Navaei; Nasseh Tabrizi [page:1]  
+**Title of paper:** *Machine Learning in Software Development Life Cycle: A Comprehensive Review* [page:1]  
+**Journal / Source:** *Proceedings of the 17th International Conference on Evaluation of Novel Approaches to Software Engineering (ENASE 2022)*, SCITEPRESS [page:1]  
+**Volume (issue):** No aplica; paper de congreso [page:1]  
+**pag – pag (year):** 344–354 (2022) [page:1]  
+**DOI:** 10.5220/0011040600003176 [page:1]  
+
+## Estado del arte que hace el autor
+
+El artículo presenta una revisión sistemática sobre la aplicación de técnicas de *machine learning* en las distintas fases del ciclo de vida del desarrollo de software, específicamente Requirements Analysis, Design, Implementation, Testing y Maintenance [page:1]. Los autores trabajaron con publicaciones de 2015 a 2021 y reportan que la fase con menos trabajos identificados es Requirements Analysis, mientras que Software Testing concentra la mayor cantidad de publicaciones [page:1].
+
+El estado del arte elaborado por la fuente parte de una idea central: la creciente complejidad del software ha superado, en muchos casos, la capacidad de comprensión puramente humana, por lo que se vuelve necesario incorporar automatización e inteligencia en el SDLC [page:1]. En ese contexto, el *machine learning* se presenta como una tecnología capaz de aprender desde datos y experiencias previas para mejorar el rendimiento, la toma de decisiones y la adaptación del software a condiciones cambiantes [page:1].
+
+La revisión también muestra que el uso de ML no está distribuido de forma homogénea entre las fases del SDLC [page:1]. Testing aparece como la etapa más favorecida por la disponibilidad de datasets cuantificables, mientras que Requirements Analysis y Architecture Design presentan menos estudios, en parte por la escasez de datos bien estructurados y por la complejidad semántica de esas fases [page:1].
+
+Además, el artículo identifica patrones metodológicos recurrentes en la literatura revisada [page:1]. Entre los algoritmos más usados en el conjunto del SDLC destacan Support Vector Machine, Random Forest, Naïve Bayes y Decision Trees, aunque su popularidad varía según la fase analizada [page:1]. Los autores concluyen que SVM es uno de los algoritmos supervisados más utilizados a lo largo de todas las fases, mientras que Reinforcement Learning aparece mucho menos mencionado [page:1].
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+La motivación principal del artículo es comprender cómo y en qué medida el *machine learning* está siendo utilizado en cada fase del SDLC, dado que la literatura previa solía concentrarse en una sola etapa o en aplicaciones muy específicas [page:1]. Los autores indican que su revisión busca cubrir el ciclo completo y detectar por qué ciertas fases reciben mucha más atención investigativa que otras [page:1].
+
+De forma implícita, la fuente critica la fragmentación del conocimiento previo sobre ML y desarrollo de software [page:1]. El propio artículo señala que varias revisiones anteriores se enfocaron en una fase particular, mientras que su trabajo propone una visión transversal de Requirements, Design, Implementation, Testing y Maintenance [page:1].
+
+Otra motivación importante es identificar vacíos de investigación asociados a la disponibilidad y calidad de datasets [page:1]. Los autores destacan que Requirements Analysis tiene pocos conjuntos de datos públicos y que algunos repositorios, como PROMISE, presentan limitaciones como desbalance y tamaño reducido, lo que dificulta una adopción más robusta de ML en esa fase [page:1].
+
+También se observa una crítica metodológica al hecho de que la adopción de ML no siempre ha sido acompañada por herramientas maduras ni por datos suficientemente documentados [page:1]. El artículo menciona que los datasets usados para análisis del SDLC suelen estar pobremente documentados y sin procesos claros de creación, lo que afecta la precisión y la generalización de los modelos [page:1].
+
+## Descripción del aporte del autor
+
+El aporte principal del artículo es ofrecer una revisión sistemática reciente y comparativa del uso de ML a través de todo el SDLC, en vez de centrarse en una sola etapa [page:1]. Para ello, los autores construyen una base de casi 150 artículos de revistas y conferencias obtenidos de ACM, IEEE y Springer, lo que les permite resumir tendencias actuales y diferencias por fase [page:1].
+
+Uno de los aportes más relevantes es la identificación de qué fases reciben más atención y qué algoritmos son más frecuentes en cada una [page:1]. El estudio muestra que Decision Trees destacan en Requirements Analysis, mientras que Support Vector Machine aparece con alta presencia en Design, Implementation, Testing y Maintenance [page:1].
+
+Otro aporte importante es la descripción detallada de los usos de ML en cada fase [page:1]. En Requirements Analysis, ML se aplica a clasificación y priorización de requisitos, detección de problemas lingüísticos, trazabilidad y estimación de esfuerzo [page:1]. En Design, se usa para detección de *code smells*, patrones de diseño, anti-patrones y predicción de mantenibilidad [page:1]. En Implementation, se orienta a predicción de defectos y recomendaciones de refactorización [page:1]. En Testing, se aprovecha para generación y selección de casos de prueba, predicción de fallos y mejora de automatización [page:1]. En Maintenance, se aplica a predicción de mantenibilidad, clasificación de tareas y optimización del mantenimiento del sistema [page:1].
+
+Además, la fuente aporta una lectura comparativa sobre las limitaciones de cada fase desde la perspectiva de datos [page:1]. Mientras Testing dispone de muchos datasets por su naturaleza cuantificable, Requirements Analysis y Maintenance sufren por disponibilidad limitada, ambigüedad y baja calidad de datos, lo que reduce el avance de soluciones basadas en ML [page:1].
+
+## Proceso para obtener el aporte que considera el autor
+
+El artículo obtiene su aporte mediante una revisión sistemática de publicaciones recientes sobre ML aplicado al SDLC [page:1]. Inicialmente los autores pensaron cubrir trabajos entre 2010 y 2020, pero debido al gran volumen de literatura decidieron concentrarse en artículos y papers de conferencia publicados entre 2015 y 2021 [page:1].
+
+Para recuperar los estudios, utilizaron consultas en ACM, IEEE y Springer con combinaciones de palabras clave como “Software engineering AND Machine learning”, “Software Development Life Cycle AND Machine Learning” y búsquedas específicas por fase, como Software Requirements Analysis, Design, Implementation, Testing y Maintenance [page:1]. El proceso requirió adaptar consultas según la base consultada, especialmente en ACM, donde fue necesario agregar restricciones y palabras clave como “Artificial Intelligence” para obtener resultados más relevantes [page:1].
+
+Luego, los autores organizaron la evidencia por fases del SDLC y también por algoritmos frecuentes [page:1]. Esta estrategia les permitió elaborar figuras comparativas que muestran qué fases concentran más publicaciones y qué algoritmos aparecen con mayor recurrencia en cada una [page:1].
+
+Por tanto, el método del artículo es analítico, comparativo y bibliográfico, no experimental [page:1]. Su fortaleza está en la síntesis estructurada de tendencias recientes y en la identificación de vacíos de investigación por fase del ciclo de vida [page:1].
+
+## Proceso para resolver el problema considerado por el autor
+
+El problema central del artículo es cómo entender el impacto real del *machine learning* en el ciclo de vida del desarrollo de software y por qué ciertas fases se benefician más que otras [page:1]. Para resolverlo, los autores descomponen el SDLC en cinco grandes fases y analizan, en cada una, qué tareas están siendo apoyadas por ML y qué técnicas se utilizan [page:1].
+
+En Requirements Analysis, la solución propuesta pasa por automatizar clasificación, priorización y validación de requisitos mediante algoritmos supervisados, NLP e Information Retrieval [page:1]. En Architecture Design, el ML se usa para detectar anomalías de diseño, *code smells*, anti-patrones y predecir atributos de mantenibilidad [page:1].
+
+En Implementation, el foco se traslada a predicción de defectos y refactorización automática o recomendada [page:1]. La revisión señala que algoritmos supervisados, especialmente Random Forest, han mostrado utilidad para recomendar qué partes del código conviene refactorizar y para mejorar la calidad interna sin cambiar el comportamiento externo del sistema [page:1].
+
+En Testing, el artículo muestra que ML apoya fault prediction, reducción de casos inviables, automatización del proceso y mejor interpretación de grandes volúmenes de datos de prueba [page:1]. En Maintenance, el enfoque se dirige a predicción de mantenibilidad, optimización de recursos y clasificación de actividades de mantenimiento, aunque los autores reconocen que esta fase aún requiere más datasets y más investigación [page:1].
+
+## Métricas que el autor usa y resultado que obtiene
+
+La fuente no presenta un experimento único con métricas cerradas tipo accuracy global o porcentaje único de mejora para todo el SDLC [page:1]. En cambio, su “resultado” principal consiste en contar publicaciones por fase, comparar popularidad de algoritmos y sintetizar aplicaciones por dominio del ciclo de vida [page:1].
+
+Uno de los resultados más claros del artículo es que Requirements Analysis tiene la menor cantidad de trabajos revisados y Testing la mayor cantidad [page:1]. Los autores atribuyen esta diferencia a que Testing dispone de más datasets y de información más cuantificable, lo que facilita la aplicación de modelos de ML [page:1].
+
+Otro resultado importante es la identificación de los cuatro algoritmos más frecuentes en el conjunto del SDLC: Random Forest, Support Vector Machine, Naïve Bayes y Decision Trees [page:1]. Según la revisión, Decision Trees tienen alta presencia en Requirements Analysis, mientras que Support Vector Machine destaca como una de las técnicas más usadas a través de las distintas fases del ciclo [page:1].
+
+Además, el artículo concluye que los datasets siguen siendo un factor decisivo para el avance de ML en SDLC [page:1]. Allí donde hay más datos estructurados, como en Testing, la investigación avanza más rápido; donde hay menos datos o mayor ambigüedad, como en Requirements Analysis y Maintenance, el progreso es más lento [page:1].
+
+## Comentar (los resultados son mejores respecto a otros)
+
+Desde una perspectiva académica, la principal fortaleza de esta fuente no está en demostrar que una técnica sea universalmente superior, sino en mostrar una cartografía bastante clara del uso de ML en el SDLC reciente [page:1]. Su valor comparativo es alto porque no se limita a una sola fase y permite entender tendencias amplias entre Requirements, Design, Implementation, Testing y Maintenance [page:1].
+
+Sin embargo, no puede afirmarse que el artículo demuestre experimentalmente que ML mejore siempre todas las fases del SDLC [page:1]. Más bien, muestra que existen oportunidades reales, pero también desigualdades de madurez, de datos y de evidencia entre fases [page:1].
+
+## Observaciones y/o críticas suyas al artículo
+
+Una observación positiva es que esta fuente organiza muy bien el panorama reciente del uso de ML en el SDLC y resulta especialmente útil para construir antecedentes y categorías analíticas en una tesis [page:1]. También es valiosa porque diferencia por fase, por algoritmo y por limitaciones de datasets, algo que ayuda mucho al momento de operacionalizar variables [page:1].
+
+Como crítica, el estudio depende de literatura secundaria y no realiza una validación empírica directa en un entorno real de desarrollo [page:1]. Por ello, aunque es fuerte para construir estado del arte, debe complementarse con trabajos experimentales o estudios de caso si se quiere demostrar impacto causal en un contexto específico [page:1].
+
+Otra crítica razonable es que el artículo mismo reconoce limitaciones relacionadas con datos insuficientes, desequilibrados o poco documentados en varias fases [page:1]. Esto significa que parte de sus conclusiones sobre menor adopción en algunas etapas puede estar condicionada no solo por menor utilidad del ML, sino por falta de infraestructura de datos adecuada [page:1].
+
+## Aportes nuestros al artículo
+
+Consideramos que esta fuente es muy valiosa para sustentar una investigación sobre integración de ML en el ciclo de vida del software, porque ofrece una visión comparativa por fases y por técnicas [page:1]. Su mayor utilidad está en mostrar que la relación entre ML y SDLC no es uniforme y que el nivel de avance depende en gran medida de la naturaleza de los datos disponibles en cada etapa [page:1].
+
+Desde nuestro análisis, el artículo también ayuda a justificar que la incorporación de ML no debe evaluarse solo por herramienta, sino por tarea específica dentro del proceso, como clasificación de requisitos, detección de *code smells*, predicción de defectos, automatización de testing o mantenibilidad [page:1]. Esto lo vuelve especialmente útil para construir variables, dimensiones e indicadores de una matriz de operacionalización [page:1][file:1].
+
+# Matriz de operacionalización de variables
+
+## Enfoque derivado de la fuente 28
+
+A partir del contenido del artículo, se puede plantear como **variable independiente** la adopción de técnicas de *machine learning* en las fases del SDLC, como **variable dependiente** la mejora del desempeño del proceso de desarrollo de software, y como **variable intermedia** la disponibilidad y calidad de datos/datasets para cada fase, porque la revisión muestra que el impacto y la frecuencia de uso del ML dependen fuertemente de la estructura y cantidad de datos existentes en Requirements, Design, Implementation, Testing y Maintenance [page:1].
+
+| Tipo de variable | Variable | Definición conceptual | Dimensiones | Indicadores | Técnica / instrumento |
+|---|---|---|---|---|---|
+| Independiente | Adopción de técnicas de ML en el SDLC [page:1] | Grado en que un proyecto utiliza algoritmos de *machine learning* para apoyar tareas de Requirements Analysis, Design, Implementation, Testing y Maintenance [page:1] | Clasificación de requisitos [page:1]; detección de anomalías de diseño [page:1]; predicción de defectos/refactorización [page:1]; automatización y predicción en testing [page:1]; predicción de mantenibilidad [page:1] | Uso de SVM, Random Forest, Naïve Bayes o Decision Trees [page:1]; uso de NLP/IR en requisitos [page:1]; uso de ML para fault prediction [page:1]; uso de ML para refactoring [page:1]; uso de ML para maintenance prediction [page:1] | Checklist técnico [page:1]; análisis documental [page:1]; entrevista [page:1] |
+| Intermedia | Disponibilidad y calidad de datasets por fase [page:1] | Nivel de acceso a datos suficientes, estructurados, balanceados y documentados para entrenar o aplicar modelos de ML en cada etapa del SDLC [page:1] | Cantidad de datasets [page:1]; balance y calidad de datos [page:1]; documentación del dataset [page:1]; trazabilidad de datos [page:1] | Número de datasets disponibles por fase [page:1]; presencia de datasets balanceados [page:1]; documentación del origen de datos [page:1]; posibilidad de reutilización [page:1] | Rúbrica de evaluación de datos [page:1]; revisión documental [page:1] |
+| Dependiente | Mejora del desempeño del proceso de desarrollo de software [page:1] | Capacidad del proyecto para aumentar eficiencia, calidad y soporte a decisiones en el SDLC mediante aplicación de ML [page:1] | Eficiencia del proceso [page:1]; calidad del software [page:1]; precisión de decisiones [page:1]; automatización [page:1]; mantenibilidad [page:1] | Reducción del esfuerzo manual [page:1]; mejor clasificación o priorización de requisitos [page:1]; mejor detección de defectos [page:1]; mayor automatización de pruebas [page:1]; apoyo a mantenimiento predictivo [page:1] | Evaluación técnica [page:1]; métricas de proyecto [page:1]; análisis comparativo [page:1] |
+
+## Observación metodológica
+
+La fuente 28 es especialmente útil para operacionalizar variables porque distribuye con claridad las aplicaciones de ML por fase del SDLC y además identifica los algoritmos y limitaciones de datos más frecuentes [page:1]. Sin embargo, como se trata de una revisión sistemática y no de un experimento aplicado en un solo entorno real, conviene complementarla con estudios empíricos recientes antes de fijar indicadores definitivos para la tesis [page:1].

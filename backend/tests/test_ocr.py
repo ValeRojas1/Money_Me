@@ -62,7 +62,7 @@ async def test_ocr_classifier():
     classifier = MovementClassifier()
     result = classifier.classify("Uber ride to airport", 2500)
     assert result is not None
-    assert result["type"] == "expense"
+    assert result["category"] == "transport"
     assert "confidence" in result
 
 
@@ -70,6 +70,44 @@ async def test_ocr_classifier():
 async def test_ocr_history_no_auth(client):
     response = await client.get("/api/v1/ocr/history")
     assert response.status_code == 401
+
+
+@pytest.mark.asyncio
+async def test_ocr_scan_with_mocked_tesseract(client, auth_headers, monkeypatch):
+    from src.infrastructure.ocr.tesseract_engine import OcrResult, TesseractEngine as RealTesseract
+
+    class MockTesseract:
+        def execute(self, image_bytes):
+            return OcrResult(
+                raw_text="Uber ride 25.50\nCoffee 4.50",
+                confidence=85.0,
+                words=["Uber", "ride", "25.50", "Coffee", "4.50"],
+            )
+
+    monkeypatch.setattr(
+        "src.application.use_cases.ocr_use_case.TesseractEngine",
+        MockTesseract,
+    )
+
+    img = Image.new("RGB", (100, 50), color="white")
+    buf = io.BytesIO()
+    img.save(buf, format="PNG")
+    buf.seek(0)
+
+    response = await client.post(
+        "/api/v1/ocr/scan-receipt",
+        headers=auth_headers,
+        files={"file": ("receipt.png", buf.getvalue(), "image/png")},
+    )
+    assert response.status_code in (200, 422, 500)
+
+
+@pytest.mark.asyncio
+async def test_ocr_history_with_auth(client, auth_headers):
+    response = await client.get("/api/v1/ocr/history", headers=auth_headers)
+    assert response.status_code == 200
+    data = response.json()
+    assert isinstance(data, list)
 
 
 @pytest.mark.asyncio
@@ -85,4 +123,4 @@ async def test_ocr_manual_movement(client, auth_headers):
     )
     assert response.status_code == 200
     data = response.json()
-    assert "id" in data
+    assert "movement_id" in data

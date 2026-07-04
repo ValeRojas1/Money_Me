@@ -1,0 +1,76 @@
+# Estado del Arte
+
+**Author(s):** Quanjun Zhang, Chunrong Fang, Yang Xie, Yaxin Zhang, Yun Yang, Weisong Sun, Shengcheng Yu, Zhenyu Chen. [file:1]  
+**Title of paper:** A Survey on Large Language Models for Software Engineering. [file:1]  
+**Journal:** arXiv preprint (cs.SE). [file:1]  
+**Volume (issue):** No aplica. [file:1]  
+**pag – pag (year):** pp. 1–61 (2024). [file:1]
+
+## Estado del arte que hace el autor
+
+Los autores realizan una revisión sistemática exhaustiva del estado actual de la investigación sobre Large Language Models (LLMs) aplicados a la ingeniería de software. [file:1]  
+Analizan 62 LLMs representativos de código, 15 objetivos de preentrenamiento en cuatro categorías y 16 tareas downstream en cinco categorías. [file:1]  
+Además, sintetizan 947 estudios sobre 112 tareas específicas de código distribuidas en las cinco fases principales del flujo de trabajo de software engineering: requisitos y diseño, desarrollo, pruebas, mantenimiento y gestión. [file:1]  
+El trabajo aborda el campo desde tres perspectivas complementarias: la perspectiva de los LLMs, la perspectiva del flujo de SE y la perspectiva de integración práctica. [file:1]  
+Con ello, construyen un estado del arte muy amplio, actualizado y estructurado sobre cómo los LLMs están transformando el SDLC. [file:1]
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+Los autores critican que, pese al rápido crecimiento de técnicas basadas en LLMs para automatizar tareas de SE, la información sobre aplicaciones, efectos y limitaciones sigue estando fragmentada. [file:1]  
+Señalan que revisiones previas se concentran en ML/DL general en SE o en tareas específicas, como NL2Code, sin abarcar el flujo completo de la ingeniería de software ni los LLMs modernos posteriores a 2022. [file:1]  
+También cuestionan la falta de análisis sistemático sobre integración práctica, evaluación empírica, seguridad, compresión y uso real de estos modelos. [file:1]  
+Su motivación es ofrecer una visión retrospectiva y prospectiva unificada que cierre el vacío entre el potencial transformador de los LLMs y su comprensión práctica en la comunidad de software engineering. [file:1]
+
+## Descripción del aporte del autor
+
+El aporte principal del artículo es una revisión sistemática amplia y actualizada que integra tres perspectivas: LLMs de código, aplicaciones en el flujo de SE y aspectos de integración práctica. [file:1]  
+El problema central que aborda es la complejidad del flujo de software engineering y la dificultad de comprender el estado del arte de los LLMs en 112 tareas específicas, lo que limita su adopción efectiva. [file:1]  
+Ese problema impacta académicamente porque dificulta organizar el conocimiento del área y también impacta empresarialmente porque complica integrar LLMs en pipelines reales de desarrollo. [file:1]  
+Los autores destacan que los LLMs transforman el paradigma tradicional de software engineering al pasar de enfoques basados en reglas o ML clásico hacia un paradigma de preentrenamiento y fine-tuning con aplicaciones transversales en el SDLC. [file:1]  
+El artículo incluye además análisis cuantitativos de tendencias, tablas comparativas y recomendaciones prácticas para evaluación, seguridad y domain tuning. [file:1]
+
+## Proceso para obtener el aporte que considera el autor
+
+Los autores emplean una metodología de revisión sistemática rigurosa. [file:1]  
+Definen tres Research Questions: perspectiva LLM, perspectiva SE y perspectiva de integración. [file:1]  
+Luego realizan búsquedas automatizadas en Google Scholar, ACM Digital Library e IEEE Xplore con palabras clave relacionadas con software engineering y LLMs. [file:1]  
+Recuperan inicialmente 32,560 artículos y aplican un filtrado en tres etapas, complementado con snowballing, hasta analizar finalmente 1,009 artículos relevantes, de los cuales 59 corresponden a LLMs y 950 a aplicaciones en SE. [file:1]  
+No ejecutan experimentos primarios, sino que sintetizan evidencia secundaria mediante taxonomías, tablas y análisis cualitativo-cuantitativo. [file:1]
+
+## Proceso para resolver el problema considerado por el autor
+
+Los autores resuelven el problema mediante una estructuración clara y exhaustiva del survey. [file:1]  
+Primero desarrollan una taxonomía completa de LLMs, incluyendo arquitecturas, preentrenamiento, tareas downstream y open science. [file:1]  
+Después presentan un mapeo detallado de 947 estudios en 112 tareas de SE distribuidas en las cinco fases del flujo de trabajo. [file:1]  
+También analizan aspectos críticos de integración, como evaluación, benchmarking, seguridad y fiabilidad, domain tuning y compresión. [file:1]  
+Finalmente, formulan desafíos abiertos y oportunidades futuras, y mantienen un repositorio vivo para facilitar la actualización continua del campo. [file:1]
+
+## Métricas que el autor usa y resultado que obtiene. Comentar
+
+Los autores utilizan métricas cuantitativas de volumen y distribución, como número total de artículos, cantidad de modelos, estudios, tareas y evolución temporal de publicaciones. [file:1]  
+Entre los resultados clave reportan 1,009 artículos analizados, 62 LLMs, 947 estudios en 112 tareas y crecimiento exponencial desde 2022. [file:1]  
+También concluyen que la fase de testing recibe la mayor atención, que Code Generation y Vulnerability Detection concentran gran parte de los estudios, y que los decoder-only LLMs dominan las aplicaciones recientes. [file:1]  
+Considero que estos resultados son superiores a revisiones previas porque ofrecen una cobertura holística del flujo completo de SE, incluyen integración práctica y mantienen un repositorio vivo. [file:1]  
+Como mejora futura, habría sido útil incorporar meta-análisis cuantitativos más profundos sobre desempeño comparativo entre familias de modelos o entre estrategias de evaluación. [file:1]
+
+## Observaciones y/o críticas suyas al artículo
+
+El artículo es una contribución excepcional por su amplitud, su organización y la triple perspectiva que maneja. [file:1]  
+Su principal fortaleza es que no se limita a una fase del SDLC ni a una sola tarea, sino que ofrece una visión realmente integral del ecosistema LLM4SE. [file:1]  
+También es muy valioso el repositorio vivo, porque permite que la revisión no quede completamente estática en un campo que cambia con enorme velocidad. [file:1]  
+Como crítica constructiva, sigue siendo un preprint y su análisis es más descriptivo que meta-analítico. [file:1]  
+Además, aunque menciona desafíos éticos y de seguridad, no profundiza tanto en regulación, sesgos o gobernanza del código generado. [file:1]
+
+## Aportes nuestros al artículo
+
+1. Esta fuente puede incorporarse como evidencia empírica fundamental del estado del arte de los LLMs en el SDLC. [file:1]  
+2. También sirve para fundamentar especialmente las dimensiones F1, F3 y F4 del modelo de tesis, porque muestra cómo los LLMs impactan distintas fases y tareas del proceso de desarrollo. [file:1]  
+3. En una tesis aplicada, esta revisión ayuda a justificar la necesidad de evolucionar desde integraciones puntuales de LLMs hacia un modelo AI-native más completo y holístico. [file:1]
+
+## Matriz de operacionalización de variables
+
+| Variable | Tipo | Definición conceptual | Definición operacional | Dimensiones | Indicadores | Escala / fuente | Instrumento |
+|---|---|---|---|---|---|---|---|
+| Ciclo de vida de desarrollo de software (SDLC) | Independiente | Conjunto de fases, modelos y prácticas que rigen el proceso completo de creación, implementación y mantenimiento de software. [file:1] | Se operacionaliza observando cómo los LLMs se aplican en las cinco fases clásicas del SDLC y en 112 tareas específicas. [file:1] | F1: Fases y modelos del proceso SDLC; F3: Integración de IA en el desarrollo de software; F4: IA Generativa aplicada a las fases del SDLC. [file:1] | Número de tareas cubiertas; cantidad de estudios por fase; tipo de modelo usado; presencia de integración práctica. [file:1] | Zhang et al. (2024). [file:1] | Revisión sistemática, taxonomías, tablas comparativas y análisis bibliométrico. [file:1] |
+| Eficiencia del proceso de desarrollo de software | Dependiente | Medición del rendimiento del SDLC en términos de tiempo de ciclo, costo, productividad, calidad del software y reducción de errores. [file:1] | Se mide indirectamente a través de los indicadores citados en el artículo sobre mejoras en code generation, testing y maintenance, junto con brechas en evaluación empírica. [file:1] | Productividad, calidad, reducción de errores, rendimiento por tarea. [file:1] | Mejoras reportadas en generación de código, pruebas y mantenimiento; consistencia de evaluación; cobertura por tarea. [file:1] | Hallazgos sintetizados del survey. [file:1] | Síntesis comparativa y análisis de literatura. [file:1] |
+| Nuevo ciclo de vida ágil AI-native | Intermedia | Modelo propuesto en la tesis que combina metodologías ágiles con integración total de IA generativa como motor principal del desarrollo. [file:1] | Se expresa mediante la transición desde integraciones puntuales de LLMs hacia un modelo AI-native completo, holístico y transversal. [file:1] | F1, F2, F3 y F4. [file:1] | Cobertura de fases asistidas por IA; grado de integración transversal; uso sistemático de LLMs por tarea. [file:1] | Adaptación conceptual basada en Zhang et al. (2024). [file:1] | Síntesis analítica y futura validación empírica. [file:1] |

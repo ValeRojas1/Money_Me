@@ -39,3 +39,18 @@ async def test_export_pdf_unauthorized(client):
 async def test_export_empty(client, auth_headers):
     response = await client.get("/api/v1/reports/export/csv", headers=auth_headers)
     assert response.status_code == 200
+
+
+@pytest.mark.asyncio
+async def test_export_csv_unauthorized(client):
+    response = await client.get("/api/v1/reports/export/csv")
+    assert response.status_code == 401
+
+
+@pytest.mark.asyncio
+async def test_export_invalid_date_format(client, auth_headers):
+    response = await client.get(
+        "/api/v1/reports/export/csv?start_date=invalid-date",
+        headers=auth_headers,
+    )
+    assert response.status_code == 422

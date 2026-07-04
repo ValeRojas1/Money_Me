@@ -1,0 +1,104 @@
+# Fuente 15
+
+**Author(s):** Yeshwanth Macha; Sunij Kumar Pulichikkunnu [page:1]  
+**Title of paper:** *A Survey of DevOps Practices for Machine Learning and Artificial Intelligence Workflows in Modern Software Development* [page:1]  
+**Journal:** ESP Journal of Engineering & Technology Advancements [page:1]  
+**Volume (issue):** Volume 4, Issue 3 [page:1]  
+**pag – pag (year):** 200–208 (2024) [page:1]  
+**DOI:** 10.56472/25832646/JETA-V4I3P121 [page:1]  
+
+## Estado del arte que hace el autor
+
+El artículo presenta el estado del arte de las prácticas DevOps aplicadas a flujos de trabajo de machine learning e inteligencia artificial dentro del desarrollo moderno de software [page:1]. Los autores parten de la idea de que los procesos AI/ML son más complejos que los del software tradicional, debido a que incorporan no solo código, sino también datos, entrenamiento continuo, validación y despliegue de modelos [page:1].
+
+En la introducción, los autores explican que esta complejidad ha impulsado la evolución hacia MLOps como una adaptación de DevOps para sistemas AI/ML, con el propósito de automatizar, monitorear y controlar el ciclo de vida del modelo asegurando escalabilidad, confiabilidad y mantenibilidad [page:1]. Desde esa base, el artículo organiza el estado del arte alrededor de conceptos como integración continua, entrega continua, infraestructura como código, contenerización, testing automatizado, versionado y monitoreo [page:1].
+
+Además, el trabajo contextualiza históricamente la evolución desde modelos tradicionales como Waterfall y V-Model, pasando por Agile, hasta la aparición de DevOps y posteriormente MLOps [page:1]. Esta revisión permite entender que la incorporación de IA en el ciclo de desarrollo no representa solo una mejora técnica aislada, sino una transformación de los procesos de ingeniería hacia enfoques más automatizados, colaborativos y centrados en datos [page:1].
+
+El estado del arte también se fortalece con una revisión comparativa de estudios previos sobre microservicios, testing asistido por IA, integración de ML en el SDLC y desafíos de ingeniería de software para sistemas inteligentes [page:1]. De ese modo, los autores no solo describen tecnologías, sino que sintetizan prácticas, limitaciones y tendencias organizacionales vinculadas con la adopción de DevOps en workflows AI/ML [page:1].
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+La motivación del artículo surge de una necesidad clara: aunque ha crecido el interés por integrar DevOps en procesos de IA y ML, todavía faltan estudios de síntesis que resuman de manera estructurada las prácticas existentes, los desafíos y las diferencias organizacionales en su adopción [page:1]. Los autores afirman explícitamente que aún existe la necesidad de encuestas o revisiones que integren las prácticas actuales, identifiquen estrategias centrales y ofrezcan una visión comparativa [page:1].
+
+En ese sentido, el artículo realiza una crítica implícita a la fragmentación del conocimiento previo, ya que muchos trabajos analizan retos específicos o soluciones puntuales, pero no ofrecen una visión panorámica sobre cómo DevOps habilita flujos modernos de AI/ML [page:1]. La investigación se justifica porque las organizaciones siguen enfrentando problemas de reproducibilidad, gestión de infraestructura, colaboración entre equipos y deriva de datos o modelos, lo cual exige una revisión más articulada [page:1].
+
+Los autores también sugieren que los enfoques tradicionales del desarrollo de software resultan insuficientes para manejar la naturaleza iterativa, dependiente de datos y sujeta a cambios del machine learning [page:1]. Por ello, su motivación consiste en mostrar por qué MLOps y las prácticas DevOps extendidas son necesarias para resolver vacíos operativos y de gobernanza que aparecen al implementar sistemas inteligentes en producción [page:1].
+
+## Descripción del aporte del autor
+
+El principal aporte del artículo es ofrecer una encuesta estructurada sobre prácticas DevOps que permiten soportar flujos de trabajo de machine learning e inteligencia artificial en el desarrollo moderno de software [page:1]. La contribución incluye la identificación de habilitadores clave, vacíos actuales y estrategias organizacionales orientadas a construir sistemas AI/ML más escalables, mantenibles y responsables [page:1].
+
+Uno de los aportes más relevantes del trabajo es la comparación explícita entre DevOps tradicional y MLOps [page:1]. Los autores muestran que DevOps se enfoca en código, despliegue e infraestructura, mientras que MLOps amplía ese alcance para incluir datos, ingeniería de características, entrenamiento, reentrenamiento, validación de modelos y monitoreo de deriva [page:1].
+
+Otro aporte importante es la sistematización de los componentes centrales de un workflow AI/ML [page:1]. El artículo distingue tres núcleos del proceso: ingeniería y preprocesamiento de datos, entrenamiento/validación/despliegue del modelo, y monitoreo continuo con gestión del ciclo de vida [page:1]. Esta organización aporta claridad conceptual para investigaciones que buscan analizar la integración de IA en el SDLC [page:1].
+
+Además, el paper desarrolla una revisión de literatura comparativa donde resume objetivos, hallazgos, retos y líneas futuras de estudios previos relacionados con DevOps, ML y software engineering [page:1]. Gracias a ello, el artículo no solo informa sobre prácticas técnicas, sino que también ayuda a entender tendencias de adopción, retos organizativos y necesidades de estandarización [page:1].
+
+En el plano empresarial y social, el aporte se orienta a apoyar la construcción de aplicaciones confiables y basadas en datos en entornos dinámicos [page:1]. Esto es importante porque la correcta integración de DevOps y MLOps puede reducir ineficiencias operativas, mejorar la trazabilidad y sostener despliegues responsables de sistemas AI/ML [page:1].
+
+## Proceso para obtener el aporte que considera el autor
+
+El artículo obtiene su aporte mediante un enfoque de survey o revisión estructurada de prácticas contemporáneas relacionadas con DevOps, MLOps y workflows AI/ML [page:1]. La propia estructura del documento muestra que los autores desarrollan primero la base conceptual e histórica de DevOps y MLOps, luego describen los workflows AI/ML, después explican las prácticas DevOps habilitadoras y finalmente realizan una revisión comparativa de la literatura [page:1].
+
+En la segunda sección, el estudio traza la evolución de DevOps desde modelos tradicionales hasta paradigmas extendidos como MLOps y AIOps [page:1]. Posteriormente, en la tercera sección, define la arquitectura funcional de los workflows AI/ML, separando procesos de datos, desarrollo de modelos y gestión del ciclo de vida [page:1].
+
+Después, el artículo identifica prácticas específicas como CI/CD, IaC, contenerización, testing automatizado, monitoreo, control de versiones y gobernanza como mecanismos que hacen viable la integración de IA/ML en procesos modernos de software [page:1]. Finalmente, la revisión de literatura sintetiza estudios previos y organiza sus aportes, limitaciones y retos en una tabla comparativa [page:1].
+
+Por tanto, el “método” del autor no es experimental en el sentido clásico, sino analítico y sintético [page:1]. El valor del trabajo radica en consolidar conocimiento disperso y convertirlo en un marco interpretativo útil para investigadores y profesionales [page:1].
+
+## Proceso para resolver el problema considerado por el autor
+
+El problema central que aborda el artículo es cómo gestionar de manera eficiente, reproducible y escalable los workflows de AI/ML dentro del desarrollo de software [page:1]. Para resolverlo, los autores sostienen que es necesario aplicar prácticas DevOps extendidas hacia MLOps, integrando automatización, monitoreo y colaboración interdisciplinaria [page:1].
+
+En términos operativos, la solución propuesta incluye CI/CD para código, datasets y modelos, así como CI/CD/CT para el reentrenamiento continuo [page:1]. También incorpora infraestructura como código y contenerización para asegurar consistencia de entornos y escalabilidad, especialmente cuando los procesos requieren alto cómputo o despliegue en múltiples plataformas [page:1].
+
+El artículo destaca además la necesidad de testing automatizado y validación de modelos antes del despliegue, incluyendo validación funcional, control de calidad de datos y evaluación mediante métricas de desempeño [page:1]. A esto se suma el monitoreo continuo de precisión, latencia, fairness, bias y model drift en producción, permitiendo detectar degradación y activar bucles de retroalimentación para reentrenamiento y redepliegue [page:1].
+
+Por último, los autores consideran clave el control de versiones para código, datos y modelos, así como la gobernanza y colaboración entre desarrolladores, data scientists, ML engineers y stakeholders del negocio [page:1]. En conjunto, este proceso busca resolver no solo problemas técnicos, sino también organizacionales y de sostenibilidad operativa [page:1].
+
+## Métricas que el autor usa y resultado que obtiene
+
+El artículo menciona métricas relevantes para la validación y operación de modelos AI/ML, entre ellas precision, recall, F1-score y ROC-AUC durante la fase de validación y testing [page:1]. Asimismo, en producción propone monitorear accuracy, latency, fairness, bias y model drift como indicadores del desempeño real del sistema [page:1].
+
+Aunque estas métricas son mencionadas como parte del marco conceptual y operativo del estudio, el artículo no presenta un experimento propio con resultados cuantitativos originales comparables entre tratamientos o grupos [page:1]. Su propósito principal es sintetizar prácticas y literatura, no probar empíricamente una hipótesis con un diseño experimental cerrado [page:1].
+
+El resultado principal que obtiene el estudio es una consolidación de prácticas consideradas esenciales para gestionar flujos AI/ML de forma confiable, escalable y mantenible [page:1]. También identifica como hallazgo que las prácticas de infraestructura como código, contenerización, testing automatizado, versionado y colaboración son claves para afrontar problemas de deriva, reproducibilidad e ineficiencias operativas [page:1].
+
+## Comentar (los resultados son mejores respecto a otros)
+
+El trabajo ofrece resultados valiosos en términos de síntesis, porque organiza de forma coherente un conjunto amplio de conceptos, prácticas y estudios previos sobre DevOps y MLOps [page:1]. En comparación con fuentes más aisladas o centradas en un solo aspecto del ciclo de vida, esta encuesta tiene la ventaja de construir una visión integral y comparativa [page:1].
+
+Sin embargo, no puede afirmarse que sus “resultados” sean mejores que otros en sentido experimental, porque no presenta una validación empírica propia basada en intervención y medición cuantitativa directa [page:1]. Su fortaleza está en la estructuración del conocimiento, la comparación de literatura y la identificación de buenas prácticas aplicables a entornos reales [page:1].
+
+## Observaciones y/o críticas suyas al artículo
+
+Una primera observación es que el artículo resulta útil como fuente de base teórica y metodológica para investigaciones relacionadas con integración de IA/ML en el ciclo de desarrollo de software [page:1]. Su cobertura de conceptos, prácticas y retos es amplia, y permite construir categorías analíticas para tesis, marcos teóricos o matrices de variables [page:1].
+
+No obstante, una crítica relevante es que se trata de un estudio de tipo survey, por lo que su evidencia es principalmente secundaria [page:1]. Esto significa que, aunque resume y organiza conocimiento valioso, necesita ser complementado con estudios empíricos o experimentales si el objetivo de la tesis es demostrar relaciones causales o efectos medibles [page:1].
+
+También puede observarse que algunas afirmaciones del artículo son bastante generales y orientadas a la sistematización conceptual, por lo que el investigador deberá traducirlas cuidadosamente en indicadores observables para una matriz de operacionalización [page:1]. Aun así, su utilidad sigue siendo alta para delimitar dimensiones como automatización, monitoreo, colaboración, versionado y gobernanza [page:1].
+
+## Aportes nuestros al artículo
+
+Consideramos que esta fuente es muy valiosa para sustentar investigaciones sobre la incorporación de prácticas DevOps/MLOps en procesos de desarrollo con inteligencia artificial [page:1]. En particular, ayuda a formular relaciones entre automatización, gobierno del ciclo de vida de modelos y efectividad de despliegue de soluciones basadas en AI/ML [page:1].
+
+Desde nuestra perspectiva, el artículo puede usarse como base para definir variables asociadas a la adopción de prácticas de ingeniería moderna en proyectos de software con IA [page:1]. También sirve para justificar que la integración de datos, modelos, testing, monitoreo y colaboración es una condición crítica para pasar de desarrollos experimentales a soluciones productivas [page:1].
+
+Su aporte más fuerte para una tesis está en ofrecer dimensiones claras y técnicamente defendibles para operacionalizar el fenómeno estudiado [page:1]. Por eso, la fuente 15 puede funcionar como uno de los ejes principales para construir tanto el estado del arte como la matriz de operacionalización de variables [page:1][file:1].
+
+# Matriz de operacionalización de variables
+
+## Enfoque derivado de la fuente 15
+
+A partir del contenido del artículo, se puede plantear una relación donde la **variable independiente** es la adopción de prácticas DevOps/MLOps en workflows AI/ML, la **variable dependiente** es la efectividad del desarrollo y despliegue de sistemas AI/ML, y la **variable intermedia** es la madurez de gestión del ciclo de vida del modelo, ya que el artículo explica que la mejora operativa se da mediante procesos de automatización, monitoreo, validación y gobernanza [page:1].
+
+| Tipo de variable | Variable | Definición conceptual | Dimensiones | Indicadores | Técnica / instrumento |
+|---|---|---|---|---|---|
+| Independiente | Adopción de prácticas DevOps/MLOps | Grado en que un proyecto incorpora prácticas como CI/CD, CI/CD/CT, IaC, contenerización, testing automatizado, control de versiones, monitoreo y gobernanza para workflows AI/ML [page:1] | Integración continua; automatización; infraestructura; testing; versionado; monitoreo; colaboración; gobernanza [page:1] | Uso de CI/CD; existencia de reentrenamiento continuo; uso de Docker/Kubernetes; validación automatizada; versionado de datos/modelos; monitoreo en producción; trabajo interdisciplinario; políticas de gobernanza [page:1] | Análisis documental; checklist técnico; entrevista |
+| Intermedia | Madurez de gestión del ciclo de vida del modelo | Nivel de formalización, control y continuidad en el manejo de datos, entrenamiento, despliegue, monitoreo y reentrenamiento de modelos AI/ML [page:1] | Reproducibilidad; trazabilidad; control del drift; continuidad operativa; gestión del cambio [page:1] | Registro de experimentos; trazabilidad de datasets y modelos; detección de drift; frecuencia de reentrenamiento; capacidad de rollback [page:1] | Rúbrica de madurez; guía de observación |
+| Dependiente | Efectividad del desarrollo y despliegue de sistemas AI/ML | Capacidad del proyecto para construir, validar, desplegar y mantener sistemas AI/ML confiables, escalables y sostenibles [page:1] | Confiabilidad; escalabilidad; mantenibilidad; calidad del modelo; eficiencia operativa [page:1] | Precisión del modelo; latencia; estabilidad de despliegue; reducción de fallos; facilidad de mantenimiento; tiempo de respuesta ante degradación [page:1] | Evaluación técnica; métricas de desempeño; análisis de resultados |
+
+## Observación metodológica
+
+La fuente 15 sí proporciona un conjunto claro de dimensiones e indicadores conceptuales asociados al uso de DevOps/MLOps en AI/ML, lo que la hace especialmente útil para una matriz de operacionalización [page:1]. Sin embargo, como se trata de una encuesta o revisión y no de un experimento controlado, los indicadores deben afinarse y complementarse con otras fuentes empíricas para su aplicación final en una investigación formal [page:1].

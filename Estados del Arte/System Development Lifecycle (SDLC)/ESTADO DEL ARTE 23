@@ -1,0 +1,101 @@
+# Fuente 23
+
+**Author(s):** No se identifica autor personal; la fuente presenta autoría institucional de Michigan Technological University, IT Security [page:1]  
+**Title of paper:** *System Development Lifecycle (SDLC)* [page:1]  
+**Journal / Source:** Guía institucional de IT Security de Michigan Technological University [page:1]  
+**Volume (issue):** No aplica [page:1]  
+**pag – pag (year):** No aplica; la página muestra “Rev 9/20/16” [page:1]  
+
+## Estado del arte que hace el autor
+
+La fuente presenta el SDLC como una metodología estructurada para asegurar la implementación exitosa de sistemas alineados con objetivos estratégicos y de negocio [page:1]. Su enfoque no está centrado en IA ni en una técnica emergente particular, sino en la formalización de fases, roles, documentos y mecanismos de aprobación a lo largo del ciclo de vida del sistema [page:1].
+
+Dentro de ese marco, el documento define seis fases principales: Initiation, Feasibility, Requirements Analysis, Design, Development, Implementation y Operations and Maintenance [page:1]. Esta estructura muestra un estado del arte clásico e institucional del desarrollo de sistemas, donde la calidad del producto depende de la trazabilidad de requisitos, la gestión del proyecto, la mitigación de riesgos y la validación progresiva de entregables [page:1].
+
+La fuente también coincide con la visión de NIST al considerar que el SDLC es un proceso multietapa para desarrollar, implementar, mantener y retirar sistemas de información [page:2]. NIST añade que la seguridad debe integrarse en cada etapa del ciclo de vida, desde la iniciación hasta la disposición final del sistema, lo que amplía el enfoque tradicional del SDLC hacia una perspectiva de gestión de riesgos y protección de la información [page:2].
+
+Por ello, el estado del arte recogido en esta fuente puede interpretarse como una visión base y normativa del SDLC, útil para contrastarla después con enfoques más recientes como DevOps, MLOps o AI-native SDLC [page:1][page:2]. En una tesis, esta fuente sirve como referente del modelo convencional sobre el cual luego se evalúan transformaciones metodológicas impulsadas por inteligencia artificial [page:1][page:2].
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+La motivación principal del documento es proporcionar a los project managers y responsables funcionales una metodología visible, repetible y medible para asegurar que los sistemas se entreguen a tiempo, dentro del presupuesto y conforme a los requisitos definidos [page:1]. La guía subraya que el SDLC ayuda a documentar decisiones, asignar responsabilidades y obtener aprobaciones formales de directivos, usuarios y responsables técnicos [page:1].
+
+Aunque la fuente no formula críticas académicas explícitas a otros trabajos, sí deja ver una crítica implícita a los desarrollos poco estructurados o con escasa trazabilidad [page:1]. Al insistir en requisitos bien definidos, gestión de riesgos, documentación y control por fases, el documento sugiere que la ausencia de método compromete calidad, visibilidad del proyecto y cumplimiento de objetivos institucionales [page:1].
+
+La fuente de NIST refuerza esta motivación al señalar que la forma más efectiva de proteger la información y los sistemas es integrar la seguridad en cada paso del proceso de desarrollo [page:2]. De manera implícita, ello cuestiona enfoques donde la seguridad se agrega al final del proyecto, ya que esa práctica incrementa costos, dificulta mitigaciones y debilita la postura de seguridad del sistema [page:2].
+
+## Descripción del aporte del autor
+
+El principal aporte de la fuente es ofrecer una estructura clara del ciclo de vida del desarrollo de sistemas, definiendo objetivos, roles, productos de trabajo y fases con sus propósitos específicos [page:1]. La guía explica que el SDLC busca entregar sistemas de calidad, proveer un marco identificable y repetible, y establecer una estructura de project management efectiva durante todo el ciclo de vida [page:1].
+
+Otro aporte importante es la delimitación funcional de cada fase [page:1]. La fase de Initiation identifica la necesidad de negocio; Feasibility evalúa si el proyecto debe continuar; Requirements Analysis formaliza requisitos medibles y testeables; Design define la solución y riesgos; Development traduce requisitos en componentes; Implementation instala el sistema; y Operations and Maintenance supervisa su funcionamiento continuo [page:1].
+
+Complementariamente, NIST amplía el aporte del SDLC al incorporar la dimensión de seguridad como parte intrínseca del proceso [page:2]. Según NIST, integrar seguridad en el SDLC permite identificar vulnerabilidades tempranamente, reducir costos de mitigación, mejorar interoperabilidad y respaldar mejores decisiones ejecutivas mediante gestión integral del riesgo [page:2].
+
+En conjunto, esta fuente aporta una base metodológica sólida para investigaciones sobre desarrollo de software, porque permite entender cómo se organiza el enfoque tradicional del ciclo de vida antes de introducir innovaciones como automatización, integración continua o inteligencia artificial [page:1][page:2].
+
+## Proceso para obtener el aporte que considera el autor
+
+El documento construye su aporte mediante una formulación procedimental del SDLC, organizada en fases consecutivas con objetivos, actividades y productos esperados [page:1]. No se trata de un estudio experimental, sino de una guía metodológica institucional orientada a la gestión y ejecución disciplinada de proyectos de sistemas [page:1].
+
+El proceso inicia cuando la gerencia identifica una necesidad de mejora del negocio mediante tecnología, lo que activa la Initiation Phase [page:1]. Luego se desarrolla una Feasibility Phase para estudiar la viabilidad y producir un plan y estimaciones de presupuesto para etapas futuras [page:1].
+
+Después, la Requirements Analysis Phase define requisitos funcionales detallados, medibles y ligados a la necesidad de negocio, además de elaborar modelos de datos, procesos y requisitos de prueba [page:1]. En la Design Phase se diseña el sistema para satisfacer esos requisitos, incorporando evaluación de riesgos, plan de conversión de datos, definición del entorno operativo y asignación de procesos a recursos [page:1].
+
+La Development Phase traduce requisitos y diseño en componentes del sistema y contempla pruebas unitarias, integración, testing de seguridad y validación por el usuario [page:1]. Finalmente, la Implementation Phase despliega el sistema en producción y la etapa de Operations and Maintenance asegura monitoreo continuo, modificaciones necesarias y posible reingreso al ciclo de planificación ante nuevos cambios [page:1].
+
+## Proceso para resolver el problema considerado por el autor
+
+El problema que aborda la fuente es cómo desarrollar sistemas de información de manera controlada, trazable y alineada con necesidades organizacionales [page:1]. Para resolverlo, propone un proceso por fases donde cada etapa reduce incertidumbre y transfiere insumos estructurados a la siguiente [page:1].
+
+La resolución del problema comienza validando la necesidad y la viabilidad del proyecto antes de invertir en diseño o desarrollo [page:1]. Posteriormente, los requisitos se detallan con suficiente precisión para que puedan diseñarse, probarse y verificarse, evitando ambigüedades posteriores [page:1].
+
+En la fase de diseño se mitigan riesgos tempranamente y se definen subsistemas, entradas, salidas y entorno de operación, lo cual disminuye errores costosos en etapas tardías [page:1]. Más adelante, el desarrollo y la implementación incluyen pruebas funcionales, de integración, de seguridad y de aceptación del usuario para confirmar que el sistema satisface los requisitos definidos [page:1].
+
+NIST agrega que este proceso debe complementarse con categorización de seguridad, selección de controles, documentación de decisiones y monitoreo continuo del sistema durante operación y mantenimiento [page:2]. De ese modo, el SDLC no solo resuelve el problema de construir el sistema, sino también el de mantenerlo seguro, trazable y sostenible a lo largo del tiempo [page:2].
+
+## Métricas que el autor usa y resultado que obtiene
+
+La fuente institucional de Michigan Tech no presenta métricas cuantitativas experimentales como porcentajes de mejora, precisión o reducción de tiempos [page:1]. Su orientación es metodológica y de gestión, por lo que los “resultados” se expresan en metas organizacionales como entrega a tiempo, cumplimiento de presupuesto, satisfacción de requisitos y visibilidad del estado del proyecto [page:1].
+
+NIST tampoco plantea en este documento un experimento comparativo con métricas de desempeño del SDLC frente a otros modelos [page:2]. No obstante, sí enumera beneficios esperados de integrar seguridad durante el ciclo de vida, como identificación temprana de vulnerabilidades, menor costo de implementación de controles, mayor confianza organizacional y mejor interoperabilidad del sistema [page:2].
+
+Por ello, el resultado principal de esta fuente no es empírico-estadístico, sino normativo y operativo [page:1][page:2]. Su valor está en estructurar el proceso y justificar por qué la gestión por fases, la trazabilidad de requisitos y la seguridad integrada mejoran la gobernanza del desarrollo de sistemas [page:1][page:2].
+
+## Comentar (los resultados son mejores respecto a otros)
+
+Desde una perspectiva académica, esta fuente no pretende demostrar que el SDLC tradicional sea superior a metodologías ágiles, DevOps o AI-native mediante evidencia experimental directa [page:1][page:2]. Su objetivo es establecer una base metodológica ordenada y controlada para el desarrollo institucional de sistemas [page:1].
+
+Aun así, el documento muestra fortalezas claras frente a enfoques ad hoc o poco documentados, especialmente en trazabilidad, control, claridad de roles y gestión del riesgo [page:1]. Sin embargo, para afirmar que este enfoque produce mejores resultados que modelos más modernos, sería necesario complementarlo con estudios comparativos específicos [page:1][page:2].
+
+## Observaciones y/o críticas suyas al artículo
+
+Una observación importante es que esta fuente no es un artículo científico, sino una guía institucional [page:1]. Por esa razón, resulta muy útil para definir el concepto clásico de SDLC y sus fases, pero menos adecuada como evidencia empírica principal para probar hipótesis causales [page:1].
+
+Otra crítica es que su enfoque es lineal y fuertemente orientado a documentación, control y aprobación formal, lo cual puede hacerlo menos flexible para contextos altamente iterativos o para entornos donde la IA acelera la implementación y modifica los flujos tradicionales de trabajo [page:1]. Precisamente por eso, esta fuente funciona mejor como línea base metodológica que como modelo definitivo para proyectos contemporáneos de alta automatización [page:1][page:2].
+
+También debe notarse que la dimensión de seguridad es mucho más desarrollada en NIST que en la guía institucional resumida [page:2]. Por consiguiente, si esta fuente se usa en una tesis, conviene complementarla con referencias sobre seguridad, automatización, agilidad y transformación digital del ciclo de vida [page:2].
+
+## Aportes nuestros al artículo
+
+Consideramos que esta fuente es fundamental para establecer el marco de referencia del SDLC tradicional en una investigación sobre transformación del desarrollo de software [page:1]. Su mayor utilidad radica en describir con claridad las fases base del proceso y los principios de documentación, trazabilidad, pruebas y mantenimiento [page:1].
+
+Además, al complementarse con NIST, esta fuente permite introducir la idea de que la seguridad debe integrarse desde el inicio y no tratarse como una actividad posterior [page:2]. Eso la convierte en una base sólida para comparar luego cómo la IA, DevOps o MLOps reformulan la lógica del ciclo de vida clásico [page:1][page:2].
+
+Desde nuestro análisis, la fuente 23 sirve especialmente bien para operacionalizar variables relacionadas con formalización del proceso, gestión por fases y calidad del desarrollo [page:1]. Por ello, debe ubicarse como antecedente metodológico central dentro del estado del arte de cualquier tesis que compare SDLC tradicional con enfoques emergentes [page:1][file:1].
+
+# Matriz de operacionalización de variables
+
+## Enfoque derivado de la fuente 23
+
+A partir del contenido de la fuente, se puede plantear como **variable independiente** el grado de aplicación formal del SDLC, como **variable dependiente** la calidad y control del desarrollo del sistema, y como **variable intermedia** la trazabilidad y gestión del riesgo, porque la guía sostiene que el cumplimiento por fases, la documentación y la supervisión mejoran la entrega, el control y la satisfacción de requisitos [page:1][page:2].
+
+| Tipo de variable | Variable | Definición conceptual | Dimensiones | Indicadores | Técnica / instrumento |
+|---|---|---|---|---|---|
+| Independiente | Grado de aplicación formal del SDLC | Nivel en que un proyecto aplica de manera estructurada las fases, documentos, aprobaciones y actividades del ciclo de vida del desarrollo de sistemas [page:1] | Inicio; factibilidad; análisis de requisitos; diseño; desarrollo; implementación; operación y mantenimiento [page:1] | Existencia de acta de inicio; estudio de factibilidad; especificación de requisitos; diseño documentado; pruebas de desarrollo; despliegue planificado; monitoreo de operación [page:1] | Análisis documental; checklist de cumplimiento |
+| Intermedia | Trazabilidad y gestión del riesgo | Nivel de seguimiento de requisitos, riesgos y decisiones a lo largo de las fases del ciclo de vida [page:1][page:2] | Trazabilidad de requisitos; gestión de riesgos; seguridad; control de cambios; documentación [page:1][page:2] | Matriz de trazabilidad; evaluación de riesgos; controles de seguridad definidos; registro de cambios; documentación aprobada [page:1][page:2] | Rúbrica; revisión documental; guía de observación |
+| Dependiente | Calidad y control del desarrollo del sistema | Capacidad del proyecto para entregar un sistema alineado con necesidades del negocio, dentro de tiempo, costo y requisitos establecidos [page:1] | Cumplimiento de requisitos; calidad del sistema; control del proyecto; continuidad operativa; seguridad del sistema [page:1][page:2] | Entrega a tiempo; ajuste al presupuesto; aceptación del usuario; número de incidencias; estabilidad operativa; conformidad con requisitos de seguridad [page:1][page:2] | Evaluación técnica; métricas de proyecto; entrevista |
+
+## Observación metodológica
+
+La fuente 23 es muy útil para construir una matriz de operacionalización del SDLC tradicional porque explicita fases, objetivos, entregables y principios de control [page:1]. Sin embargo, al tratarse de una guía institucional y normativa, conviene complementarla con estudios empíricos o comparativos cuando se quiera medir su impacto frente a enfoques más modernos [page:1][page:2].

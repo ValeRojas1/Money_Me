@@ -1,0 +1,72 @@
+# Estado del Arte
+
+**Author(s):** Ricardo Amaro, Rúben Pereira, Miguel Mira da Silva [web:10][web:18]  
+**Title of paper:** Mapping DevOps Capabilities to the Software Life Cycle: A Systematic Literature Review [web:8][web:10]  
+**Journal:** Information and Software Technology [web:10][web:18]  
+**Volume (issue):** Vol. 177, art. 107583 [web:10][web:16]  
+**pag – pag (year):** 2025 [web:10][web:18]
+
+## Estado del arte que hace el autor
+
+Los autores presentan una revisión sistemática orientada a estudiar cómo las capacidades de DevOps se relacionan con los procesos del ciclo de vida del software definidos en el estándar IEEE 2675-2021. [web:10]  
+El trabajo parte de un estado del arte donde DevOps ya es reconocido por acelerar la entrega y mejorar la confiabilidad, pero su adopción sigue enfrentando dificultades culturales, técnicas, de medición y de proceso. [web:10]  
+Dentro de esa revisión, el artículo toma como base un conjunto previo de 37 capacidades DevOps y busca determinar cuáles de ellas fortalecen cada una de las 30 fases de los Life Cycle Processes. [web:10]  
+Así, el estado del arte que construyen no se limita a describir DevOps de forma general, sino que lo organiza en una lógica de mapeo estructurado entre capacidades y fases del ciclo de vida del software. [web:10]
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+La motivación del estudio surge porque, según los autores, muchas organizaciones desean adoptar DevOps para hacer más rápidos y confiables sus procesos de desarrollo y entrega, pero todavía no cuentan con una visión clara de qué capacidades impactan realmente en cada fase del ciclo de vida. [web:10]  
+También critican implícitamente que los trabajos previos no integran de manera suficiente las dimensiones cultural, técnica, de medición y de proceso dentro de un mismo marco de análisis. [web:10]  
+Además, identifican una brecha entre la teoría de adopción DevOps y su aplicación práctica, lo que dificulta tomar decisiones de mejora con base estructurada. [web:10]  
+Por eso justifican la necesidad de una revisión sistemática que conecte capacidades DevOps con procesos concretos del software life cycle y que permita orientar una adopción más exitosa. [web:10]
+
+## Descripción del aporte del autor
+
+El aporte principal del artículo es un mapeo sistemático entre capacidades DevOps y procesos del ciclo de vida del software, con el objetivo de mejorar eficiencia y resultados organizacionales. [web:10]  
+El problema central que aborda el estudio es que la adopción de DevOps suele hacerse de forma parcial o desalineada, lo que produce dificultades para mejorar entrega, calidad y confiabilidad del software. [web:10]  
+Este problema afecta a las empresas porque limita la capacidad de implementar procesos más rápidos, medibles y sostenibles, y también impacta a los equipos al mantener brechas entre desarrollo y operaciones. [web:10]  
+Como solución, el artículo organiza las relaciones detectadas en la revisión sistemática y clasifica el impacto de las capacidades sobre distintas fases del ciclo de vida. [web:10]  
+En ese sentido, su contribución no solo es teórica, sino también práctica, porque ofrece una base estructurada para evaluar dónde conviene fortalecer capacidades DevOps dentro del SDLC. [web:10]
+
+## Proceso para obtener el aporte que considera el autor
+
+Los autores emplean una metodología de revisión sistemática de la literatura. [web:10]  
+A partir de 102 documentos identificados, sintetizan y organizan las relaciones entre capacidades DevOps y procesos del ciclo de vida. [web:10]  
+Luego realizan un análisis detallado de las conexiones entre categorías para observar su aplicación e impacto. [web:10]  
+Ese proceso permite pasar de evidencia dispersa a un mapa consolidado que vincula capacidades específicas con procesos concretos del estándar IEEE 2675-2021. [web:10]
+
+## Proceso para resolver el problema considerado por el autor
+
+El problema se aborda mediante una estrategia de mapeo sistemático y clasificación de impacto. [web:10]  
+En lugar de proponer una herramienta puntual o un experimento aislado, el estudio resuelve la brecha de conocimiento identificando qué capacidades DevOps mejoran cada fase del ciclo de vida y con qué intensidad. [web:10]  
+El análisis muestra, por ejemplo, que las capacidades técnicas DevOps se correlacionan fuertemente con los procesos técnicos del ciclo de vida, mientras que las capacidades de medición tienen impacto importante sobre procesos de acuerdo. [web:10]  
+De esta manera, los autores ofrecen una guía para priorizar capacidades según el proceso de software que se desea fortalecer. [web:10]
+
+## Métricas que el autor usa y resultado que obtiene. Comentar
+
+El estudio usa una clasificación de impacto para valorar la relación entre capacidades DevOps y procesos del ciclo de vida. [web:10]  
+Con esa clasificación, identifica ocho capacidades con impacto excepcional en los Life Cycle Processes y once capacidades con impacto muy alto sobre procesos como supply, requirements definition, integration y validation. [web:10]  
+Los resultados muestran que la combinación entre capacidades DevOps y procesos del ciclo de vida puede mejorar la entrega de software, la calidad y la confiabilidad. [web:10]  
+Considero adecuada la lógica de evaluación porque permite comparar impacto entre capacidades y procesos sin reducir el análisis a una sola dimensión técnica. [web:10]  
+Sin embargo, habría sido todavía más fuerte si el artículo hubiera complementado el mapeo con casos empíricos medidos en organizaciones reales, por ejemplo tiempo de despliegue, lead time o tasa de fallos antes y después de aplicar las capacidades priorizadas. [web:10]
+
+## Observaciones y/o críticas suyas al artículo
+
+El artículo tiene como fortaleza principal su estructura clara y su utilidad práctica para relacionar DevOps con el ciclo de vida completo del software. [web:10][web:18]  
+También resulta valioso porque ofrece evidencia organizada para apoyar decisiones de adopción y madurez DevOps en entornos reales. [web:10]  
+Como crítica constructiva, al tratarse de una revisión sistemática, no valida directamente sus hallazgos con estudios de caso propios ni presenta resultados experimentales de implementación. [web:10]  
+Además, aunque el mapeo es sólido, sería útil una profundización mayor en indicadores operativos concretos para cada capacidad priorizada. [web:10]
+
+## Aportes nuestros al artículo
+
+1. Este artículo puede incorporarse como fundamento para la dimensión de integración DevOps/MLOps dentro del ciclo de vida de desarrollo de software. [web:10]  
+2. Su mapeo permite justificar que un modelo de desarrollo AI-native no debe centrarse solo en generación de código, sino también en capacidades de despliegue, monitoreo, integración y validación continua. [web:10]  
+3. En una tesis aplicada, esta base puede adaptarse para medir cómo ciertas capacidades DevOps impactan en tiempo de ciclo, calidad, confiabilidad y estabilidad operativa del proceso de desarrollo. [web:10]
+
+## Matriz de operacionalización de variables
+
+| Variable | Tipo | Definición conceptual | Definición operacional | Dimensiones | Indicadores | Escala / fuente | Instrumento |
+|---|---|---|---|---|---|---|---|
+| Ciclo de vida de desarrollo de software (SDLC) | Independiente | Conjunto de fases, procesos y prácticas que estructuran la creación, entrega y mantenimiento de software. [web:10] | Se operacionaliza observando la relación entre los procesos del ciclo de vida y las capacidades DevOps aplicadas en cada fase. [web:10] | Fases del proceso, capacidades técnicas, capacidades de medición, capacidades de proceso, capacidades culturales. [web:10] | Número y tipo de capacidades asociadas por fase; intensidad del impacto por proceso. [web:10] | Artículo de Amaro, Pereira y Mira da Silva (2025). [web:10][web:18] | Revisión documental, matriz de mapeo y análisis comparativo. [web:10] |
+| Eficiencia del proceso de desarrollo de software | Dependiente | Rendimiento del proceso en términos de rapidez, calidad, confiabilidad y mejora de resultados. [web:10] | Se mide a partir del impacto atribuido a las capacidades DevOps sobre procesos del ciclo de vida. [web:10] | Entrega, calidad, confiabilidad, alineación proceso-capacidad. [web:10] | Impacto excepcional, impacto muy alto, mejora esperada en delivery, quality y reliability. [web:10] | Resultados sintetizados en la revisión sistemática. [web:10] | Análisis de impacto y síntesis de relaciones capacidad-proceso. [web:10] |
+| Nuevo ciclo de vida ágil AI-native | Intermedia | Modelo de tesis que integra prácticas ágiles, IA y operación continua como parte estructural del desarrollo. [file:1][web:10] | Se expresa mediante la incorporación de capacidades DevOps como soporte del despliegue, validación, integración y mantenimiento de soluciones con IA. [web:10][file:1] | Integración DevOps, automatización, validación continua, operación del software. [web:10] | Presencia de capacidades priorizadas en el modelo propuesto; alineación entre desarrollo y operación. [web:10] | Adaptación conceptual basada en el artículo y en el marco de tesis. [web:10][file:1] | Síntesis analítica y diseño de matriz de adopción. [web:10] |

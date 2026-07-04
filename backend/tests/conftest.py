@@ -1,5 +1,9 @@
 import asyncio
+import os
 from pathlib import Path
+
+# Force SQLite for all tests — override .env before any app module loads
+os.environ["DATABASE_URL"] = "sqlite+aiosqlite:///./data/test.db"
 
 import pytest
 import pytest_asyncio

@@ -1,0 +1,76 @@
+# Estado del Arte
+
+**Author(s):** Marcela Paladino y Claudia Pons. [file:1]  
+**Title of paper:** From Obstacles to Strategies: Integrating Artificial Intelligence into the Software Development Life Cycle. [file:1]  
+**Journal:** Memorias del 54 JAIIO – ASSE (Argentine Symposium on Software Engineering). [file:1]  
+**Volume (issue):** 2025. [file:1]  
+**pag – pag (year):** pp. 101–117 (2025). [file:1]
+
+## Estado del arte que hace el autor
+
+Las autoras realizan una revisión narrativa exhaustiva del estado del arte sobre la integración de Inteligencia Artificial en el Software Development Life Cycle. [file:1]  
+En las secciones centrales del trabajo clasifican sistemáticamente herramientas y técnicas de IA por fase del SDLC, desafíos técnicos, organizacionales y éticos, y estrategias propuestas para superarlos. [file:1]  
+Citan explícitamente estudios recientes entre 2022 y 2025 y utilizan una matriz de extracción de datos propia para organizar los hallazgos. [file:1]  
+Posicionan su trabajo como una síntesis actualizada que conecta oportunidades tecnológicas con barreras reales y estrategias prácticas, con un enfoque especialmente útil para contextos latinoamericanos. [file:1]
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+Las autoras critican que, aunque la literatura sobre IA en SDLC es abundante, existe dispersión temática y falta de integración entre avances tecnológicos y obstáculos reales de adopción. [file:1]  
+Señalan que muchos estudios previos se concentran en herramientas puntuales, como GitHub Copilot en desarrollo, pero no analizan de forma holística las barreras que impiden una adopción plena en entornos reales. [file:1]  
+También justifican su artículo porque las empresas, especialmente en Latinoamérica, enfrentan resistencia organizacional, problemas de datos y dilemas éticos que dificultan materializar los beneficios prometidos por la IA. [file:1]  
+Su motivación es llenar ese vacío mediante un marco que una desafíos técnicos, organizacionales y éticos con soluciones concretas. [file:1]
+
+## Descripción del aporte del autor
+
+El aporte principal del artículo es una revisión narrativa estructurada que vincula obstáculos de adopción con estrategias de superación para integrar IA en el SDLC. [file:1]  
+El problema central que aborda es que las barreras técnicas, organizacionales y éticas impiden una integración efectiva y sostenible de la IA en el proceso de desarrollo de software. [file:1]  
+Ese problema tiene impacto empresarial porque conduce a proyectos más lentos, costosos y con mayor riesgo de errores o brechas de seguridad, y tiene impacto social porque puede frenar la modernización tecnológica y la confianza en estas herramientas. [file:1]  
+Las autoras sostienen que, aunque la IA ofrece mejoras significativas en todas las fases del SDLC, la adopción exitosa solo se logrará con estrategias integrales que combinen mejoras técnicas, capacitación y marcos éticos robustos. [file:1]  
+El trabajo propone así una conexión directa entre oportunidad, barrera y estrategia, lo que lo vuelve muy útil para tesis aplicadas. [file:1]
+
+## Proceso para obtener el aporte que considera el autor
+
+Las autoras utilizan un método cualitativo de revisión narrativa complementado con una matriz de extracción de datos. [file:1]  
+El proceso incluye búsqueda en IEEE Xplore, Scopus y Google Scholar para el periodo 2022–2025, usando criterios de selección rigurosos y términos específicos. [file:1]  
+Luego construyen una matriz estructurada con variables como fase del SDLC, herramienta o técnica, desafío, factor contribuyente, estrategia, impacto y referencia. [file:1]  
+Finalmente realizan una síntesis narrativa y una codificación temática para organizar el conocimiento disponible. [file:1]  
+No realizan experimento propio, sino sistematización y clasificación de evidencia previa. [file:1]
+
+## Proceso para resolver el problema considerado por el autor
+
+Las autoras proponen un enfoque holístico de estrategias integrales como solución práctica. [file:1]  
+En la dimensión técnica recomiendan curación de datos, modelos explicables, plataformas interoperables y arquitecturas modulares. [file:1]  
+En la dimensión organizacional plantean programas de formación continua, equipos interdisciplinarios y compromiso gerencial. [file:1]  
+En la dimensión ética proponen auditorías de privacidad, políticas de gobernanza y explicabilidad obligatoria. [file:1]  
+Además, recomiendan implementar estas estrategias de forma simultánea para superar las fases críticas de planificación, pruebas y despliegue o mantenimiento. [file:1]
+
+## Métricas que el autor usa y resultado que obtiene. Comentar
+
+El artículo no presenta métricas numéricas propias, porque se trata de una revisión narrativa. [file:1]  
+Sin embargo, sintetiza métricas de estudios citados, entre ellas mejoras en velocidad de codificación y generación de pruebas de hasta 30–50 %, reducción de ambigüedad en requisitos mediante NLP, mayor cobertura de pruebas y detección temprana de vulnerabilidades. [file:1]  
+También identifica como barreras recurrentes la compatibilidad legacy, la calidad de datos y la resistencia organizacional. [file:1]  
+Considero que el enfoque cualitativo es correcto y muy actual para 2025, y que las estrategias propuestas son prácticas y accionables. [file:1]  
+Como mejora futura, habría sido ideal incorporar una tabla comparativa cuantitativa más fuerte o un caso de estudio argentino o latinoamericano para reforzar el impacto contextual. [file:1]
+
+## Observaciones y/o críticas suyas al artículo
+
+El artículo tiene varias fortalezas importantes: es muy actual, adopta un enfoque latinoamericano, usa una matriz clara y mantiene equilibrio entre oportunidades, obstáculos y estrategias. [file:1]  
+También es especialmente útil porque traduce la discusión teórica en recomendaciones concretas y accionables para organizaciones reales. [file:1]  
+Como crítica constructiva, al ser una revisión narrativa no alcanza el rigor metodológico de una revisión sistemática tipo PRISMA. [file:1]  
+Además, no incluye métricas propias ni casos de estudio cuantitativos, lo que limita su fuerza probatoria si se quiere demostrar impacto empírico directo. [file:1]
+
+## Aportes nuestros al artículo
+
+1. Esta fuente puede incorporarse para sustentar la dimensión de integración realista de IA en el SDLC, no solo desde el potencial tecnológico sino desde las barreras concretas de adopción. [file:1]  
+2. También es muy útil para fundamentar una visión aplicada del nuevo ciclo de vida ágil AI-native, especialmente en contextos latinoamericanos o peruanos. [file:1]  
+3. En una tesis aplicada, la matriz propuesta por las autoras puede adaptarse para medir el nivel de madurez en adopción de IA en empresas, universidades o equipos de desarrollo. [file:1]
+
+## Matriz de operacionalización de variables
+
+| Variable | Tipo | Definición conceptual | Definición operacional | Dimensiones | Indicadores | Escala / fuente | Instrumento |
+|---|---|---|---|---|---|---|---|
+| Integración de IA en SDLC | Independiente | Grado de adopción de herramientas de IA por fase del SDLC. [file:1] | Se mide como el porcentaje de fases con IA implementada respecto del total de fases del SDLC. [file:1] | Planificación, requisitos, diseño, desarrollo, pruebas, mantenimiento. [file:1] | Herramientas por fase, como Copilot, NLP u otros agentes inteligentes. [file:1] | Matriz Paladino y Pons (2025). [file:1] | Matriz de extracción y encuesta. [file:1] |
+| Desafíos técnicos | Interviniente | Barreras relacionadas con datos, integración y modelos. [file:1] | Se mide por número y tipo de obstáculos técnicos reportados. [file:1] | Calidad de datos, legacy, opacidad. [file:1] | % de estudios que mencionan caja negra o problemas de datos. [file:1] | Estudios citados por las autoras. [file:1] | Codificación temática. [file:1] |
+| Desafíos organizacionales | Interviniente | Resistencia cultural y falta de capacidades humanas para adoptar IA. [file:1] | Se mide por el nivel de resistencia y la brecha de habilidades. [file:1] | Capacitación, soporte gerencial. [file:1] | % de organizaciones con programas de formación en IA. [file:1] | Estudios de apoyo citados en la revisión. [file:1] | Encuestas a equipos. [file:1] |
+| Desafíos éticos | Interviniente | Problemas de privacidad, transparencia y gobernanza. [file:1] | Se mide por el cumplimiento de principios éticos y presencia de mecanismos de control. [file:1] | Privacidad, explicabilidad. [file:1] | Presencia de auditorías éticas y modelos explicables. [file:1] | Estudios y políticas referidos en la revisión. [file:1] | Revisión de políticas y auditorías. [file:1] |
+| Estrategias de superación | Dependiente / aplicada | Soluciones propuestas para cada dimensión de obstáculo. [file:1] | Se mide por el grado de implementación de estrategias recomendadas. [file:1] | Técnicas, organizacionales, éticas. [file:1] | % de adopción de curación de datos, formación y auditorías. [file:1] | Recomendaciones del artículo. [file:1] | Evaluación pre/post implementación. [file:1] |

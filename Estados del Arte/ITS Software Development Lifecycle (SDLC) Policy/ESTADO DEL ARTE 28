@@ -1,0 +1,97 @@
+# Fuente: Software Development Lifecycle (ITS)
+
+**Author(s):** Autoría institucional; Dakota State University [page:2]  
+**Title of paper:** *Software Development Lifecycle* [page:2]  
+**Journal / Source:** Dakota State University, Policy 14.10, Information Technology Services (ITS) [page:2]  
+**Volume (issue):** No aplica [page:2]  
+**pag – pag (year):** No aplica; originalmente emitida el 02/07/2026 y adoptada el 02/09/2026 [page:2]  
+
+## Estado del arte que hace el autor
+
+La política presenta el ciclo de vida del desarrollo de software como un proceso estandarizado para asegurar que el desarrollo y los cambios en software se realicen de forma segura, consistente y conforme a los requerimientos universitarios [page:2]. El documento se alinea además con marcos NIST, en particular NIST SP 800-53 Rev. 5, el NIST Cybersecurity Framework y otros documentos relacionados con seguridad en el ciclo de vida del sistema [page:2].
+
+El estado del arte implícito en esta fuente corresponde a una visión institucional y contemporánea del SDLC, donde el desarrollo ya no se entiende solo como codificación, sino como una secuencia gobernada de fases, aprobaciones, pruebas, documentación, seguridad y control de cambios [page:2]. La política establece que el SDLC de DSU puede incluir hasta nueve fases: Initiation, Feasibility, Requirements Analysis, Design, Development/Procurement, Testing, Implementation, Maintenance y Disposal [page:2].
+
+Además, la fuente amplía el SDLC clásico con elementos de gobierno operacional concretos como separación de ambientes, control de acceso a producción, uso obligatorio de repositorios aprobados, aprobaciones UAT en TDX, change requests para despliegues productivos y pruebas de seguridad continuas [page:2]. Por ello, esta política representa un enfoque práctico del SDLC centrado en control institucional, seguridad, trazabilidad y continuidad operativa [page:2].
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+La motivación principal de la política es definir un SDLC estandarizado para el equipo ITS, de modo que el desarrollo de software y los cambios a sistemas institucionales se ejecuten de forma segura, uniforme y auditable [page:2]. La política también busca asegurar que todos los departamentos y unidades coordinen sus actividades de desarrollo con ITS y sigan un mismo marco de trabajo [page:2].
+
+De manera implícita, la fuente critica los desarrollos no coordinados, inseguros o poco documentados [page:2]. Esto se evidencia cuando exige separación entre ambientes de desarrollo, prueba y producción, limita el acceso del personal de desarrollo a producción, y obliga a mantener documentación actualizada durante todas las fases [page:2].
+
+También existe una crítica implícita a prácticas donde la seguridad se incorpora tarde o de manera informal [page:2]. La política exige que requisitos de seguridad, pruebas de seguridad, evaluaciones finales de seguridad, pruebas de penetración continuas y validaciones ante cambios mayores formen parte del proceso de desarrollo y mantenimiento [page:2].
+
+## Descripción del aporte del autor
+
+El principal aporte de la fuente es establecer una política SDLC formal para ITS con fases definidas, responsabilidades claras y controles concretos de gestión, seguridad y despliegue [page:2]. El documento indica que ITS Leadership es responsable de desarrollar y mantener la política y de asegurar su cumplimiento [page:2].
+
+Otro aporte importante es la estructuración detallada de nueve fases del ciclo de vida [page:2]. La política describe objetivos, actividades y entregables esperados en Initiation, Feasibility, Requirements Analysis, Design, Development/Procurement, Testing, Implementation, Maintenance y Disposal [page:2].
+
+Además, el documento integra explícitamente herramientas y flujos operativos institucionales como TeamDynamix (TDX) para solicitudes, aprobaciones, almacenamiento de requisitos, UAT y cambios de producción [page:2]. También incorpora lineamientos sobre versionado de código, uso de repositorios aprobados, pruebas unitarias, integración, seguridad, entrenamiento de usuarios y mecanismos de rollback en producción [page:2].
+
+En conjunto, el aporte de la política no es experimental sino normativo y procedimental [page:2]. Su valor está en convertir el desarrollo de software en un proceso formal, trazable y alineado con buenas prácticas de seguridad y gestión universitaria [page:2].
+
+## Proceso para obtener el aporte que considera el autor
+
+El documento obtiene su aporte definiendo una política institucional completa y organizada por secciones: razón de la política, alcance, declaración de la política, procedimientos mayores, documentos relacionados e historial [page:2]. No se trata de un paper experimental, sino de una norma operativa que sintetiza buenas prácticas para orientar a ITS y a otros actores involucrados en proyectos de software [page:2].
+
+Dentro de la declaración de política, el texto define responsabilidades de liderazgo, coordinación interdepartamental, formulación de requerimientos por parte de stakeholders y ejecución técnica por parte de desarrolladores [page:2]. Después, describe las nueve fases del SDLC y sus controles, adaptables según tamaño y características del sistema [page:2].
+
+Finalmente, la política agrega procedimientos mayores que refuerzan el marco de trabajo, como separación de ambientes, restricción de acceso a producción, eliminación de rutas de acceso de desarrollo, documentación continua, control especial para software que maneje datos altamente sensibles y revisión anual de la política [page:2]. Por ello, el aporte se construye como una combinación entre metodología, gobernanza y seguridad operativa [page:2].
+
+## Proceso para resolver el problema considerado por el autor
+
+El problema que aborda la política es cómo asegurar que el desarrollo de software institucional se ejecute con calidad, seguridad, consistencia y control a lo largo de todo su ciclo de vida [page:2]. Para resolverlo, el documento define una secuencia de fases y controles de aprobación que van desde la identificación de necesidades hasta la disposición final del sistema [page:2].
+
+La solución inicia cuando los stakeholders reconocen una necesidad de mejora y la formalizan mediante requerimientos o formularios TDX [page:2]. Luego se evalúa la factibilidad del proyecto considerando costo/beneficio, riesgo y capacidad institucional [page:2].
+
+Posteriormente, la fase de Requirements Analysis formaliza requisitos funcionales y de seguridad, define requerimientos de prueba y almacena la documentación en TDX [page:2]. La fase de Design traduce esos requisitos en un diseño integral con ambiente operativo, infraestructura requerida, subsistemas, diagramas y eventualmente esquemas de base de datos y ERD [page:2].
+
+En Development/Procurement, el código se desarrolla en ambientes no productivos, se versiona en repositorios aprobados, se ejecutan pruebas unitarias, integración y revisiones de código, y se admite el uso de soluciones de terceros si son más convenientes [page:2]. En Testing, los stakeholders realizan UAT, se valida el producto final contra los requisitos, y se exige que ninguna pieza de código pase a producción sin aprobaciones UAT registradas en TDX [page:2].
+
+En Implementation, la política requiere un TDX Change request aprobado con plan de despliegue, resultados de UAT, procedimientos de rollback y ventana programada de cambio [page:2]. Finalmente, en Maintenance y Disposal, el sistema se opera, se monitorea, se prueban sus condiciones de seguridad periódicamente, se documentan cambios, y se asegura migración o archivo adecuado de los datos al retirar el sistema [page:2].
+
+## Métricas que el autor usa y resultado que obtiene
+
+La política no presenta métricas experimentales de investigación como accuracy, F1-score o comparaciones estadísticas entre metodologías [page:2]. Sin embargo, sí establece explícitamente que deben rastrearse métricas como defect rates y change success rates como parte del enfoque de mejora continua [page:2].
+
+Además, el documento define indicadores operativos indirectos de cumplimiento y calidad, por ejemplo aprobación de UAT antes de producción, existencia de documentación por fase, uso de ambientes separados, pruebas de seguridad finales y control de cambios mediante TDX [page:2]. Estas condiciones funcionan como criterios de evaluación del desempeño del proceso de desarrollo institucional [page:2].
+
+El resultado esperado de la política es que el desarrollo y los cambios de software se realicen de manera segura, consistente y en cumplimiento con los requerimientos universitarios [page:2]. También se espera fortalecer el control institucional, la trazabilidad, la seguridad y la continuidad de los sistemas bajo responsabilidad de ITS [page:2].
+
+## Comentar (los resultados son mejores respecto a otros)
+
+Desde una perspectiva metodológica, la fuente es fuerte en control, seguridad y trazabilidad del proceso [page:2]. Frente a prácticas informales o poco gobernadas, ofrece una estructura clara de fases, aprobaciones, documentación y validaciones que puede reducir riesgos operativos y de seguridad [page:2].
+
+Sin embargo, no puede afirmarse que esta política produzca mejores resultados que otros enfoques como Agile, DevOps o AI-native SDLC en todos los contextos, porque no se presenta como estudio comparativo empírico [page:2]. Su fortaleza está en la gobernanza institucional y en la formalización del proceso, especialmente útil en entornos universitarios o regulados [page:2].
+
+## Observaciones y/o críticas suyas al artículo
+
+Una observación positiva es que esta fuente es muy útil como antecedente normativo para definir el SDLC tradicional con controles modernos de seguridad y gestión [page:2]. También resulta valiosa porque especifica actividades concretas que pueden convertirse fácilmente en dimensiones e indicadores para una tesis [page:2].
+
+Como crítica, se trata de una política institucional y no de un artículo científico [page:2]. Por esa razón, su utilidad es muy alta para describir procesos, obligaciones y controles, pero más limitada si se requiere demostrar relaciones causales o mejoras cuantitativas frente a otras metodologías [page:2].
+
+Otra observación es que el enfoque puede ser más pesado para equipos pequeños o entornos altamente ágiles, ya que exige múltiples aprobaciones, documentación, separación de ambientes y coordinación con ITS [page:2]. No obstante, esa misma formalidad es parte de su valor cuando el objetivo es asegurar cumplimiento, seguridad y continuidad institucional [page:2].
+
+## Aportes nuestros al artículo
+
+Consideramos que esta fuente es especialmente útil para fundamentar investigaciones sobre gobernanza del desarrollo de software, cumplimiento de controles y madurez institucional del SDLC [page:2]. Su principal aporte para una tesis está en permitir una lectura del ciclo de vida no solo como secuencia técnica, sino como sistema de control, trazabilidad y seguridad [page:2].
+
+Además, esta política ayuda a justificar que variables como documentación, control de cambios, segregación de ambientes, validación de usuarios y pruebas de seguridad deben ser consideradas al analizar la calidad del proceso de desarrollo [page:2]. Esto la convierte en una excelente fuente para construir matrices de operacionalización orientadas a calidad, seguridad y control del SDLC [page:2][file:1].
+
+# Matriz de operacionalización de variables
+
+## Enfoque derivado de la fuente ITS SDLC Policy
+
+A partir del contenido de la política, se puede plantear como **variable independiente** el nivel de cumplimiento de la política ITS SDLC, como **variable dependiente** la calidad, seguridad y control del proceso de desarrollo de software, y como **variable intermedia** la madurez de gobernanza y control operativo del proyecto, porque la política sostiene que los resultados del desarrollo dependen de fases estandarizadas, documentación, pruebas, segregación de ambientes y change management [page:2].
+
+| Tipo de variable | Variable | Definición conceptual | Dimensiones | Indicadores | Técnica / instrumento |
+|---|---|---|---|---|---|
+| Independiente | Nivel de cumplimiento de la política ITS SDLC [page:2] | Grado en que los proyectos de software siguen las fases, controles, aprobaciones y lineamientos definidos por la política de ITS [page:2] | Initiation [page:2]; Feasibility [page:2]; Requirements Analysis [page:2]; Design [page:2]; Development/Procurement [page:2]; Testing [page:2]; Implementation [page:2]; Maintenance [page:2]; Disposal [page:2] | Existencia de project request en TDX [page:2]; análisis costo/beneficio y riesgo [page:2]; requisitos documentados [page:2]; diseño revisado [page:2]; código en repositorio aprobado [page:2]; UAT registrado [page:2]; change request aprobado [page:2]; pruebas de mantenimiento y retiro planificado [page:2] | Checklist de cumplimiento [page:2]; análisis documental [page:2] |
+| Intermedia | Madurez de gobernanza y control operativo [page:2] | Nivel de formalización con que el proyecto gestiona seguridad, documentación, segregación de ambientes, accesos, validaciones y mejora continua [page:2] | Separación de ambientes [page:2]; restricción de acceso a producción [page:2]; documentación continua [page:2]; seguridad transversal [page:2]; control de cambios [page:2]; mejora continua [page:2] | Ambientes separados dev/test/prod [page:2]; acceso restringido a producción [page:2]; rutas de acceso de desarrollo eliminadas [page:2]; documentación por fases [page:2]; pruebas de seguridad [page:2]; métricas de defect rates y change success rates [page:2] | Rúbrica de madurez [page:2]; guía de observación [page:2]; revisión documental [page:2] |
+| Dependiente | Calidad, seguridad y control del proceso de desarrollo [page:2] | Capacidad del proyecto para entregar software seguro, consistente, trazable y alineado con los requerimientos institucionales [page:2] | Calidad funcional [page:2]; seguridad [page:2]; trazabilidad [page:2]; consistencia operativa [page:2]; continuidad del sistema [page:2] | Cumplimiento de requisitos [page:2]; aprobación UAT [page:2]; evaluaciones de seguridad finales [page:2]; despliegues con rollback planificado [page:2]; documentación archivada [page:2]; mantenimiento con pruebas periódicas [page:2] | Evaluación técnica [page:2]; métricas de proyecto [page:2]; entrevista [page:2] |
+
+## Observación metodológica
+
+La fuente es especialmente fuerte para operacionalizar variables relacionadas con cumplimiento del proceso, seguridad y gobernanza del SDLC, porque define fases, responsabilidades, controles y métricas de seguimiento de manera explícita [page:2]. Sin embargo, al ser una política institucional, conviene complementarla con estudios empíricos o comparativos si la tesis necesita demostrar impacto cuantitativo frente a otros enfoques de desarrollo [page:2].

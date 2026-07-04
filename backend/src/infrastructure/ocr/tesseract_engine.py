@@ -1,3 +1,5 @@
+import os
+import shutil
 import subprocess
 import tempfile
 from pathlib import Path
@@ -7,6 +9,47 @@ from src.config.settings import settings
 
 class OCREngineError(Exception):
     pass
+
+
+# Common install locations for Tesseract on different OSes.
+# Used as a fallback when settings.tesseract_cmd does not point to a real file.
+_COMMON_TESSERACT_PATHS: list[str] = [
+    r"C:\Program Files\Tesseract-OCR\tesseract.exe",
+    r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe",
+    os.path.expandvars(r"%LOCALAPPDATA%\Programs\Tesseract-OCR\tesseract.exe"),
+    os.path.expandvars(r"%LOCALAPPDATA%\Tesseract-OCR\tesseract.exe"),
+    os.path.expandvars(r"%ProgramFiles%\Tesseract-OCR\tesseract.exe"),
+    "/usr/bin/tesseract",
+    "/usr/local/bin/tesseract",
+    "/opt/homebrew/bin/tesseract",
+]
+
+
+def resolve_tesseract_cmd(configured: str = "") -> str:
+    """
+    Resolve a usable path to the Tesseract executable.
+
+    Order of preference:
+      1. The configured path (from .env / settings) if it exists on disk.
+      2. `tesseract` found on the system PATH.
+      3. A known common install location that exists on disk.
+      4. The configured value (or bare "tesseract") as a last resort so the
+         caller still gets a clear, actionable error if nothing is found.
+    """
+    configured = (configured or settings.tesseract_cmd or "").strip().strip('"')
+
+    if configured and Path(configured).is_file():
+        return configured
+
+    on_path = shutil.which("tesseract") or shutil.which("tesseract.exe")
+    if on_path:
+        return on_path
+
+    for candidate in _COMMON_TESSERACT_PATHS:
+        if candidate and Path(candidate).is_file():
+            return candidate
+
+    return configured or "tesseract"
 
 
 class OcrResult:
@@ -26,7 +69,7 @@ class OcrResult:
 class TesseractEngine:
 
     def __init__(self, tesseract_cmd: str = "", lang: str = "spa+eng") -> None:
-        self._tesseract_cmd = tesseract_cmd or settings.tesseract_cmd
+        self._tesseract_cmd = resolve_tesseract_cmd(tesseract_cmd)
         self._lang = self._resolve_lang(lang)
 
     def _resolve_lang(self, requested_lang: str) -> str:
@@ -127,8 +170,10 @@ class TesseractEngine:
             )
         except FileNotFoundError:
             raise OCREngineError(
-                f"Tesseract executable not found at '{self._tesseract_cmd}'. "
-                "Please ensure Tesseract OCR is installed and TESSERACT_CMD in .env is correct."
+                f"No se encontró el ejecutable de Tesseract ('{self._tesseract_cmd}'). "
+                "Instala Tesseract OCR (https://github.com/UB-Mannheim/tesseract/wiki) "
+                "y verifica que esté en el PATH o que TESSERACT_CMD en .env apunte a "
+                "tesseract.exe (por ejemplo C:\\Program Files\\Tesseract-OCR\\tesseract.exe)."
             )
 
         if result.returncode != 0:

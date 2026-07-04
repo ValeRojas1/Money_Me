@@ -1,0 +1,79 @@
+# Estado del Arte
+
+**Author(s):** Shih-Chieh Dai, Jun Xu, Guanhong Tao.  
+**Title of paper:** A Comprehensive Study of LLM Secure Code Generation.  
+**Journal:** arXiv preprint (cs.CR).  
+**Volume (issue):** No aplica.  
+**pag – pag (year):** 1-12 (2025).
+
+## Estado del arte que hace el autor
+
+Los autores realizan un estudio empírico exhaustivo para evaluar el rendimiento real de cuatro técnicas state-of-the-art de generación de código seguro con LLMs: SVEN, SafeCoder, CodeGuard y PromSec.  
+Analizan cómo estas técnicas afectan simultáneamente la seguridad y la corrección funcional del código generado, aspecto que la literatura previa no evaluaba de manera conjunta, pues normalmente medía seguridad y funcionalidad por separado y con datasets distintos.  
+Para ello emplean dos benchmarks amplios, BigCodeBench y SecCodePLT, con más de 1,000 tareas cada uno, además de tres analizadores estáticos —CodeQL, Bearer y Bandit— y dos LLMs para detección de vulnerabilidades.  
+El estudio muestra que muchas mejoras aparentes en seguridad ocurren a costa de sacrificar funcionalidad, ya sea eliminando líneas vulnerables o generando garbage code irrelevante.  
+Asimismo, evidencian que depender de un solo escáner, como CodeQL, puede ocultar problemas reales de seguridad.
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+Los autores critican que los trabajos previos sobre generación segura de código evalúan la seguridad y la funcionalidad de forma independiente y con datasets diferentes.  
+Señalan que esta evaluación fragmentada distorsiona los resultados reportados y oculta el verdadero impacto de las técnicas en contextos reales de desarrollo.  
+Además, observan que gran parte de la literatura depende casi exclusivamente de CodeQL, pese a que este escáner falla en detectar más del 20 % de vulnerabilidades reales.  
+Por ello justifican su estudio, argumentando que en el SDLC real el código generado debe ser simultáneamente funcional y seguro, no solo una de las dos cosas.
+
+## Descripción del aporte del autor
+
+El aporte principal del artículo es un estudio sistemático y combinado de la seguridad y funcionalidad del código generado por LLMs mediante técnicas de generación segura.  
+El problema central que aborda es que varias técnicas existentes mejoran la seguridad aparente, pero comprometen la funcionalidad del código, y además son evaluadas con metodologías incompletas.  
+Este problema impacta en las empresas porque puede producir código inseguro o no utilizable, elevar el tiempo de revisión y corrección, y aumentar los costos de validación.  
+También impacta en la sociedad porque incrementa el riesgo de vulnerabilidades en software generado con IA y retrasa la adopción confiable de estos sistemas.  
+El artículo resuelve este problema proponiendo una evaluación conjunta de seguridad y funcionalidad sobre el mismo código generado, usando múltiples escáneres y LLMs detectores de vulnerabilidades.  
+Asimismo, introduce una métrica más fina, SAFE1, que considera la tasa de aprobación de pruebas unitarias, y complementa el análisis con revisión cualitativa de fallos, como eliminación de código vulnerable o generación de garbage code.  
+Los resultados cuestionan la efectividad real de varias técnicas actuales, al mostrar que las mejoras de seguridad suelen ser limitadas y frecuentemente reducen la funcionalidad.
+
+## Proceso para obtener el aporte que considera el autor
+
+Los autores emplean un enfoque empírico riguroso.  
+Primero seleccionan cuatro técnicas state-of-the-art: SVEN, SafeCoder, CodeGuard y PromSec.  
+Después utilizan dos datasets grandes, BigCodeBench y SecCodePLT, que en conjunto abarcan alrededor de 2,000 tareas.  
+Luego aplican tres analizadores estáticos y dos LLMs para evaluar la seguridad del código generado.  
+La funcionalidad se mide con pruebas unitarias ejecutadas sobre el mismo código generado, evitando la separación artificial entre seguridad y desempeño funcional.  
+Finalmente calculan métricas combinadas como Secure-Pass1 y SAFE1, y realizan análisis manual de casos representativos para explicar las discrepancias observadas.  
+Todo el proceso es reproducible y se basa en evaluación combinada, no en mediciones aisladas.
+
+## Proceso para resolver el problema considerado por el autor
+
+Los autores resuelven el problema de la evaluación fragmentada mediante una evaluación unificada que mide seguridad y funcionalidad sobre la misma salida de código generada por el LLM.  
+Este enfoque permite identificar el trade-off real entre ambas dimensiones y revelar limitaciones que las evaluaciones previas ocultaban.  
+Además, proponen usar múltiples escáneres y una métrica más fina como SAFE1 para obtener resultados más confiables y más representativos del uso real en el SDLC.  
+Con ello construyen una base metodológica más sólida para futuras evaluaciones de generación segura de código.
+
+## Métricas que el autor usa y resultado que obtiene. Comentar los resultados son mejores respecto a otros
+
+Los autores usan métricas de **seguridad** como Secure1, reportada con tres escáneres y dos LLMs detectores de vulnerabilidades.  
+Para la **funcionalidad**, emplean Pass1 a nivel de tarea y caso, medido por el porcentaje de pruebas unitarias superadas.  
+También utilizan métricas combinadas como Secure-Pass1 y SAFE1, que permiten evaluar seguridad y funcionalidad al mismo tiempo.  
+Los resultados muestran que las técnicas analizadas mejoran la seguridad en algunos casos, pero pueden reducir la funcionalidad hasta en 50 % en ciertos modelos.  
+Además, concluyen que CodeQL por sí solo deja sin detectar más del 20 % de vulnerabilidades reales.  
+Considero que estas métricas son más sólidas que las usadas en trabajos previos porque combinan seguridad y funcionalidad sobre el mismo código y usan múltiples herramientas de evaluación, superando los estudios que evaluaban cada dimensión por separado o con un único escáner.
+
+## Observaciones y/o críticas suyas al artículo
+
+El artículo es una contribución muy relevante porque evidencia limitaciones serias en la literatura actual sobre generación segura de código con LLMs.  
+Su principal fortaleza es la evaluación combinada a gran escala y el análisis cualitativo que explica por qué algunas técnicas aparentan mejorar seguridad mientras degradan utilidad real.  
+Como crítica constructiva, el estudio se centra en Python y en un conjunto específico de técnicas, por lo que sería valioso ampliarlo a más lenguajes y a LLMs comerciales más recientes.  
+Además, la generación de pruebas unitarias para SecCodePLT se apoya en un LLM, lo que podría introducir sesgos menores.
+
+## Aportes nuestros al artículo
+
+El presente trabajo de tesis incorpora el estudio de Dai et al. (2025) como evidencia empírica clave de la dimensión F4: IA Generativa aplicada a las fases del SDLC, especialmente en la fase de implementación y generación de código seguro.  
+Se utilizará para justificar que el Nuevo ciclo de vida ágil AI-native debe incorporar mecanismos híbridos de validación combinada seguridad-funcionalidad desde el diseño.  
+Esto mejora directamente la eficiencia del proceso de desarrollo, ya que ayuda a evitar el trade-off observado entre seguridad y funcionalidad y reduce iteraciones de corrección posteriores.
+
+## Matriz de operacionalización de variables
+
+| Variable | Tipo | Definición operacional | Dimensiones de la variable independiente | Relación con el artículo |
+|---|---|---|---|---|
+| Ciclo de vida de desarrollo de software (SDLC) | Independiente | Conjunto de fases, modelos y prácticas que rigen el proceso completo de creación, implementación y mantenimiento de software. | F1: Fases y modelos del proceso SDLC; F3: Integración de IA en el desarrollo de software; F4: IA Generativa aplicada a las fases del SDLC. | El artículo evalúa técnicas de generación segura de código en la fase de implementación, destacando la necesidad de hibridación y evaluación combinada. |
+| Eficiencia del proceso de desarrollo de software | Dependiente | Medición del rendimiento del SDLC en términos de tiempo de ciclo, costo, productividad, calidad del software y reducción de errores. | Se mide a través de los indicadores citados en el artículo. | Las técnicas seguras reducen vulnerabilidades, pero pueden comprometer funcionalidad, impactando negativamente la eficiencia real si no se equilibran ambas dimensiones. |
+| Nuevo ciclo de vida ágil AI-native | Intermedia | Modelo propuesto en la tesis que combina metodologías ágiles con integración total de IA generativa como motor principal del desarrollo. | F1, F3 y F4. | El ciclo AI-native debe incorporar evaluación combinada seguridad-funcionalidad y mecanismos híbridos para superar las limitaciones identificadas por el estudio. |

@@ -1,0 +1,85 @@
+# Estado del Arte
+
+**Author(s):** Kevin Paul Rivas Verastegui, Elmo Francisco Tirado Ruiz y Marcelino Torres Villanueva.  
+**Title of paper:** El Impacto de las IA Generadoras de Código en el Trabajo de los Programadores.  
+**Journal:** Revista Innovación y Software.  
+**Volume (issue):** Vol. 6, No. 1.  
+**pag – pag (year):** pp. 55-68 (2025).
+
+## Estado del arte que hace el autor
+
+Los autores realizan una revisión sistemática del estado del arte sobre el impacto de las IA generadoras de código, principalmente GitHub Copilot y ChatGPT, en el trabajo de los programadores.  
+En las secciones de introducción, metodología y resultados citan explícitamente 9 estudios clave publicados entre 2022 y 2024 y seleccionados mediante PRISMA.  
+Entre ellos destacan trabajos como Dohmke et al. (2024), con datos de 934,533 usuarios; Cui et al. (2024), con un experimento controlado que reporta 55.8 % de incremento en productividad; y Finnie-Ansley et al. (2022), que advierte sobre la generación de código menos seguro por falsa confianza.  
+Los autores posicionan su estudio como la primera revisión sistemática en español, elaborada por investigadores peruanos, que diferencia claramente los efectos de la IA según el nivel de experiencia del programador y alerta sobre riesgos éticos y de seguridad en el contexto latinoamericano.  
+De esta manera, el artículo construye un panorama actualizado del campo y lo adapta a una realidad regional donde la adopción de asistentes de código ya empezó, pero la evidencia contextual todavía es limitada.
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+Los autores critican que los estudios previos son mayoritariamente en inglés, se encuentran fragmentados y se centran sobre todo en productividad, sin analizar de forma integrada los riesgos para programadores novatos ni el contexto de países en desarrollo como Perú.  
+Justifican su trabajo porque la adopción masiva de herramientas como Copilot ya es una realidad en empresas y universidades peruanas, pero todavía falta evidencia local sobre sus efectos reales.  
+También señalan un vacío importante: los programadores junior pueden ganar velocidad, pero al mismo tiempo perder habilidades fundamentales y generar código inseguro.  
+Además, resaltan que el potencial económico de estas herramientas es enorme, pero que, sin supervisión humana, pueden producir dependencia, vulnerabilidades y problemas éticos.  
+Por ello, elaboran un trabajo accesible y útil para estudiantes, docentes y empresas peruanas.
+
+## Descripción del aporte del autor
+
+El problema central que aborda el artículo es el impacto diferenciado de las IA generadoras de código según el nivel de experiencia del programador y los riesgos asociados, tales como vulnerabilidades de seguridad, pérdida de habilidades y dependencia tecnológica.  
+Este problema tiene un impacto directo en las empresas y startups, porque una adopción mal gestionada puede producir código más rápido, pero también más inseguro o más difícil de mantener.  
+Al mismo tiempo, puede afectar a la sociedad, especialmente en países como Perú, donde una gran proporción de usuarios potenciales son estudiantes o desarrolladores junior que podrían adoptar la tecnología sin la formación ni la supervisión necesarias.  
+Los autores muestran que estas herramientas pueden acelerar el desarrollo hasta en 55.8 %, reducir costos y democratizar el acceso a la programación, pero también pueden debilitar el aprendizaje profundo y aumentar la falsa confianza en los resultados generados por IA.  
+Desde esta perspectiva, el aporte del artículo no consiste en defender o rechazar la IA generadora de código, sino en construir una visión equilibrada sobre sus beneficios y riesgos.  
+La hipótesis implícita del trabajo es que estas herramientas aumentan significativamente la productividad, pero su beneficio neto es mayor en programadores experimentados, mientras que en programadores novatos pueden generar más riesgos que ventajas si no existe supervisión humana adecuada.  
+El artículo, por tanto, aporta una lectura crítica y contextualizada para la realidad latinoamericana y peruana, integrando productividad, calidad, seguridad y formación de talento en una misma discusión.
+
+## Proceso para obtener el aporte que considera el autor
+
+Los autores utilizan un método cualitativo-cuantitativo de revisión sistemática basado en PRISMA, sin desarrollar un experimento propio.  
+El proceso seguido incluye:  
+1. Búsqueda en arXiv y Google Académico con ecuaciones específicas relacionadas con “Generative AI” y asistentes de codificación como GitHub Copilot.  
+2. Aplicación estricta de criterios de inclusión y exclusión: publicaciones entre 2022 y 2024, acceso libre y documentos en español o inglés.  
+3. Filtrado de 411 documentos iniciales hasta seleccionar 9 artículos de alta calidad.  
+4. Análisis profundo y síntesis de resultados en una tabla comparativa.  
+5. Extracción de métricas reales de productividad, aceptación de código, velocidad y seguridad.  
+Este procedimiento les permite construir una síntesis ordenada, actual y adaptada a la temática específica del impacto laboral y formativo de la IA generadora de código.
+
+## Proceso para resolver el problema considerado por el autor
+
+Los autores proponen como solución práctica un enfoque equilibrado e híbrido entre humano e IA.  
+En este modelo, la IA automatiza tareas repetitivas y acelera la generación de soluciones, mientras que el ser humano conserva la responsabilidad de revisar la lógica, la seguridad y la pertinencia del código.  
+Además, recomiendan formación continua, marcos éticos como SE4GenAI y HypeSE, y el uso de herramientas con verificaciones automáticas de seguridad y sistemas de retroalimentación especialmente orientados a usuarios junior.  
+Para el contexto peruano, sugieren combinar asistentes como Copilot con revisión manual y capacitación sistemática en universidades, sector público y empresas.  
+Aunque el artículo no ejecuta un experimento propio, sí plantea una ruta clara para resolver el problema identificado: adopción responsable, supervisión humana obligatoria y fortalecimiento de capacidades en los programadores.
+
+## Métricas que el autor usa y resultado que obtiene. Comentar los resultados son mejores respecto a otros
+
+Las métricas cuantitativas reportadas por los autores provienen de los 9 estudios seleccionados en la revisión sistemática.  
+Entre las principales se encuentran: incremento de productividad de 55.8 % en tareas de programación, aceptación promedio de código de 30 %, aumento de velocidad de codificación entre 21 % y 28 % en sector público, y reducción de errores de hasta 15 % en algunos casos.  
+Sin embargo, también destacan una métrica crítica: el código generado por IA fue significativamente menos seguro en 4 de 5 tareas analizadas en algunos estudios, debido a falsa confianza del usuario.  
+Considero que estas métricas son correctas, relevantes y útiles para el contexto peruano, porque no se limitan a mostrar beneficios, sino que incorporan riesgos reales.  
+Además, superan enfoques más simplistas centrados solo en productividad, ya que integran calidad, seguridad, experiencia del usuario y posible impacto económico.  
+Aun así, habría sido ideal que el artículo incluyera un caso de estudio local, por ejemplo en una universidad o empresa peruana, para medir antes y después con datos propios.
+
+## Observaciones y/o críticas suyas al artículo
+
+El artículo tiene como fortaleza principal ser una revisión 100 % peruana, muy actual y metodológicamente rigurosa, con enfoque PRISMA y una diferenciación clara entre programadores novatos y experimentados.  
+También destaca por su utilidad práctica para tesis, educación superior y empresas tecnológicas en Perú.  
+Como debilidad, se trata únicamente de una revisión bibliográfica y no de un estudio empírico propio, por lo que no aporta datos cuantitativos nuevos del contexto peruano.  
+Asimismo, el corpus final de 9 artículos es útil pero relativamente pequeño para un campo que evoluciona tan rápido.  
+Pese a ello, el trabajo cumple muy bien su objetivo de ordenar la evidencia disponible y traducirla a un marco regional comprensible.
+
+## Aportes nuestros al artículo
+
+1. Convertimos el análisis del artículo al formato académico exigido por la universidad.  
+2. Incorporamos una matriz de operacionalización de variables para que la fuente pueda ser utilizada directamente en una tesis sobre adopción de IA en programación.  
+3. Proponemos que esta matriz se aplique en universidades peruanas, como UNITRU o UNMSM, mediante encuestas periódicas o estudios comparativos de uso responsable de IA en programación.  
+4. Además, esta fuente fortalece la discusión de la variable dependiente “eficiencia del proceso de desarrollo de software” al mostrar que la productividad no puede evaluarse sin considerar seguridad, calidad y formación del programador.
+
+## Matriz de operacionalización de variables
+
+| Variable | Tipo | Definición operacional | Dimensiones de la variable independiente | Relación con el artículo |
+|---|---|---|---|---|
+| Productividad IA en programación | Independiente | Aumento de velocidad y eficiencia en tareas de programación mediante el uso de asistentes de IA generativa. | Velocidad; tareas completadas; aceptación de código. | El artículo reporta mejoras de 55.8 % en productividad y 30 % de aceptación promedio de código en estudios revisados. |
+| Eficiencia del proceso de desarrollo de software | Dependiente | Medición del rendimiento del desarrollo en términos de tiempo, costo, calidad, reducción de errores y seguridad del código. | Tiempo de completitud; calidad del código; errores; seguridad. | La evidencia muestra que la IA acelera tareas, pero también puede reducir la seguridad y afectar negativamente la calidad si no existe supervisión humana. |
+| Nivel de experiencia del programador | Interviniente | Diferencia en el impacto del uso de IA generadora de código según años de experiencia y capacidad de validación. | Junior vs. Senior; capacidad de revisión; dependencia. | El artículo sostiene que los programadores experimentados obtienen mayores beneficios netos, mientras que los novatos enfrentan más riesgos de dependencia y falsa confianza. |
+| Nuevo ciclo de vida ágil AI-native | Intermedia | Modelo propuesto en la tesis que combina metodologías ágiles con integración total de IA generativa como motor del desarrollo, sin eliminar la validación humana. | F2: Metodologías ágiles; F3: Integración de IA; F4: IA generativa aplicada al SDLC. | El artículo justifica que un ciclo AI-native debe incorporar supervisión humana, controles de seguridad y formación continua para que la IA mejore realmente la eficiencia. |

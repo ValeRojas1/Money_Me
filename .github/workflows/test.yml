@@ -1,0 +1,106 @@
+name: MoneyMe CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  backend:
+    name: Backend Tests (pytest)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: backend/requirements.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Create test DB directory
+        run: mkdir -p data
+
+      - name: Run tests
+        run: python -m pytest -v --tb=short
+        env:
+          DATABASE_URL: "sqlite+aiosqlite:///./data/test.db"
+
+  frontend:
+    name: Frontend Tests (flutter test)
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.27"
+          channel: stable
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Run tests
+        run: flutter test
+
+  e2e:
+    name: E2E Tests (integration_test)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: backend/requirements.txt
+
+      - name: Install backend dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Seed E2E database & start backend
+        run: |
+          mkdir -p data
+          python seed_e2e.py
+          nohup uvicorn src.main:app --host 127.0.0.1 --port 8000 > /tmp/backend.log 2>&1 &
+          echo "Waiting for backend..."
+          for i in $(seq 1 30); do
+            if curl -s http://127.0.0.1:8000/health > /dev/null 2>&1; then
+              echo "Backend ready!"
+              break
+            fi
+            sleep 1
+          done
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.27"
+          channel: stable
+          cache: true
+
+      - name: Run E2E tests
+        working-directory: .
+        run: flutter test integration_test/ --dart-define=API_BASE_URL=http://127.0.0.1:8000

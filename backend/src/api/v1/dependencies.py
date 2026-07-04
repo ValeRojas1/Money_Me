@@ -7,9 +7,11 @@ from src.core.errors import UnauthorizedError
 
 
 async def get_current_user(
-    authorization: str = Header(...),
+    authorization: str | None = Header(None),
     db: AsyncSession = Depends(get_db),
 ) -> dict:
+    if authorization is None:
+        raise UnauthorizedError("Authorization header missing")
     if not authorization.startswith("Bearer "):
         raise UnauthorizedError("Invalid authorization header")
 

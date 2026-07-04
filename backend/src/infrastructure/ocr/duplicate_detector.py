@@ -1,4 +1,5 @@
 import hashlib
+import re
 from datetime import date
 from typing import Any
 
@@ -16,17 +17,41 @@ class DuplicateDetector:
         return hashlib.sha256(data).hexdigest()
 
     @staticmethod
+    def _normalize_text(text: str) -> str:
+        """Collapse whitespace and lowercase so near-identical OCR text matches."""
+        return re.sub(r"\s+", " ", (text or "").strip().lower())
+
+    @staticmethod
     async def check_exact_duplicate(
         db: AsyncSession,
         user_id: int,
-        image_hash: str,
+        raw_text: str,
     ) -> bool:
-        stmt = select(ProcessedCapture).where(
-            ProcessedCapture.user_id == user_id,
-            ProcessedCapture.raw_text == image_hash,
+        """
+        Detect if the same receipt was already scanned by comparing the
+        normalized OCR text against recent captures for this user.
+
+        The previous implementation compared a SHA-256 image hash against the
+        stored raw_text column (which never holds a hash), so it never matched.
+        Comparing normalized OCR text is schema-safe (no new column) and works
+        because two scans of the same image produce virtually identical text.
+        """
+        normalized = DuplicateDetector._normalize_text(raw_text)
+        if not normalized or len(normalized) < 12:
+            # Too little text to reliably decide it's a duplicate.
+            return False
+
+        stmt = (
+            select(ProcessedCapture.raw_text)
+            .where(ProcessedCapture.user_id == user_id)
+            .order_by(ProcessedCapture.created_at.desc())
+            .limit(200)
         )
         result = await db.execute(stmt)
-        return result.scalar_one_or_none() is not None
+        for (existing_text,) in result.all():
+            if DuplicateDetector._normalize_text(existing_text) == normalized:
+                return True
+        return False
 
     @staticmethod
     async def check_semantic_duplicate(

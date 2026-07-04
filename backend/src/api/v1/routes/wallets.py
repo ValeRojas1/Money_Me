@@ -31,6 +31,20 @@ async def create_wallet(
     return await use_case.create_wallet(db, user_id, body)
 
 
+@router.get("/{wallet_id}", summary="Get wallet by ID")
+async def get_wallet(
+    wallet_id: int,
+    db: AsyncSession = Depends(get_db),
+    current_user: dict = Depends(get_current_user),
+):
+    user_id = int(current_user.get("sub", 0))
+    use_case = WalletUseCase()
+    try:
+        return await use_case.get_wallet(db, user_id, wallet_id)
+    except NotFoundError as e:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(e))
+
+
 @router.put("/{wallet_id}", summary="Update a wallet")
 async def update_wallet(
     wallet_id: int,

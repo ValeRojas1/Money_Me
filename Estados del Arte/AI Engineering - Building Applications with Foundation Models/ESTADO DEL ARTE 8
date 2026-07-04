@@ -1,0 +1,72 @@
+# Estado del Arte
+
+**Author(s):** Chip Huyen. [web:56][web:59]  
+**Title of paper / book:** AI Engineering: Building Applications with Foundation Models. [file:3][web:56]  
+**Journal / Editorial:** O’Reilly Media. [file:3][web:56]  
+**Volume (issue):** No aplica. [web:56]  
+**pag – pag (year):** 2025. [file:3][web:56]
+
+## Estado del arte que hace el autor
+
+La autora presenta un estado del arte centrado en la emergencia de la **AI engineering** como disciplina distinta de la ingeniería de machine learning tradicional. [web:56]  
+Explica que el uso de foundation models ha transformado el desarrollo de productos de IA, porque ahora muchas aplicaciones se construyen adaptando modelos ya disponibles en lugar de entrenarlos desde cero. [web:56]  
+Dentro de ese panorama, el libro revisa temas como evaluación, benchmarks, prompt engineering, RAG, fine-tuning, agentes, dataset engineering e inferencia, mostrando cómo todos ellos conforman el nuevo stack de aplicaciones basadas en modelos fundacionales. [web:56]  
+La obra ubica así el estado del arte en la transición desde sistemas de ML clásicos hacia aplicaciones centradas en modelos generativos abiertos o de servicio. [web:56]
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+La motivación principal del libro surge del rápido crecimiento de la demanda por productos de IA y de la reducción de barreras de entrada para construirlos. [web:56]  
+La autora señala implícitamente que los marcos clásicos de ML engineering no bastan para explicar los desafíos actuales, porque construir aplicaciones con foundation models requiere decisiones diferentes sobre evaluación, adaptación del modelo, datasets, serving y costo. [web:56]  
+Además, resalta que cuanto más se usan sistemas de IA, más oportunidades existen para fallos catastróficos, por lo que la evaluación se vuelve un problema central. [web:56]  
+La obra se justifica entonces como una guía para ayudar a desarrolladores y equipos a navegar un ecosistema técnico nuevo, complejo y cambiante. [web:56]
+
+## Descripción del aporte del autor
+
+El aporte principal del libro es ofrecer un marco integral para construir aplicaciones sobre foundation models. [web:56]  
+El problema que aborda es que muchas personas pueden acceder hoy a modelos potentes, pero no necesariamente saben cómo convertirlos en aplicaciones robustas, evaluables, eficientes y útiles en producción. [web:56]  
+Ese problema afecta a empresas y equipos de ingeniería porque una mala elección de modelo, de benchmark, de estrategia de adaptación o de serving puede generar altos costos, fallos de calidad o productos inviables. [web:56]  
+Para responder a ello, la autora estructura un proceso de desarrollo que va desde la comprensión del problema hasta la selección del modelo, su evaluación, adaptación, despliegue y optimización. [web:56]  
+El libro es especialmente valioso porque conecta fundamentos técnicos con decisiones de ingeniería aplicadas al mundo real. [web:56]
+
+## Proceso para obtener el aporte que considera el autor
+
+La autora construye su aporte mediante una exposición sistemática de conceptos, patrones y decisiones de diseño para aplicaciones con IA. [web:56]  
+El libro inicia explicando qué es AI engineering y cómo difiere de ML engineering, y luego avanza por temas como evaluación de modelos abiertos, selección de datasets, adaptación de modelos, RAG, agentes, fine-tuning, serving y optimización de latencia y costo. [web:56]  
+También propone un marco progresivo de desarrollo de aplicaciones, empezando por técnicas más simples y avanzando hacia enfoques más sofisticados. [web:56]  
+Este proceso convierte el libro en una guía metodológica más que en un artículo experimental con una sola prueba puntual. [web:56]
+
+## Proceso para resolver el problema considerado por el autor
+
+El libro resuelve el problema planteando una arquitectura de decisiones para el desarrollo de productos basados en foundation models. [web:56]  
+En lugar de proponer un único algoritmo, la autora muestra cómo seleccionar modelos, diseñar evaluaciones, aplicar prompt engineering, incorporar RAG, optar por fine-tuning cuando sea necesario y desplegar aplicaciones de manera eficiente. [web:56]  
+También enfatiza que la evaluación debe ser continua y que los benchmarks y métricas deben elegirse según las necesidades concretas del sistema. [web:56]  
+Así, la solución del libro es un marco práctico de ingeniería que permite pasar de “tener acceso a un modelo” a “construir una aplicación usable, medible y desplegable”. [web:56]
+
+## Métricas que el autor usa y resultado que obtiene. Comentar
+
+La información recuperada no presenta un conjunto único de métricas experimentales comparables, porque la fuente es un libro de alcance amplio y metodológico. [web:56]  
+Lo que sí destaca es que la evaluación ocupa un lugar central y que deben elegirse benchmarks, datasets y métricas adecuados para cada necesidad de aplicación. [web:56]  
+También se menciona explícitamente el enfoque **AI-as-a-judge** como una de las estrategias relevantes para evaluar modelos abiertos y respuestas generativas. [web:56]  
+Desde una perspectiva académica, considero que esta obra es más útil como marco conceptual y metodológico que como evidencia cuantitativa cerrada. [web:56]  
+Su fortaleza está en ordenar el proceso completo de desarrollo de aplicaciones con IA, aunque para una tesis conviene complementarlo con estudios experimentales específicos por dimensión, como calidad, seguridad, tiempo o costos. [web:56]
+
+## Observaciones y/o críticas suyas al artículo
+
+La principal fortaleza de esta fuente es su visión integral del proceso de construcción de aplicaciones con foundation models. [web:56]  
+También es muy valiosa porque diferencia claramente AI engineering de ML engineering y coloca la evaluación como eje central del ciclo de desarrollo. [web:56]  
+Como crítica constructiva, al ser una obra amplia y de enfoque ingenieril, no ofrece una validación experimental unificada que permita medir su propuesta como si fuera un experimento controlado. [web:56]  
+Además, su amplitud temática hace que deba complementarse con artículos más específicos cuando se quiera sustentar con detalle aspectos como seguridad, productividad o calidad funcional. [web:56]
+
+## Aportes nuestros al artículo
+
+1. Esta fuente puede utilizarse como marco general para sustentar la arquitectura conceptual del ciclo de vida ágil AI-native de la tesis. [web:56]  
+2. También sirve para justificar que el desarrollo con IA debe tratarse como un proceso end-to-end que incluye selección de modelo, evaluación, adaptación, despliegue y optimización. [web:56]  
+3. En una investigación aplicada, este libro ayuda a estructurar dimensiones como evaluación, prompting, RAG, fine-tuning, serving y feedback continuo dentro del modelo propuesto. [web:56]
+
+## Matriz de operacionalización de variables
+
+| Variable | Tipo | Definición conceptual | Definición operacional | Dimensiones | Indicadores | Escala / fuente | Instrumento |
+|---|---|---|---|---|---|---|---|
+| Ciclo de vida de desarrollo de software (SDLC) | Independiente | Conjunto de fases del desarrollo de aplicaciones que incorporan foundation models dentro de un proceso de ingeniería. [web:56] | Se operacionaliza según la incorporación de prácticas de AI engineering en el diseño, evaluación, adaptación y despliegue de aplicaciones. [web:56] | Selección de modelo, evaluación, adaptación, despliegue, optimización. [web:56] | Número de prácticas incorporadas; presencia de evaluación; nivel de adaptación del modelo; estrategia de serving. [web:56] | Huyen (2025). [file:3][web:56] | Revisión conceptual, análisis de arquitectura y guía metodológica. [web:56] |
+| Eficiencia del proceso de desarrollo de software | Dependiente | Rendimiento del proceso de construcción de aplicaciones con IA en términos de calidad, costo, latencia, utilidad y robustez. [web:56] | Se mide indirectamente por la adecuación entre modelos, benchmarks, métricas, estrategias de adaptación y despliegue elegidas para una aplicación. [web:56] | Calidad, costo, latencia, evaluación, confiabilidad. [web:56] | Uso de métricas adecuadas, selección de benchmark, control de latencia, ajuste de costo, calidad de respuestas. [web:56] | Marco metodológico del libro. [web:56] | Evaluación de sistema, selección de benchmarks y análisis comparativo. [web:56] |
+| Nuevo ciclo de vida ágil AI-native | Intermedia | Modelo de tesis que incorpora IA generativa y foundation models como núcleo del desarrollo de software moderno. [file:1][web:56] | Se expresa por la adopción coordinada de prompting, RAG, fine-tuning, evaluación y serving dentro de iteraciones ágiles. [web:56] | Prompting, RAG, fine-tuning, evaluación continua, despliegue. [web:56] | Número de técnicas integradas, coherencia del pipeline, presencia de feedback y monitoreo. [web:56] | Adaptación conceptual basada en AI Engineering. [web:56] | Síntesis analítica y diseño del modelo de tesis. [web:56] |

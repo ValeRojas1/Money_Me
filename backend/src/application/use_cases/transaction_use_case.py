@@ -4,8 +4,10 @@ from typing import Any
 from sqlalchemy import asc, desc, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from src.core.errors import NotFoundError
+from src.core.errors import NotFoundError, ValidationError
 from src.domain.models.movement import Movement, MovementStatus, MovementType
+from src.domain.models.wallet import Wallet
+from src.domain.models.category import Category
 
 
 class TransactionUseCase:
@@ -82,16 +84,30 @@ class TransactionUseCase:
         return self._to_dict(movement)
 
     async def create_transaction(self, db: AsyncSession, user_id: int, data: dict) -> dict:
+        wallet_stmt = select(Wallet).where(
+            Wallet.id == data["wallet_id"], Wallet.user_id == user_id,
+        )
+        wallet_result = await db.execute(wallet_stmt)
+        if not wallet_result.scalar_one_or_none():
+            raise ValidationError("Wallet not found or does not belong to user")
+
+        category_stmt = select(Category).where(
+            Category.id == data["category_id"],
+        )
+        category_result = await db.execute(category_stmt)
+        if not category_result.scalar_one_or_none():
+            raise ValidationError("Category not found")
+
         movement = Movement(
             user_id=user_id,
-            wallet_id=data.get("wallet_id", 1),
-            category_id=data.get("category_id", 1),
+            wallet_id=data["wallet_id"],
+            category_id=data["category_id"],
             type=MovementType(data.get("type", "expense")),
             amount_cents=data.get("amount_cents", 0),
             currency=data.get("currency", "USD"),
             description=data.get("description", ""),
             notes=data.get("notes"),
-            transaction_date=date.fromisoformat(data.get("transaction_date", str(date.today()))),
+            transaction_date=data["transaction_date"] if isinstance(data.get("transaction_date"), date) else date.fromisoformat(data.get("transaction_date", str(date.today()))),
             tags=data.get("tags"),
             status=MovementStatus.COMPLETED,
         )

@@ -83,17 +83,27 @@ class ImageProcessor:
         """
         img = Image.open(io.BytesIO(data))
 
+        # Normalize EXIF orientation so rotated phone photos are read upright.
+        try:
+            img = ImageOps.exif_transpose(img)
+        except Exception:
+            pass
+
         # Resize large images down to avoid memory issues
         if img.width > MAX_IMAGE_DIMENSION or img.height > MAX_IMAGE_DIMENSION:
             img.thumbnail((MAX_IMAGE_DIMENSION, MAX_IMAGE_DIMENSION), Image.LANCZOS)
 
-        # Upscale very small images — Tesseract needs at least ~150dpi
-        min_dim = 300
-        if img.width < min_dim or img.height < min_dim:
-            scale = max(min_dim / img.width, min_dim / img.height)
-            new_w = int(img.width * scale)
-            new_h = int(img.height * scale)
-            img = img.resize((new_w, new_h), Image.LANCZOS)
+        # Upscale small/medium images — Tesseract is far more accurate when the
+        # text is large. Yape/Plin screenshots are often only ~700px wide with
+        # tiny fonts, so we push the shortest side up to ~1000px.
+        target_min_side = 1000
+        shortest = min(img.width, img.height)
+        if 0 < shortest < target_min_side and max(img.width, img.height) < MAX_IMAGE_DIMENSION:
+            scale = min(target_min_side / shortest, 3.0)
+            if scale > 1.05:
+                new_w = min(int(img.width * scale), MAX_IMAGE_DIMENSION)
+                new_h = min(int(img.height * scale), MAX_IMAGE_DIMENSION)
+                img = img.resize((new_w, new_h), Image.LANCZOS)
 
         if _is_screenshot_like(img):
             # ── Screenshot / digital app capture ──────────────────────────────

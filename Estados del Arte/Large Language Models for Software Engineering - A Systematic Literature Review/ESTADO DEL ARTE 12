@@ -1,0 +1,73 @@
+# Estado del Arte
+
+**Author(s):** Xinyi Hou, Yanjie Zhao, Yue Liu, Zhou Yang, Kailong Wang, Li Li, Xiapu Luo, David Lo, John Grundy, Haoyu Wang. [file:1]  
+**Title of paper:** Large Language Models for Software Engineering: A Systematic Literature Review. [file:1]  
+**Journal:** ACM Transactions on Software Engineering and Methodology (TOSEM). [file:1]  
+**Volume (issue):** X, Y, Article 1. [file:1]  
+**pag – pag (year):** pp. 1–79 (2024). [file:1]
+
+## Estado del arte que hace el autor
+
+Los autores presentan la primera **Systematic Literature Review (SLR)** exhaustiva sobre la aplicación de Large Language Models en Software Engineering. [file:1]  
+Analizan 395 trabajos publicados entre enero de 2017 y enero de 2024 y estructuran el campo alrededor de cuatro preguntas de investigación: modelos utilizados, datasets, técnicas de optimización/evaluación y tareas de SE resueltas. [file:1]  
+Además, clasifican los LLMs por arquitectura, describen estrategias de datos y mapean 85 tareas de ingeniería de software agrupadas en seis actividades principales del SDLC. [file:1]  
+Con ello, construyen un estado del arte amplio y actualizado que convierte una literatura dispersa en un marco unificado para LLM4SE. [file:1]
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+Los autores critican que la literatura previa estaba altamente fragmentada. [file:1]  
+Señalan que muchos trabajos previos se concentraban en subáreas muy específicas, como testing o NL2Code, o revisaban modelos de ML/DL más antiguos sin integrar los LLMs modernos. [file:1]  
+También resaltan que faltaba una revisión holística que conectara arquitecturas de LLMs, manejo de datos, técnicas de optimización, tareas resueltas y brechas persistentes. [file:1]  
+Por ello justifican su SLR como una necesidad urgente para evitar duplicación de esfuerzos y orientar futuras investigaciones hacia soluciones más confiables e híbridas. [file:1]
+
+## Descripción del aporte del autor
+
+El aporte principal del artículo es una revisión sistemática comprehensiva de 395 papers sobre LLM4SE. [file:1]  
+El problema central que aborda es la falta de comprensión sistemática de cómo los LLMs están siendo usados para optimizar procesos y resultados dentro de la ingeniería de software. [file:1]  
+Ese problema afecta a empresas y equipos porque puede conducir a adopciones aisladas, ineficientes o con altos riesgos de alucinaciones, baja calidad y costos de validación. [file:1]  
+Como respuesta, el estudio clasifica arquitecturas, datasets, técnicas de optimización y evaluación, y aplicaciones concretas en 85 tareas de SE. [file:1]  
+También propone una agenda de desafíos y direcciones futuras, destacando la necesidad de hibridación entre LLMs y técnicas tradicionales de ingeniería de software. [file:1]
+
+## Proceso para obtener el aporte que considera el autor
+
+Los autores siguieron la metodología SLR de Kitchenham. [file:1]  
+Primero definieron cuatro preguntas de investigación y criterios de inclusión/exclusión; luego realizaron búsqueda manual en seis venues top, búsqueda automática en siete bases de datos y snowballing. [file:1]  
+A partir de un conjunto inicial de 218,765 registros, filtraron y evaluaron calidad hasta seleccionar 395 artículos para análisis final. [file:1]  
+Posteriormente extrajeron datos estructurados sobre modelos, datasets, técnicas y tareas, y realizaron análisis temático y bibliométrico. [file:1]  
+Ese proceso convierte su contribución en una de las síntesis más rigurosas y reproducibles del área. [file:1]
+
+## Proceso para resolver el problema considerado por el autor
+
+El artículo resuelve el problema de fragmentación mediante una síntesis holística guiada por las cuatro preguntas de investigación. [file:1]  
+Clasifica sistemáticamente los LLMs, los tipos de datos, las estrategias de optimización, los métodos de evaluación y las tareas de software engineering abordadas. [file:1]  
+Además, identifica brechas explícitas y formula recomendaciones de investigación futura, como PEFT, prompt engineering dinámico, evaluación robusta e integración híbrida con técnicas clásicas de SE. [file:1]  
+Así, el trabajo no solo describe el campo, sino que también organiza su evolución y propone una hoja de ruta. [file:1]
+
+## Métricas que el autor usa y resultado que obtiene. Comentar
+
+Los autores emplean métricas bibliométricas y de clasificación temática. [file:1]  
+Entre los resultados clave reportan 395 papers analizados, dominancia de decoder-only LLMs en 2023, uso mayoritario de datasets open-source, predominio de entradas token-based y un total de 85 tareas de SE abordadas exitosamente. [file:1]  
+Estas métricas son sólidas porque no se limitan a contar papers, sino que permiten entender tendencias, madurez del campo, distribución de arquitecturas y cobertura por tareas. [file:1]  
+Considero que el estudio es metodológicamente muy fuerte y superior a revisiones más limitadas porque integra evidencia cuantitativa rigurosa y análisis cualitativo profundo. [file:1]  
+Como mejora futura, podría complementarse con metaanálisis comparativos más finos sobre efectividad relativa entre familias de modelos o técnicas de prompting/fine-tuning. [file:1]
+
+## Observaciones y/o críticas suyas al artículo
+
+La principal fortaleza del artículo es su exhaustividad y rigor metodológico. [file:1]  
+También es especialmente valioso porque conecta modelos, datos, tareas, evaluación y agenda futura en un único marco coherente. [file:1]  
+Como crítica constructiva, aunque cubre hasta enero de 2024, el campo evoluciona muy rápido, por lo que parte del panorama puede volverse obsoleto con rapidez. [file:1]  
+Además, se centra más en síntesis estructural que en comparaciones meta-analíticas profundas de desempeño entre métodos. [file:1]
+
+## Aportes nuestros al artículo
+
+1. Esta fuente puede usarse como fundamento bibliométrico y empírico central para las dimensiones de integración de IA y uso de IA generativa dentro del SDLC. [file:1]  
+2. También sirve para justificar que el nuevo ciclo de vida ágil AI-native debe construirse sobre una integración híbrida y no sobre automatización aislada. [file:1]  
+3. En una tesis aplicada, el mapeo de 85 tareas permite ubicar con claridad qué fases del SDLC ya tienen apoyo fuerte de LLMs y cuáles aún presentan brechas. [file:1]
+
+## Matriz de operacionalización de variables
+
+| Variable | Tipo | Definición conceptual | Definición operacional | Dimensiones | Indicadores | Escala / fuente | Instrumento |
+|---|---|---|---|---|---|---|---|
+| Ciclo de vida de desarrollo de software (SDLC) [file:1] | Independiente [file:1] | Conjunto de fases, modelos y prácticas que rigen el proceso completo de creación, implementación y mantenimiento de software. [file:1] | Se operacionaliza observando cómo los LLMs se aplican a 85 tareas distribuidas en varias actividades del SDLC. [file:1] | Fases y modelos del proceso SDLC, integración de IA, IA generativa aplicada al SDLC, operación y ciclo de vida del modelo. [file:1] | Número de tareas cubiertas por LLMs; distribución por fase; técnicas de optimización y evaluación usadas. [file:1] | Hou et al. (2024). [file:1] | SLR, análisis bibliométrico y extracción estructurada de datos. [file:1] |
+| Eficiencia del proceso de desarrollo de software [file:1] | Dependiente [file:1] | Rendimiento del SDLC en tiempo de ciclo, costo, productividad, calidad del software y reducción de errores. [file:1] | Se mide indirectamente mediante las mejoras y limitaciones reportadas por las técnicas de optimización y evaluación analizadas en la SLR. [file:1] | Productividad, calidad, reducción de alucinaciones, confiabilidad. [file:1] | Frecuencia de uso de técnicas híbridas; tareas exitosas; métodos de evaluación robusta; reducción de fallos reportados. [file:1] | Hallazgos de la SLR. [file:1] | Síntesis comparativa y análisis temático. [file:1] |
+| Nuevo ciclo de vida ágil AI-native [file:1] | Intermedia [file:1] | Modelo de tesis que combina metodologías ágiles con integración total de IA generativa como motor principal del desarrollo. [file:1] | Se expresa mediante la incorporación sistemática y segura de LLMs a varias fases del SDLC con evaluación e hibridación. [file:1] | Integración transversal de IA, prompting/fine-tuning, evaluación, hibridación, operación. [file:1] | Número de fases asistidas por LLMs; presencia de evaluación robusta; grado de hibridación con técnicas clásicas. [file:1] | Adaptación conceptual basada en Hou et al. [file:1] | Síntesis analítica y futura validación empírica. [file:1] |

@@ -93,7 +93,7 @@ void main() {
     test('OCR error returns scan-friendly message', () {
       final error = UserFriendlyError.fromException(Exception('OCR failed'));
       expect(error.title, 'Scan failed');
-      expect(error.message, contains('try a clearer photo'));
+      expect(error.message, contains('Try a clearer photo'));
     });
 
     test('prediction error returns friendly message', () {

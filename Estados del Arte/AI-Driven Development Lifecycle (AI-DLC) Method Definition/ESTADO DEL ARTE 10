@@ -1,0 +1,73 @@
+# Estado del Arte
+
+**Author(s):** Raja SP. [file:1]  
+**Title of paper:** AI-Driven Development Lifecycle (AI-DLC) Method Definition. [file:1]  
+**Journal / Tipo de documento:** White Paper – Amazon Web Services. [file:1]  
+**Volume (issue):** No aplica. [file:1]  
+**pag – pag (year):** pp. 1–8 (2024). [file:1]
+
+## Estado del arte que hace el autor
+
+El autor realiza una revisión crítica del SDLC tradicional y de los métodos ágiles en el contexto del paso desde una era **AI-assisted** hacia una era AI-driven. [file:1]  
+Sostiene que los marcos clásicos fueron diseñados para procesos humanos lentos, con rituales extensos, roles rígidos e iteraciones medidas en semanas. [file:1]  
+A partir de esa crítica, presenta el AI-Driven Development Lifecycle (AI-DLC) como un método AI-native con principios, artefactos, fases y rituales propios. [file:1]  
+El estado del arte que construye se organiza alrededor de esa transición conceptual: de una IA que solo ayuda en tareas puntuales a una IA que colabora y orquesta el proceso completo. [file:1]
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+Raja SP critica que los métodos existentes, tanto SDLC clásico como Agile/Scrum, no están alineados con la velocidad, flexibilidad y capacidades agenticas de la IA actual. [file:1]  
+También cuestiona que hacer **retrofitting** de IA sobre marcos heredados limita su potencial y mantiene ineficiencias como daily standups, estimaciones por story points o medición por velocity. [file:1]  
+Otra crítica importante es que varios frameworks ágiles dejan las técnicas de diseño, como DDD, BDD o TDD, en un plano opcional, lo que puede contribuir a baja calidad de software. [file:1]  
+El autor usa además el costo estimado de la mala calidad del software en Estados Unidos, 2.41 billones de dólares en 2022, para reforzar la necesidad de un rediseño metodológico profundo. [file:1]
+
+## Descripción del aporte del autor
+
+El aporte principal del documento es la definición completa del método **AI-DLC**, concebido como un nuevo ciclo de vida AI-native para sistemas complejos. [file:1]  
+El problema central que aborda es que los métodos tradicionales no aprovechan plenamente la capacidad de la IA para iterar en horas o días, descomponer tareas automáticamente y colaborar de forma agentica. [file:1]  
+Según el documento, esto impacta a las empresas porque ralentiza la entrega, eleva costos y reduce calidad, y también impacta socialmente al limitar la democratización del desarrollo. [file:1]  
+Como solución, el método define diez principios, tres fases, artefactos específicos y rituales orientados a validación humana en tiempo real. [file:1]  
+Entre los artefactos que introduce están Intent, Unit, Bolt, Domain Design, Logical Design, Code, Unit Tests y Deployment Units. [file:1]
+
+## Proceso para obtener el aporte que considera el autor
+
+El autor construye su propuesta mediante un enfoque de **first principles thinking** y reimaginación conceptual del proceso de desarrollo. [file:1]  
+Parte de la evolución histórica del software engineering, desde machine code hasta APIs y LLMs, y de las limitaciones observadas en la práctica actual. [file:1]  
+No presenta una revisión sistemática de literatura ni un experimento empírico, sino una construcción metodológica basada en tendencias de IA agentica, Domain-Driven Design y necesidades de sistemas complejos. [file:1]  
+El resultado es un método estructurado con fases, rituales, prompts y ejemplos de aplicación en escenarios green-field y brown-field. [file:1]
+
+## Proceso para resolver el problema considerado por el autor
+
+El documento resuelve el problema definiendo explícitamente el framework AI-DLC y su flujo operativo. [file:1]  
+Describe cómo la IA inicia y dirige la conversación, cómo los Intents se descomponen en Units y Bolts, y cómo se integran técnicas de diseño como núcleo del proceso. [file:1]  
+También establece dos rituales principales, Mob Elaboration y Mob Construction, para mantener validación humana continua. [file:1]  
+El proceso es recursivo y combina planificación, ejecución y validación con artefactos persistentes y trazabilidad. [file:1]  
+En términos prácticos, el autor afirma que este enfoque reduce handoffs, disminuye especialización fragmentada y acorta radicalmente el tiempo de iteración. [file:1]
+
+## Métricas que el autor usa y resultado que obtiene. Comentar
+
+El documento es propositivo y no presenta métricas empíricas propias derivadas de un caso de estudio o experimento controlado. [file:1]  
+Aun así, usa como referencia el costo de la mala calidad del software en Estados Unidos y afirma que AI-DLC permite iteraciones en horas o días frente a iteraciones de semanas en Scrum. [file:1]  
+También sostiene que el método reduce handoffs y mejora calidad mediante validación humana temprana. [file:1]  
+Considero que la propuesta es conceptualmente fuerte y muy útil para una tesis porque define con claridad un modelo AI-native completo. [file:1]  
+Sin embargo, su principal debilidad metodológica es la falta de validación cuantitativa propia en productividad, calidad, costo o adopción real. [file:1]
+
+## Observaciones y/o críticas suyas al artículo
+
+La mayor fortaleza del documento es que propone un marco operativo completo y no solo una idea general sobre uso de IA en programación. [file:1]  
+También resulta especialmente relevante para tu tema porque se alinea directamente con la variable de un nuevo ciclo de vida ágil AI-native. [file:1]  
+Como crítica constructiva, el documento está orientado principalmente al ecosistema AWS, lo que puede sesgar su aplicabilidad o su lenguaje de adopción. [file:1]  
+Además, no profundiza en gobernanza, sesgos, riesgos éticos ni validación empírica a escala. [file:1]
+
+## Aportes nuestros al artículo
+
+1. Esta fuente puede utilizarse como referente más directo para definir conceptualmente el **nuevo ciclo de vida ágil AI-native** de la tesis. [file:1]  
+2. También permite justificar que la IA no solo debe asistir la codificación, sino iniciar, estructurar y acelerar el flujo completo del desarrollo. [file:1]  
+3. En una tesis aplicada, su principal valor está en que puede convertirse en base teórica para una validación empírica posterior con indicadores de tiempo, costo, calidad y productividad. [file:1]
+
+## Matriz de operacionalización de variables
+
+| Variable | Tipo | Definición conceptual | Definición operacional | Dimensiones | Indicadores | Escala / fuente | Instrumento |
+|---|---|---|---|---|---|---|---|
+| Ciclo de vida de desarrollo de software (SDLC) [file:1] | Independiente [file:1] | Conjunto de fases, modelos y prácticas que rigen la creación, implementación y mantenimiento del software. [file:1] | Se operacionaliza observando la adopción de fases, artefactos y rituales del método AI-DLC. [file:1] | Fases del proceso, integración de IA, IA generativa aplicada al SDLC. [file:1] | Presencia de Inception, Construction y Operations; uso de Intent, Unit y Bolt; nivel de trazabilidad. [file:1] | Raja SP (2024). [file:1] | White paper, análisis conceptual y diseño metodológico. [file:1] |
+| Eficiencia del proceso de desarrollo de software [file:1] | Dependiente [file:1] | Rendimiento del proceso en tiempo de ciclo, costo, productividad, calidad y reducción de errores. [file:1] | Se mide mediante indicadores asociados a iteraciones más cortas, menor handoff y validación temprana. [file:1] | Tiempo, costo, productividad, calidad, reducción de errores. [file:1] | Duración de iteraciones; número de handoffs; tiempo de validación; retrabajo evitado. [file:1] | Indicadores citados por el documento. [file:1] | Comparación pre/post adopción del método y seguimiento de proyecto. [file:1] |
+| Nuevo ciclo de vida ágil AI-native [file:1] | Intermedia [file:1] | Modelo de tesis que combina agilidad con integración total de IA generativa como motor principal del desarrollo. [file:1] | Se expresa mediante el grado de automatización, validación humana y uso estructurado de IA en todo el flujo. [file:1] | Fases, artefactos, rituales, colaboración humano-IA. [file:1] | % de tareas asistidas o dirigidas por IA; nivel de validación humana; continuidad de conocimiento. [file:1] | Adaptación conceptual basada en AI-DLC. [file:1] | Síntesis analítica y futura validación empírica. [file:1] |

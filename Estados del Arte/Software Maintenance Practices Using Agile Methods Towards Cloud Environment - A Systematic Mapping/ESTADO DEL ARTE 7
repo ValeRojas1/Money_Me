@@ -1,0 +1,72 @@
+# Estado del Arte
+
+**Author(s):** Mohammed Almashhadani, Abhishek Mishra, Ahmet Yazici. [file:3][web:50]  
+**Title of paper:** Software Maintenance Practices Using Agile Methods Towards Cloud Environment: A Systematic Mapping. [file:3][web:50]  
+**Journal:** Journal of Software: Evolution and Process. [file:3][web:50]  
+**Volume (issue):** Vol. 36, e2698. [file:3][web:49]  
+**pag – pag (year):** 2024. [file:3][web:50]
+
+## Estado del arte que hace el autor
+
+Los autores desarrollan un estado del arte sobre prácticas de mantenimiento de software cuando se emplean métodos ágiles en contextos orientados a la nube. [web:49][web:50]  
+Su trabajo parte del reconocimiento de que el mantenimiento sigue siendo una actividad crítica y costosa dentro del ciclo de vida del software, especialmente cuando los sistemas migran o evolucionan hacia arquitecturas cloud. [web:49][web:50]  
+Desde esa base, el artículo realiza un **systematic mapping** para identificar cómo la literatura ha tratado el uso de prácticas ágiles en tareas de mantenimiento, evolución y adaptación de software en entornos cloud. [web:49][web:50]  
+Así, el estado del arte no solo revisa mantenimiento o agilidad por separado, sino su convergencia en escenarios modernos de infraestructura y operación. [web:49][web:50]
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+La motivación del estudio surge de la necesidad de comprender mejor cómo las prácticas ágiles apoyan el mantenimiento de software cuando los sistemas se orientan a la nube. [web:49][web:50]  
+La existencia misma del *systematic mapping* indica que la literatura previa estaba dispersa y que hacía falta una síntesis estructurada sobre enfoques, beneficios, desafíos y líneas de investigación. [web:49][web:50]  
+De forma implícita, el artículo cuestiona que muchas discusiones sobre agilidad se concentran más en desarrollo inicial que en mantenimiento continuo, a pesar de que esta fase absorbe gran parte del esfuerzo de software. [web:49][web:50]  
+También justifica la revisión porque el cambio hacia cloud introduce nuevas exigencias de despliegue, evolución, coordinación y adaptación que requieren enfoques más flexibles. [web:49][web:50]
+
+## Descripción del aporte del autor
+
+El aporte principal del trabajo es un mapeo sistemático de prácticas de mantenimiento de software basadas en métodos ágiles en dirección a entornos cloud. [web:49][web:50]  
+El problema central que aborda es la falta de una visión integrada sobre qué prácticas ágiles están siendo utilizadas en mantenimiento, cómo se aplican y qué resultados producen cuando el software opera o evoluciona hacia la nube. [web:49][web:50]  
+Este problema afecta a las organizaciones porque el mantenimiento ineficiente incrementa costos, ralentiza entregas y dificulta la adaptación tecnológica de sistemas existentes. [web:49][web:50]  
+Además, afecta a la comunidad investigadora al no contar con un panorama claro de las tendencias, vacíos y oportunidades de mejora en esta intersección entre mantenimiento, agilidad y cloud. [web:49][web:50]  
+Por ello, el artículo aporta una síntesis estructurada útil tanto para investigación como para práctica profesional. [web:49][web:50]
+
+## Proceso para obtener el aporte que considera el autor
+
+Los autores emplean la metodología de **systematic mapping**, lo cual implica búsqueda, selección, clasificación y síntesis de estudios relevantes sobre mantenimiento ágil orientado a cloud. [web:49][web:50]  
+El propósito del mapeo es identificar categorías de prácticas, focos temáticos, enfoques metodológicos y tendencias en la literatura. [web:49][web:50]  
+Aunque la información recuperada no muestra el detalle completo del protocolo de búsqueda, el propio artículo se presenta explícitamente como un mapeo sistemático, lo que indica un proceso estructurado de revisión secundaria. [web:49][web:50]  
+Este tipo de proceso permite transformar evidencia dispersa en una visión organizada del campo. [web:49][web:50]
+
+## Proceso para resolver el problema considerado por el autor
+
+El problema se aborda mediante la organización y clasificación de los estudios existentes sobre mantenimiento ágil en entornos cloud. [web:49][web:50]  
+En lugar de resolverlo con un experimento puntual, el artículo propone una respuesta de tipo analítico: identificar qué prácticas ágiles se reportan, en qué contextos se aplican y cómo contribuyen al mantenimiento y evolución del software. [web:49][web:50]  
+Esa síntesis sirve para clarificar patrones de adopción, beneficios, restricciones y posibles vacíos de investigación. [web:49][web:50]  
+Desde una perspectiva aplicada, este enfoque ayuda a que organizaciones y equipos seleccionen prácticas más adecuadas para mantenimiento continuo y transición a la nube. [web:49][web:50]
+
+## Métricas que el autor usa y resultado que obtiene. Comentar
+
+Con la información disponible no se observan métricas cuantitativas experimentales directas, ya que la fuente corresponde a un estudio de mapeo sistemático. [web:49][web:50]  
+Por naturaleza, este tipo de estudio suele centrarse en conteo y clasificación de publicaciones, temas, enfoques y tendencias más que en mediciones de laboratorio o comparación de desempeño técnico. [web:49][web:50]  
+En ese sentido, su “resultado” principal es una estructura ordenada del conocimiento disponible sobre prácticas de mantenimiento ágiles orientadas a cloud. [web:49][web:50]  
+Considero que esto es útil para tesis porque ofrece base conceptual y panorámica, aunque no reemplaza evidencia empírica sobre mejoras concretas en tiempo, costo o calidad. [web:49][web:50]  
+Como mejora futura, sería ideal complementar esta fuente con estudios que midan lead time, incidentes post-release, frecuencia de despliegue o mantenibilidad antes y después de aplicar prácticas ágiles en mantenimiento cloud. [web:49][web:50]
+
+## Observaciones y/o críticas suyas al artículo
+
+La principal fortaleza del artículo es que aborda una intersección muy relevante y actual: mantenimiento, métodos ágiles y entorno cloud. [web:49][web:50]  
+También es valioso porque trata una fase del SDLC que a menudo recibe menos atención que el desarrollo inicial, pese a su enorme peso en costos y sostenibilidad del software. [web:49][web:50]  
+Como crítica constructiva, al ser un *systematic mapping*, su aporte es más clasificatorio que experimental, por lo que no permite afirmar por sí solo cuánto mejora una práctica específica el mantenimiento en la nube. [web:49][web:50]  
+Asimismo, la información accesible no muestra métricas operativas detalladas, lo que obliga a complementarlo con estudios de caso o validaciones cuantitativas. [web:49][web:50]
+
+## Aportes nuestros al artículo
+
+1. Esta fuente puede servir como sustento para la dimensión de mantenimiento y evolución continua dentro del ciclo de vida propuesto en la tesis. [web:49][web:50]  
+2. También ayuda a justificar que un modelo AI-native no debe enfocarse solo en desarrollo inicial, sino también en mantenimiento, adaptación y operación del software en entornos modernos. [web:49][web:50]  
+3. En una aplicación de tesis, esta base puede vincularse con indicadores como tiempo de mantenimiento, frecuencia de actualización, defectos corregidos y sostenibilidad del sistema en nube. [web:49][web:50]
+
+## Matriz de operacionalización de variables
+
+| Variable | Tipo | Definición conceptual | Definición operacional | Dimensiones | Indicadores | Escala / fuente | Instrumento |
+|---|---|---|---|---|---|---|---|
+| Ciclo de vida de desarrollo de software (SDLC) | Independiente | Conjunto de fases del software, incluyendo mantenimiento y evolución en ambientes cloud. [web:49][web:50] | Se operacionaliza mediante la identificación de prácticas ágiles aplicadas a mantenimiento de software orientado a la nube. [web:49][web:50] | Mantenimiento, evolución, prácticas ágiles, entorno cloud. [web:49][web:50] | Número de prácticas identificadas, tipo de enfoque ágil, contexto de aplicación cloud. [web:49][web:50] | Almashhadani, Mishra y Yazici (2024). [file:3][web:50] | Mapeo sistemático, revisión documental y clasificación temática. [web:49][web:50] |
+| Eficiencia del proceso de desarrollo de software | Dependiente | Rendimiento del proceso de mantenimiento y evolución del software en términos de adaptación, continuidad y sostenibilidad. [web:49][web:50] | Se mide de forma indirecta a través de los beneficios y patrones reportados en la literatura sobre mantenimiento ágil hacia cloud. [web:49][web:50] | Adaptación, continuidad operativa, flexibilidad, sostenibilidad. [web:49][web:50] | Beneficios reportados, desafíos identificados, áreas de mejora, tendencia de adopción. [web:49][web:50] | Evidencia sintetizada del mapeo sistemático. [web:49][web:50] | Síntesis bibliográfica y análisis categorial. [web:49][web:50] |
+| Nuevo ciclo de vida ágil AI-native | Intermedia | Modelo de tesis que combina agilidad, IA y operación continua del software. [file:1][web:49] | Se expresa al integrar prácticas de mantenimiento continuo y adaptación cloud como parte estructural del ciclo AI-native. [web:49][web:50] | Agilidad, mantenimiento continuo, adaptación cloud, soporte inteligente. [web:49][web:50] | Presencia de prácticas continuas, alineación con evolución del sistema, soporte a cambios iterativos. [web:49][web:50] | Adaptación conceptual basada en el mapeo sistemático. [web:49][web:50] | Síntesis analítica y diseño de dimensiones del modelo de tesis. [web:49][web:50] |

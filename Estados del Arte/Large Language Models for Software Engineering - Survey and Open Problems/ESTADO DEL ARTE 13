@@ -1,0 +1,72 @@
+# Estado del Arte
+
+**Author(s):** Angela Fan, Beliz Gokkaya, Mark Harman, Mitya Lyubarskiy, Shubho Sengupta, Shin Yoo, Jie M. Zhang. [file:1]  
+**Title of paper:** Large Language Models for Software Engineering: Survey and Open Problems. [file:1]  
+**Journal:** arXiv preprint (cs.SE). [file:1]  
+**Volume (issue):** No aplica. [file:1]  
+**pag – pag (year):** pp. 1–23 (2023). [file:1]
+
+## Estado del arte que hace el autor
+
+Los autores realizan una revisión estructurada del campo emergente de los LLMs aplicados a Software Engineering. [file:1]  
+Analizan cómo las capacidades emergentes de los LLMs, como creatividad, razonamiento en lenguaje natural y generación de artefactos, impactan actividades como requisitos, diseño, generación de código, testing, mantenimiento, documentación, analytics y educación en SE. [file:1]  
+También incluyen tendencias bibliométricas, un mapa de actividades del desarrollo frente a dominios de investigación y una taxonomía de desafíos abiertos. [file:1]  
+De este modo, el artículo funciona como una fotografía amplia del estado del arte hasta julio de 2023 y como una hoja de ruta para problemas todavía no resueltos. [file:1]
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+Los autores critican que el crecimiento explosivo de literatura sobre LLMs en SE no iba acompañado de suficiente rigor científico ni de integración con la ingeniería de software clásica. [file:1]  
+Señalan vacíos importantes como la falta de benchmarks específicos, evaluación robusta frente a no-determinismo y alucinaciones, poca atención a requisitos, diseño y refactorización, y escasa consideración de temas energéticos, escalabilidad y explicabilidad. [file:1]  
+También cuestionan que muchos trabajos trataban los LLMs como componentes aislados, sin hibridarlos con técnicas consolidadas como testing, análisis estático, SBSE o automated repair. [file:1]  
+Su motivación es entonces ofrecer una visión holística que conecte los LLMs con la literatura madura de SE para evitar soluciones poco confiables y demasiado aisladas. [file:1]
+
+## Descripción del aporte del autor
+
+El aporte principal del artículo es una survey comprehensiva con énfasis en aplicaciones y problemas abiertos de LLMs en SE. [file:1]  
+El problema central que aborda es que, aunque los LLMs ofrecen capacidades revolucionarias, también introducen riesgos como alucinaciones, no-determinismo y problemas de escalabilidad que comprometen la confiabilidad del SDLC. [file:1]  
+Ese problema afecta a empresas porque puede traducirse en código incorrecto, deuda técnica y mayores costos de validación, y a la sociedad porque retrasa una adopción responsable de IA generativa en desarrollo de software. [file:1]  
+Como solución, el artículo propone una taxonomía de aplicaciones, una agenda de ocho problemas transversales abiertos y un fuerte énfasis en la hibridación entre LLMs y técnicas tradicionales. [file:1]  
+Los autores concluyen que los LLMs no reemplazan la ingeniería de software clásica, sino que la potencian cuando se integran correctamente. [file:1]
+
+## Proceso para obtener el aporte que considera el autor
+
+Los autores emplean una metodología de survey estructurada. [file:1]  
+Primero realizan un análisis bibliométrico manual de arXiv para cuantificar el crecimiento de publicaciones en LLMs y específicamente en LLM+SE hasta julio de 2023. [file:1]  
+Luego revisan literatura primaria en las principales actividades del SDLC y dominios de investigación, y finalmente sintetizan tendencias, resultados empíricos, limitaciones y problemas abiertos. [file:1]  
+No ejecutan experimentos primarios, sino que construyen una síntesis cualitativa y prospectiva basada en evidencia existente y en experiencia experta. [file:1]
+
+## Proceso para resolver el problema considerado por el autor
+
+El artículo resuelve el problema de fragmentación organizando la literatura alrededor del ciclo de vida del software y de varios dominios de investigación relacionados. [file:1]  
+Destaca explícitamente la necesidad de hibridación, por ejemplo LLM + testing, LLM + Genetic Improvement, LLM + SBSE y LLM + análisis estático. [file:1]  
+Además, propone una agenda concreta de ocho temas transversales, incluyendo prompt engineering dinámico, evaluación robusta, testing exhaustivo, aprovechamiento de alucinaciones, manejo de prompts largos y cobertura de subdominios poco estudiados. [file:1]  
+Esto permite transformar una literatura emergente y dispersa en una base conceptual más estable para investigación y práctica. [file:1]
+
+## Métricas que el autor usa y resultado que obtiene. Comentar
+
+Los autores usan métricas bibliométricas y cualitativas. [file:1]  
+Entre sus resultados destacan el crecimiento exponencial de papers en LLM+SE y el hecho de que más del 10 % de los papers sobre LLMs en 2023 ya correspondían a software engineering. [file:1]  
+También identifican subáreas poco cubiertas, como requisitos, diseño y refactorización, y sostienen que la hibridación es la vía principal para mitigar alucinaciones y mejorar confiabilidad. [file:1]  
+Considero que las conclusiones son sólidas porque combinan evidencia cuantitativa de crecimiento del campo con análisis cualitativo profundo sobre riesgos y soluciones. [file:1]  
+Como mejora futura, sería útil complementar la survey con comparaciones sistemáticas de rendimiento por subárea o con actualizaciones periódicas dada la velocidad del dominio. [file:1]
+
+## Observaciones y/o críticas suyas al artículo
+
+La principal fortaleza del artículo es que conecta de manera explícita los LLMs con la tradición consolidada de software engineering. [file:1]  
+También es muy valioso por su enfoque en problemas abiertos y por defender la hibridación como principio central para confiabilidad. [file:1]  
+Como crítica constructiva, al ser una survey de 2023, ya queda parcialmente desactualizada frente a la velocidad del avance en modelos, benchmarks y herramientas. [file:1]  
+Además, se enfoca más en oportunidades y agenda futura que en evaluaciones cuantitativas comparativas entre soluciones. [file:1]
+
+## Aportes nuestros al artículo
+
+1. Esta fuente puede servir como fundamento teórico fuerte para justificar la integración híbrida y segura de LLMs en el SDLC. [file:1]  
+2. También ayuda a sustentar que el nuevo ciclo de vida ágil AI-native no debe ser una sustitución ciega del proceso tradicional, sino una evolución apoyada en hibridación y evaluación robusta. [file:1]  
+3. En una tesis aplicada, su agenda de problemas abiertos puede utilizarse para definir criterios de diseño y validación del modelo propuesto. [file:1]
+
+## Matriz de operacionalización de variables
+
+| Variable | Tipo | Definición conceptual | Definición operacional | Dimensiones | Indicadores | Escala / fuente | Instrumento |
+|---|---|---|---|---|---|---|---|
+| Ciclo de vida de desarrollo de software (SDLC) [file:1] | Independiente [file:1] | Conjunto de fases, modelos y prácticas que rigen el proceso completo de creación, implementación y mantenimiento de software. [file:1] | Se operacionaliza observando cómo los LLMs se integran en múltiples fases del SDLC y en distintos dominios de SE. [file:1] | Fases y modelos del proceso SDLC, integración de IA, IA generativa aplicada al SDLC, operación y ciclo de vida del modelo. [file:1] | Número de fases impactadas; subáreas cubiertas; presencia de hibridación con técnicas clásicas. [file:1] | Fan et al. (2023). [file:1] | Survey estructurada, análisis bibliométrico y síntesis cualitativa. [file:1] |
+| Eficiencia del proceso de desarrollo de software [file:1] | Dependiente [file:1] | Rendimiento del SDLC en términos de tiempo de ciclo, costo, productividad, calidad del software y reducción de errores. [file:1] | Se mide indirectamente por la capacidad de enfoques híbridos para reducir alucinaciones, mejorar calidad y aumentar productividad. [file:1] | Productividad, calidad, confiabilidad, reducción de riesgos. [file:1] | Presencia de validación robusta; integración con testing/análisis estático; mitigación de alucinaciones. [file:1] | Hallazgos del survey. [file:1] | Síntesis comparativa y agenda de investigación. [file:1] |
+| Nuevo ciclo de vida ágil AI-native [file:1] | Intermedia [file:1] | Modelo de tesis que combina metodologías ágiles con integración total de IA generativa como motor principal del desarrollo. [file:1] | Se expresa mediante una integración híbrida y segura de LLMs en todo el SDLC con evaluación continua. [file:1] | Hibridación, prompting, evaluación, integración transversal, seguridad. [file:1] | Número de prácticas híbridas incorporadas; presencia de evaluación robusta; cobertura de fases del SDLC. [file:1] | Adaptación conceptual basada en Fan et al. [file:1] | Síntesis analítica y futura validación aplicada. [file:1] |

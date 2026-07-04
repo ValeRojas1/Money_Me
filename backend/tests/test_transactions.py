@@ -81,3 +81,78 @@ async def test_filter_by_type(client, auth_headers, test_movement):
     assert response.status_code == 200
     data = response.json()
     assert len(data["items"]) >= 1
+
+
+@pytest.mark.asyncio
+async def test_create_transaction_negative_amount(client, auth_headers, test_wallet, test_category):
+    response = await client.post(
+        "/api/v1/transactions/",
+        headers=auth_headers,
+        json={
+            "wallet_id": test_wallet.id,
+            "category_id": test_category.id,
+            "type": "expense",
+            "amount_cents": -100,
+            "description": "Negative",
+            "transaction_date": str(date.today()),
+        },
+    )
+    assert response.status_code in (200, 422)
+
+
+@pytest.mark.asyncio
+async def test_create_transaction_empty_description(client, auth_headers, test_wallet, test_category):
+    response = await client.post(
+        "/api/v1/transactions/",
+        headers=auth_headers,
+        json={
+            "wallet_id": test_wallet.id,
+            "category_id": test_category.id,
+            "type": "expense",
+            "amount_cents": 1000,
+            "description": "",
+            "transaction_date": str(date.today()),
+        },
+    )
+    assert response.status_code == 422
+
+
+@pytest.mark.asyncio
+async def test_create_transaction_invalid_wallet(client, auth_headers, test_category):
+    response = await client.post(
+        "/api/v1/transactions/",
+        headers=auth_headers,
+        json={
+            "wallet_id": 99999,
+            "category_id": test_category.id,
+            "type": "expense",
+            "amount_cents": 1000,
+            "description": "Invalid wallet",
+            "transaction_date": str(date.today()),
+        },
+    )
+    assert response.status_code in (400, 404, 422)
+
+
+@pytest.mark.asyncio
+async def test_list_transactions_pagination(client, auth_headers, test_movement):
+    response = await client.get("/api/v1/transactions/?page=1&limit=5", headers=auth_headers)
+    assert response.status_code == 200
+    data = response.json()
+    assert data["page"] == 1
+    assert data["limit"] == 5
+    assert "pages" in data
+
+
+@pytest.mark.asyncio
+async def test_list_transactions_sort(client, auth_headers, test_movement):
+    response = await client.get("/api/v1/transactions/?sort_by=amount&sort_order=desc", headers=auth_headers)
+    assert response.status_code == 200
+    data = response.json()
+    assert len(data["items"]) >= 1
+
+
+@pytest.mark.asyncio
+async def test_transaction_unauthorized(client):
+    response = await client.get("/api/v1/transactions/")
+    assert response.status_code == 401

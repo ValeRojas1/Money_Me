@@ -83,13 +83,14 @@ class OcrUseCase:
 
         self._image_processor.validate_file(file_data, filename)
 
-        image_hash = self._duplicate_detector.compute_image_hash(file_data)
-        is_dup = await self._duplicate_detector.check_exact_duplicate(
-            db, user_id, image_hash
-        )
-
         preprocessed = self._image_processor.preprocess(file_data)
         ocr_result = self._tesseract.execute(preprocessed)
+
+        # Exact-duplicate check compares normalized OCR text against previous
+        # captures (schema-safe, no image-hash column required).
+        is_dup = await self._duplicate_detector.check_exact_duplicate(
+            db, user_id, ocr_result.raw_text
+        )
 
         # Extract multiple rows of transactions
         fields_list = self._field_extractor.extract_multiple(ocr_result.raw_text)
@@ -97,8 +98,11 @@ class OcrUseCase:
         results = []
         
         for fields in fields_list:
+            # When several rows were extracted from one image, classify each row
+            # by its own line so categories don't all collapse to the same value.
+            classify_text = fields.raw_fields.get("line") or ocr_result.raw_text
             classification = self._classifier.classify(
-                ocr_result.raw_text, fields.amount_cents
+                classify_text, fields.amount_cents
             )
 
             semantic_dup = False

@@ -1,0 +1,99 @@
+# Fuente 27
+
+**Author(s):** P. C. Harish Padmanaban; Yogesh Kumar Sharma [page:1]  
+**Title of paper:** *Implication of Artificial Intelligence in Software Development Life Cycle: A State of the Art Review* [page:1]  
+**Journal:** *International Journal of Recent Research Aspects (IJRRA)* [page:1]  
+**Volume (issue):** Vol. 6, Issue 2 [page:1]  
+**pag – pag (year):** 93–98 (2019) [page:1]  
+
+## Estado del arte que hace el autor
+
+El artículo presenta una revisión del uso de inteligencia artificial en el ciclo de vida del desarrollo de software, con énfasis en cómo distintas técnicas de IA pueden apoyar o automatizar actividades de ingeniería de software [page:1]. Desde el resumen, los autores sostienen que existe un potencial significativo para usar AI en todas las fases del SDLC debido a la complejidad creciente del software y a la necesidad de mejorar calidad, experiencia acumulada y capacidad de adaptación frente a entornos cambiantes [page:1].
+
+El estado del arte construido por la fuente incluye técnicas como natural language processing, neural networks, genetic algorithms, fuzzy logic, ant colony optimization y planning techniques como mecanismos aplicables a diferentes etapas del SDLC [page:1]. Con ello, la revisión no trata la IA como una sola herramienta, sino como un conjunto amplio de enfoques capaces de intervenir en planificación, estimación, requirements engineering, diseño, integración, verificación y validación [page:1].
+
+Además, el artículo sitúa la convergencia entre inteligencia artificial y software engineering como un área de investigación cada vez más cercana, después de haber evolucionado durante mucho tiempo de forma separada [page:1]. El texto cita que ambos campos comparten preocupaciones por modelar procesos del mundo real y por apoyar a los ingenieros en la creación de mejor software en menos tiempo [page:1].
+
+También se observa que el estado del arte de la fuente se orienta tanto a automatización como a soporte a decisiones [page:1]. En particular, el artículo revisa aplicaciones de IA en planificación y project effort estimation, análisis de riesgos, manejo de requisitos ambiguos, trazabilidad y selección del technology stack en soluciones con componentes inteligentes [page:1]. En conjunto, esta revisión funciona como un antecedente general sobre la promesa de la IA en el SDLC, especialmente desde una perspectiva previa al auge masivo de LLM modernos [page:1].
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+La motivación principal del artículo es que automatizar la ingeniería de software es uno de los desafíos más relevantes de la actualidad, y la IA tiene la capacidad de potenciar ese proceso [page:1]. Los autores parten de la premisa de que el software evoluciona en condiciones cambiantes e impredecibles, por lo que los métodos clásicos por sí solos no siempre son suficientes para mantener calidad y eficiencia [page:1].
+
+De forma implícita, el artículo critica la escasa interacción histórica entre los campos de IA y SE [page:1]. La fuente afirma que ambos dominios crecieron de manera independiente y que no hubo mucho intercambio de resultados de investigación entre ellos, lo que habría limitado el desarrollo de soluciones integradas para automatizar actividades del SDLC [page:1].
+
+Otra motivación relevante es que problemas como requisitos ambiguos, gestión de riesgos, predicción de defectos y esfuerzo de proyecto requieren enfoques más inteligentes que los métodos manuales tradicionales [page:1]. En ese sentido, el artículo justifica su revisión porque busca mostrar cómo AI techniques pueden reducir esas limitaciones y ofrecer apoyo más robusto a lo largo de todo el ciclo de vida [page:1].
+
+## Descripción del aporte del autor
+
+El principal aporte del artículo es presentar una revisión de estado del arte sobre el uso de IA para automatizar o apoyar las principales etapas del SDLC [page:1]. La contribución consiste en reunir aplicaciones de múltiples técnicas de IA dentro de una narrativa orientada al ciclo completo de desarrollo de software [page:1].
+
+Uno de los aportes más destacados es la síntesis del uso de AI en la etapa de planificación y estimación de esfuerzo [page:1]. La fuente revisa propuestas basadas en knowledge-based systems, genetic algorithms, neural networks y case-based reasoning para tareas como asignación de personal, evaluación de factibilidad, estimación de costos, programación y análisis de riesgos [page:1].
+
+Otro aporte importante es la atención dedicada a requirements engineering [page:1]. El artículo subraya que la IA puede contribuir a desambiguar requisitos expresados en lenguaje natural, construir ontologías y sistemas basados en conocimiento, y utilizar computational intelligence para abordar problemas de incompletitud y priorización [page:1].
+
+Asimismo, la fuente extiende su aporte hacia diseño, selección de technology stack, entrenamiento y optimización de modelos, integración de componentes de IA, identificación de versiones y procesos de verification and validation [page:1]. En conjunto, el artículo ofrece una visión bastante amplia de cómo la IA puede incorporarse dentro del SDLC, no solo para análisis inicial, sino también para operación y mantenimiento de componentes inteligentes [page:1].
+
+## Proceso para obtener el aporte que considera el autor
+
+El artículo obtiene su aporte a través de una revisión bibliográfica de trabajos previos sobre inteligencia artificial aplicada a actividades del SDLC [page:1]. El propio resumen señala que se trata de una “state of the art literature review” orientada a revelar trabajos pasados y presentes sobre automatización del ciclo de vida usando AI [page:1].
+
+La estructura del documento permite ver que el análisis se organiza por fases del ciclo de vida y por tipos de técnicas [page:1]. Primero describe las fases generales del SDLC y modelos populares como Waterfall, Iterative, Spiral y V-Model; luego conecta ese marco con aplicaciones de IA en planificación, requisitos, documentación de software para sistemas inteligentes, selección de stack tecnológico, entrenamiento de modelos, integración y V&V [page:1].
+
+El método, por tanto, es fundamentalmente analítico y sintético, no experimental [page:1]. Su valor proviene de reunir literatura heterogénea y traducirla en un esquema que permita visualizar la contribución potencial de la IA a distintas actividades del desarrollo de software [page:1].
+
+## Proceso para resolver el problema considerado por el autor
+
+El problema central que aborda el artículo es cómo mejorar o automatizar el SDLC mediante técnicas de inteligencia artificial [page:1]. Para resolverlo, los autores identifican puntos concretos del ciclo donde la IA puede intervenir con mayor impacto [page:1].
+
+En planificación y estimación, la IA se propone para asignación de recursos, evaluación de factibilidad, riesgo y costo del proyecto [page:1]. En requirements engineering, la revisión destaca herramientas para desambiguar lenguaje natural, gestionar conocimiento del dominio y priorizar o completar requisitos [page:1].
+
+Además, el artículo entra en un nivel más operativo al discutir cómo documentar software con componentes de IA, sugiriendo que los requisitos no deben asumir precisión del 100%, sino especificar resultados probabilísticos esperados [page:1]. También plantea que deben definirse controles criptográficos, identificación de versión del modelo, seguimiento del resultado y monitoreo del componente inteligente [page:1].
+
+Más adelante, el texto propone que la correcta selección del technology stack, el entrenamiento y optimización de la red, la integración con el sistema y la verificación y validación separada del AI software unit son pasos fundamentales para resolver el problema de desplegar software con IA de manera controlada [page:1]. Así, el artículo entiende la incorporación de IA no solo como mejora de productividad, sino como rediseño parcial de prácticas del SDLC [page:1].
+
+## Métricas que el autor usa y resultado que obtiene
+
+La fuente no presenta un experimento propio con métricas cuantitativas consolidadas como porcentajes de mejora del tiempo, defect density o precisión comparativa entre metodologías [page:1]. Su naturaleza es la de una revisión de estado del arte, por lo que el resultado principal es descriptivo y conceptual [page:1].
+
+No obstante, el artículo sí menciona criterios de evaluación relevantes en el contexto de software con IA, especialmente cuando discute requisitos probabilísticos, expected accuracy, training outcomes y verification and validation [page:1]. En particular, resalta que los componentes de IA no deben especificarse como si ofrecieran resultados determinísticos del 100%, sino en términos de probabilidad esperada [page:1].
+
+El resultado principal del trabajo es concluir que existe un potencial amplio para usar IA en prácticamente todas las fases del SDLC [page:1]. Además, la fuente sugiere como línea futura el desarrollo de un marco híbrido que integre Agile practices with AI strategy para ampliar y mejorar el ciclo de vida del desarrollo de software [page:1].
+
+## Comentar (los resultados son mejores respecto a otros)
+
+Desde una lectura crítica, la fuente es valiosa como revisión panorámica, pero no como prueba empírica fuerte de superioridad de la IA frente a enfoques tradicionales [page:1]. El artículo muestra amplitud temática y cubre numerosas fases del SDLC, lo que le da utilidad conceptual para marcos teóricos [page:1].
+
+Sin embargo, no puede afirmarse que sus resultados sean “mejores” en sentido experimental porque no desarrolla un estudio comparativo propio con medición controlada [page:1]. Su fortaleza está en mostrar posibilidades de aplicación y en anticipar líneas de integración entre IA, Agile y desarrollo de software, más que en demostrar efectos cuantificados [page:1].
+
+## Observaciones y/o críticas suyas al artículo
+
+Una observación positiva es que la fuente ofrece una visión amplia de la relación entre IA y SDLC, incluyendo tanto técnicas generales de IA como implicancias prácticas sobre requisitos, integración y verificación [page:1]. Para una tesis, esto la convierte en un buen antecedente general, especialmente para contextualizar la idea de automatización inteligente del ciclo de vida [page:1].
+
+Como crítica, el artículo presenta un enfoque bastante general y no siempre profundiza con el mismo nivel en cada fase del SDLC [page:1]. Además, al tratarse de una revisión de 2019, su marco queda anterior a la ola de herramientas basadas en LLM y copilotos modernos, por lo que algunas ideas deben actualizarse con literatura reciente [page:1].
+
+También es importante notar que la fuente menciona limitaciones metodológicas propias, como uso de un single-case holistic structure, pequeño tamaño de expertos y posibles supuestos en recolección y análisis de datos [page:1]. Esto obliga a usarla más como soporte conceptual que como evidencia cerrada de efectividad [page:1].
+
+## Aportes nuestros al artículo
+
+Consideramos que esta fuente es útil para fundamentar la idea de que la IA puede impactar transversalmente el ciclo de vida del software y no solo la fase de codificación [page:1]. Su valor para una tesis está en ofrecer una estructura inicial para relacionar IA con planificación, requisitos, diseño, integración, pruebas y mantenimiento [page:1].
+
+Desde nuestro análisis, la fuente 27 también es importante porque introduce la necesidad de tratar los componentes de IA con una lógica distinta a la del software determinístico clásico [page:1]. Aspectos como precisión probabilística, identificación de versiones del modelo, monitoreo y controles criptográficos aportan dimensiones interesantes para operacionalizar variables en investigaciones sobre desarrollo asistido por IA [page:1].
+
+Por ello, proponemos usar esta fuente como antecedente conceptual amplio y complementarla con estudios más recientes y específicos sobre LLM, DevOps, AI-native SDLC y automatización moderna del desarrollo [page:1][file:1].
+
+# Matriz de operacionalización de variables
+
+## Enfoque derivado de la fuente 27
+
+A partir del contenido del artículo, se puede plantear como **variable independiente** la integración de técnicas de inteligencia artificial en el SDLC, como **variable dependiente** la mejora del proceso de desarrollo de software, y como **variable intermedia** la adecuación metodológica y técnica para gestionar componentes inteligentes, porque la fuente sostiene que los beneficios de la IA dependen de planificación, requisitos probabilísticos, selección de stack, entrenamiento, integración y V&V apropiados [page:1].
+
+| Tipo de variable | Variable | Definición conceptual | Dimensiones | Indicadores | Técnica / instrumento |
+|---|---|---|---|---|---|
+| Independiente | Integración de técnicas de IA en el SDLC | Grado en que un proyecto incorpora técnicas como NLP, neural networks, genetic algorithms, fuzzy logic o knowledge-based systems en fases del ciclo de vida del software [page:1] | Planificación; requirements engineering; diseño; entrenamiento; integración; verificación y validación [page:1] | Uso de IA en estimación; uso de NLP para requisitos; selección de modelos o topologías; entrenamiento iterativo; integración del AI software unit; pruebas específicas para IA [page:1] | Análisis documental; checklist técnico; entrevista |
+| Intermedia | Adecuación metodológica y técnica para gestionar componentes inteligentes | Nivel de preparación del proceso para tratar componentes de IA con requisitos probabilísticos, versionado, monitoreo y seguridad adecuados [page:1] | Requisitos probabilísticos; versionado; seguridad; technology stack; monitoreo; trazabilidad [page:1] | Definición de precisión esperada; identificación de versión del modelo; controles criptográficos; stack documentado; monitoreo del componente; registro del resultado con versión del modelo [page:1] | Rúbrica; guía de observación; revisión documental |
+| Dependiente | Mejora del proceso de desarrollo de software | Capacidad del proyecto para desarrollar software con mayor soporte inteligente, mejor gestión del riesgo y mejor adaptación a requisitos cambiantes [page:1] | Eficiencia; calidad; adaptabilidad; trazabilidad; robustez operativa [page:1] | Mejora en planificación; menor ambigüedad en requisitos; mejor integración; validación del componente IA; facilidad de mantenimiento; consistencia del sistema [page:1] | Evaluación técnica; análisis de proyecto; encuesta |
+
+## Observación metodológica
+
+La fuente 27 es útil para operacionalizar variables asociadas a IA en el SDLC porque conecta técnicas inteligentes con varias fases del proceso y además introduce requisitos particulares de componentes de IA, como precisión probabilística y versionado [page:1]. Sin embargo, al ser una revisión general y previa al auge actual de herramientas generativas modernas, conviene complementarla con literatura más reciente para afinar indicadores definitivos [page:1].

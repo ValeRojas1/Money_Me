@@ -1,0 +1,76 @@
+# Estado del Arte
+
+**Author(s):** Alessandro Midolo, Alessandro Giagnorio, Fiorella Zampetti, Rosalia Tufano, Gabriele Bavota, Massimiliano Di Penta. [file:1]  
+**Title of paper:** Guidelines to Prompt Large Language Models for Code Generation: An Empirical Characterization. [file:1]  
+**Journal / Venue:** arXiv preprint (cs.SE). [file:1]  
+**Volume (issue):** No aplica. [file:1]  
+**pag – pag (year):** pp. 1–12 (2026). [file:1]
+
+## Estado del arte que hace el autor
+
+Los autores presentan una revisión empírica del estado actual del **prompting** en LLMs para generación de código. [file:1]  
+Sostienen que, aunque los LLMs ya son ampliamente utilizados en software engineering, la calidad y corrección del código generado dependen de forma crítica de la ingeniería de prompts. [file:1]  
+También señalan que existen técnicas generales de prompt engineering y de optimización automática, pero faltan guías específicas y accionables para desarrolladores en tareas de generación de código. [file:1]  
+Con base en ese vacío, construyen una taxonomía práctica de diez guías de mejora derivadas empíricamente. [file:1]
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+Los autores critican que muchos trabajos previos se centran en técnicas generales, como CoT, ProTeGi o PromptAgent, pero no proporcionan recomendaciones concretas y específicas para el dominio de desarrollo de software. [file:1]  
+Argumentan que los prompts para generación de código requieren elementos particulares como I/O format, precondiciones, postcondiciones, manejo de excepciones, detalles algorítmicos y ejemplos claros. [file:1]  
+Según el artículo, la ausencia de estas guías prácticas genera código incorrecto o de baja calidad incluso cuando se usan modelos avanzados. [file:1]  
+Por eso, la motivación del estudio es cerrar la brecha entre las capacidades técnicas de los LLMs y su uso efectivo por parte de developers reales. [file:1]
+
+## Descripción del aporte del autor
+
+El aporte principal del artículo es un catálogo de **10 guías específicas** para mejorar prompts de generación de código con LLMs. [file:1]  
+El problema central que aborda es la falta de directrices accionables para que los desarrolladores formulen prompts capaces de producir código correcto y útil. [file:1]  
+Este problema afecta a las empresas porque reduce productividad, incrementa iteraciones de corrección y puede introducir deuda técnica. [file:1]  
+También impacta la adopción real de LLMs dentro del SDLC, ya que un mal prompting limita el beneficio práctico de la IA generativa. [file:1]  
+Las diez guías identificadas son: Requirements, Pre-conditions, Post-conditions, I/O format, Exceptions, Algorithmic Details, Variable Mentioning, Unclear Conditions, More Examples y Assertive Language. [file:1]
+
+## Proceso para obtener el aporte que considera el autor
+
+Los autores siguen un enfoque mixto, iterativo y empírico. [file:1]  
+Primero seleccionan tareas de tres benchmarks de Python: BigCodeBench, HumanEval+ y MBPP+, y usan cuatro LLMs state-of-the-art para generar código. [file:1]  
+Luego identifican tareas donde los modelos fallan consistentemente y aplican un proceso automático de optimización guiado por resultados de tests. [file:1]  
+Cuando logran código correcto, piden al LLM que reconstruya un prompt optimizado y después comparan manualmente el prompt original con el refinado. [file:1]  
+A partir de ese análisis doble ciego extraen los patrones de mejora que consolidan en la taxonomía de diez guías. [file:1]
+
+## Proceso para resolver el problema considerado por el autor
+
+El artículo resuelve el problema mediante un pipeline que combina optimización automática, análisis cualitativo y validación con practitioners. [file:1]  
+La primera parte del proceso genera prompts mejorados a partir de fallos detectados por tests. [file:1]  
+La segunda parte transforma esas diferencias entre prompts iniciales y optimizados en guías accionables que cualquier desarrollador puede aplicar. [file:1]  
+La tercera parte valida el uso real y la utilidad percibida de esas guías mediante una encuesta a 50 practitioners. [file:1]  
+Con ello, el estudio pasa de una mejora técnica aislada a un conjunto reusable de recomendaciones prácticas para el SDLC asistido por IA. [file:1]
+
+## Métricas que el autor usa y resultado que obtiene. Comentar
+
+Los autores emplean tres grupos principales de métricas. [file:1]  
+El primero es el éxito técnico, medido como porcentaje de tareas donde el LLM logra generar código que pasa los tests tras la optimización del prompt. [file:1]  
+El segundo es la frecuencia de uso de las guías reportada por practitioners, y el tercero es la utilidad percibida medida con escala Likert de 5 puntos. [file:1]  
+Los resultados muestran que los practitioners usan con mayor frecuencia guías relacionadas con I/O format, precondiciones y postcondiciones, mientras que usan menos ejemplos y claridad lingüística. [file:1]  
+Sin embargo, también perciben como muy útiles las guías de ejemplos y claridad, lo que revela una brecha entre uso habitual y valor potencial. [file:1]  
+Considero que el estudio es metodológicamente sólido porque combina evidencia automática basada en tests con validación humana en práctica profesional. [file:1]  
+Además, sus resultados son más útiles que muchas recomendaciones generales de prompting porque se traducen directamente en acciones concretas para generar mejor código. [file:1]
+
+## Observaciones y/o críticas suyas al artículo
+
+La principal fortaleza del artículo es que ofrece guías específicas, empíricamente derivadas y validadas para prompting en generación de código. [file:1]  
+También es muy valioso porque conecta optimización técnica con comportamiento real de practitioners. [file:1]  
+Como crítica constructiva, el análisis se limita a Python y a tres benchmarks, por lo que la generalización a otros lenguajes o escenarios productivos aún debe comprobarse. [file:1]  
+Además, la encuesta se basa en autoinforme, lo que no mide por sí mismo la efectividad real de las guías en proyectos industriales completos. [file:1]
+
+## Aportes nuestros al artículo
+
+1. Esta fuente puede incorporarse como base práctica para la dimensión de **IA generativa aplicada a la fase de implementación** dentro de la tesis. [file:1]  
+2. También permite justificar que la eficiencia del desarrollo con IA depende no solo del modelo elegido, sino de la calidad del prompting usado por el equipo. [file:1]  
+3. En una tesis aplicada, estas diez guías pueden convertirse en criterios de intervención o checklist para medir mejora en calidad y tiempo de generación de código. [file:1]
+
+## Matriz de operacionalización de variables
+
+| Variable | Tipo | Definición conceptual | Definición operacional | Dimensiones | Indicadores | Escala / fuente | Instrumento |
+|---|---|---|---|---|---|---|---|
+| Ciclo de vida de desarrollo de software (SDLC) [file:1] | Independiente [file:1] | Conjunto de fases, modelos y prácticas que rigen la creación, implementación y mantenimiento de software. [file:1] | Se operacionaliza observando el uso de prompting optimizado en la fase de generación e implementación de código. [file:1] | Fases del proceso, integración de IA, IA generativa aplicada al SDLC. [file:1] | Uso de prompts estructurados; inclusión de I/O, pre/postcondiciones y ejemplos; reducción de iteraciones fallidas. [file:1] | Midolo et al. (2026). [file:1] | Benchmarks, tests automatizados y análisis de prompts. [file:1] |
+| Eficiencia del proceso de desarrollo de software [file:1] | Dependiente [file:1] | Rendimiento del proceso en términos de tiempo de ciclo, costo, productividad, calidad y reducción de errores. [file:1] | Se mide mediante el éxito del código generado tras mejora de prompts y por la disminución de correcciones posteriores. [file:1] | Productividad, calidad, reducción de errores, tiempo de corrección. [file:1] | % de tareas que pasan tests; frecuencia de iteraciones; utilidad percibida; uso de guías. [file:1] | Resultados experimentales y encuesta a practitioners. [file:1] | Benchmarking, escala Likert y análisis comparativo de prompts. [file:1] |
+| Nuevo ciclo de vida ágil AI-native [file:1] | Intermedia [file:1] | Modelo de tesis que combina metodologías ágiles con integración total de IA generativa como motor principal del desarrollo. [file:1] | Se expresa mediante la incorporación de guías explícitas de prompting dentro de iteraciones de desarrollo asistidas por IA. [file:1] | Prompting, iteración, validación de código, mejora continua. [file:1] | Número de guías aplicadas; consistencia del prompt; mejora en calidad del output; reducción de retrabajo. [file:1] | Adaptación conceptual basada en Midolo et al. [file:1] | Síntesis analítica y futura validación en caso real. [file:1] |

@@ -1,0 +1,103 @@
+# Fuente 24
+
+**Author(s):** Autoría institucional; Commonwealth of Pennsylvania, Office of Administration [page:1]  
+**Title of paper:** *Software Development Life Cycle Policy* [page:1]  
+**Journal / Source:** Information Technology Policy del Commonwealth of Pennsylvania [page:1]  
+**Volume (issue):** No aplica [page:1]  
+**pag – pag (year):** 13 páginas; effective date July 01, 2025 [page:1]  
+
+## Estado del arte que hace el autor
+
+La fuente presenta el SDLC desde una perspectiva normativa y organizacional, definiéndolo como un marco obligatorio para proyectos de desarrollo y mejora de aplicaciones dentro del gobierno del Commonwealth of Pennsylvania [page:1]. A diferencia de un artículo académico o una revisión teórica, esta política describe el estado actual esperado de las buenas prácticas de desarrollo de software en una organización pública grande, integrando no solo fases del SDLC, sino también riesgo de proveedores, diseño, testing, despliegue, mantenimiento, accesibilidad, licenciamiento, gestión de cambios y estándares empresariales [page:1].
+
+El documento afirma que, independientemente de si la metodología empleada es waterfall, spiral, agile u otra, todas comparten componentes fundamentales del SDLC [page:1]. Sobre esa base, establece que las agencias deben mantener un framework documentado que contemple, como mínimo, factibilidad, gestión de requisitos, diseño, desarrollo, calidad y testing, deployment y operations & maintenance [page:1].
+
+Además, la política introduce una visión moderna del SDLC que no se restringe al desarrollo interno de software [page:1]. El estado del arte que refleja esta fuente incorpora evaluación de alternativas COTS y SaaS, matrices comparativas con ponderación, inventario de aplicaciones, release management, change management, alineación con ALM, control de accesos por entorno, vendor risk assessment y requisitos de accesibilidad y branding digital [page:1].
+
+Por ello, esta fuente representa una evolución del SDLC clásico hacia una gobernanza integral del ciclo de vida de aplicaciones [page:1]. En el contexto de una tesis, es una referencia útil para mostrar cómo el enfoque tradicional-institucional del SDLC se ha ampliado para incluir no solo fases técnicas, sino controles empresariales, cumplimiento, arquitectura, continuidad y seguridad operacional [page:1].
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+La motivación principal de la política es establecer un marco uniforme y obligatorio para el desarrollo, adquisición, modernización y mantenimiento de software a nivel gubernamental [page:1]. El documento busca asegurar consistencia metodológica, reducción de riesgo, cumplimiento normativo y alineación con necesidades del negocio y de la organización [page:1].
+
+De forma implícita, la política critica prácticas fragmentadas o poco gobernadas de desarrollo de software [page:1]. Esto se observa cuando exige que todos los proyectos nuevos o de mejora utilicen un framework SDLC bien documentado y cuando obliga a justificar por qué una solución COTS o SaaS sí o no es viable frente a desarrollo a medida [page:1].
+
+También hay una crítica implícita a la proliferación innecesaria de aplicaciones personalizadas y legadas [page:1]. La política ordena priorizar reutilización, COTS y SaaS sobre desarrollos custom del Commonwealth, y obliga a demostrar con análisis comparativo cuándo una aplicación a medida resulta realmente la mejor alternativa [page:1].
+
+Finalmente, la política se motiva por la necesidad de fortalecer continuidad, seguridad, accesibilidad y control organizacional a lo largo del ciclo de vida [page:1]. Esto muestra que el problema ya no es solo “desarrollar software”, sino gobernar un ecosistema de aplicaciones con valor sostenible, bajo riesgo y alineado a estándares empresariales [page:1].
+
+## Descripción del aporte del autor
+
+El principal aporte de esta fuente es formalizar un SDLC ampliado y de alcance empresarial, aplicable tanto al desarrollo interno como al uso de software de terceros [page:1]. La política establece componentes mínimos obligatorios del ciclo de vida y los conecta con mecanismos de gobernanza, evaluación de valor, diseño, testing, seguridad, release management y continuidad operativa [page:1].
+
+Uno de sus aportes más relevantes es la incorporación explícita de **Vendor Risk Assessment** antes de la adquisición o uso de nuevos servicios de cómputo [page:1]. Esto amplía la mirada tradicional del SDLC hacia un enfoque donde la seguridad y el riesgo del proveedor forman parte del ciclo desde etapas tempranas [page:1].
+
+Otro aporte importante es la priorización de soluciones reutilizables, COTS y SaaS frente al desarrollo personalizado [page:1]. El documento exige análisis comparativos con criterios ponderados y justificación sólida cuando se selecciona desarrollo custom, lo que introduce un componente de racionalidad económica y arquitectónica en la toma de decisiones [page:1].
+
+La política también refuerza aspectos de calidad y gobierno mediante testing integral, segregación de ambientes, separación de funciones, code management tools, release management, change management e inventario de aplicaciones [page:1]. En conjunto, este aporte convierte al SDLC en una plataforma de gobernanza tecnológica y no solo en una secuencia de desarrollo [page:1].
+
+## Proceso para obtener el aporte que considera el autor
+
+El documento obtiene su aporte mediante la definición normativa de procesos obligatorios y criterios mínimos para todas las agencias bajo su alcance [page:1]. No se trata de una investigación experimental, sino de una política institucional que sintetiza prácticas de ingeniería, gestión de riesgo, adquisición y operación en un solo marco de referencia [page:1].
+
+El proceso inicia estableciendo que todo proyecto de desarrollo o mejora debe usar un SDLC bien documentado [page:1]. A partir de allí, se detallan los componentes mínimos del framework: feasibility, vendor risk assessment, requirements management, principles de selección de solución, design, development, quality assurance and testing, deployment y operations & maintenance [page:1].
+
+Luego, la política agrega procesos complementarios como release management, change management e application inventory [page:1]. También establece alineación entre SDLC, SADM, project management approach, ALM tools y Service Design Package para asegurar coherencia metodológica y operativa [page:1].
+
+En síntesis, el aporte se obtiene no mediante observación empírica de un caso aislado, sino mediante la integración estructurada de estándares organizacionales para conducir el desarrollo de software bajo una lógica de valor, control y sostenibilidad [page:1].
+
+## Proceso para resolver el problema considerado por el autor
+
+El problema que aborda la política es cómo desarrollar, modernizar o adquirir software de forma consistente, segura y costo-efectiva dentro de una organización pública compleja [page:1]. Para resolverlo, propone un SDLC institucional con controles obligatorios desde la evaluación inicial hasta la operación continua [page:1].
+
+La solución parte con estudios de factibilidad y evaluación de alternativas, incluyendo comparación entre COTS, SaaS y desarrollo personalizado [page:1]. Posteriormente, se exige gestión de requisitos con trazabilidad, alineación con el Service Design Package y documentación suficiente para sostener diseño, construcción y validación [page:1].
+
+Durante desarrollo y pruebas, la política establece uso de ambientes diferenciados, naming conventions por entorno, pruebas unitarias, integración, UAT, seguridad, gestión de defectos y uso de testing tools alineadas con change management [page:1]. Después, en deployment y operations, incorpora readiness assessments, go-live decision, rollback mechanisms, monitoreo de desempeño, releases futuras y archivado de documentación [page:1].
+
+Además, el documento resuelve el problema de la gobernanza continua mediante release management, segregation of duties, code management tools, access controls, application inventory, digital accessibility, design standards y compliance con múltiples políticas relacionadas [page:1]. De esta manera, el problema del desarrollo de software se aborda como un problema integral de arquitectura, riesgo, operación y valor empresarial [page:1].
+
+## Métricas que el autor usa y resultado que obtiene
+
+La política no presenta métricas cuantitativas experimentales típicas de un paper científico, como reducción porcentual de defectos o mejoras estadísticas de rendimiento [page:1]. Sin embargo, sí menciona criterios y elementos de evaluación que actúan como indicadores de madurez del proceso, por ejemplo test coverage and effectiveness, interoperability, extensibility, maintainability, support costs, business criticality, recoverability y continued value to the enterprise [page:1].
+
+También exige la creación de una comparative analysis matrix con weighted scoring and ranking methods para evaluar alternativas tecnológicas [page:1]. Esto significa que, aunque la fuente no ofrece resultados empíricos medidos en un estudio, sí institucionaliza mecanismos de evaluación y decisión cuantificable dentro del propio proceso de selección de soluciones [page:1].
+
+El resultado principal que obtiene la política es un marco de gobernanza robusto para asegurar que el software siga procesos normalizados, con menor riesgo y mayor alineación con objetivos organizacionales [page:1]. Su valor está en definir qué debe medirse, controlarse y justificarse, más que en reportar un experimento comparativo [page:1].
+
+## Comentar (los resultados son mejores respecto a otros)
+
+Desde una perspectiva metodológica, la fuente es fuerte en estandarización, control y gobernanza del SDLC [page:1]. Frente a enfoques menos estructurados, aporta claridad de responsabilidades, priorización de valor, integración de seguridad, trazabilidad y mecanismos formales de análisis comparativo [page:1].
+
+Sin embargo, no puede afirmarse con rigor que esta política genere “mejores resultados” que metodologías ágiles, DevOps o AI-native en todos los contextos, porque no presenta evidencia experimental comparativa [page:1]. Su fortaleza está en la capacidad normativa para ordenar y controlar procesos complejos, especialmente en entornos gubernamentales o regulados [page:1].
+
+## Observaciones y/o críticas suyas al artículo
+
+Una observación importante es que esta fuente no es un artículo científico, sino una política institucional extensa y prescriptiva [page:1]. Por ello, es especialmente útil para fundamentar dimensiones de gobernanza, compliance, trazabilidad, riesgos y controles dentro del SDLC, pero no para demostrar causalidad mediante evidencia experimental [page:1].
+
+Como crítica, su enfoque puede resultar pesado o burocrático para organizaciones pequeñas, equipos altamente ágiles o entornos donde se necesita experimentación rápida [page:1]. La cantidad de controles, alineaciones, matrices y aprobaciones puede fortalecer la calidad y el cumplimiento, pero también aumentar complejidad y tiempo de coordinación [page:1].
+
+Otra crítica razonable es que la política está diseñada para un contexto gubernamental específico [page:1]. Por tanto, en una tesis conviene abstraer sus principios generales —gobernanza, evaluación de alternativas, trazabilidad, seguridad, continuidad— sin asumir que toda su estructura debe replicarse tal cual en otros tipos de organización [page:1].
+
+## Aportes nuestros al artículo
+
+Consideramos que esta fuente es muy valiosa para mostrar cómo el SDLC tradicional puede evolucionar hacia un modelo de gobernanza integral del software [page:1]. Su principal valor para una tesis está en la riqueza de dimensiones que incorpora: selección de solución, riesgo del proveedor, testing, release management, change management, inventory, accesibilidad y continuidad [page:1].
+
+Además, esta política permite sustentar que el éxito del desarrollo de software no depende solo de programar bien, sino también de evaluar alternativas, justificar decisiones, controlar ambientes y asegurar alineamiento con el negocio y las políticas institucionales [page:1]. Esa idea es útil para comparar luego cómo la IA o los enfoques AI-native pueden modificar o complementar tales controles [page:1].
+
+Desde nuestro análisis, la fuente 24 es una excelente base para construir variables relacionadas con madurez del SDLC, gobernanza del proceso, calidad de implementación y control del ciclo de vida [page:1]. Por ello, debe ubicarse como antecedente normativo fuerte dentro del estado del arte de tu investigación [page:1][file:1].
+
+# Matriz de operacionalización de variables
+
+## Enfoque derivado de la fuente 24
+
+A partir del contenido de la política, se puede plantear como **variable independiente** el nivel de adopción del framework SDLC institucional, como **variable dependiente** la gobernanza y calidad del ciclo de vida del software, y como **variable intermedia** la capacidad de evaluación, control y gestión del riesgo, porque la política sostiene que la calidad organizacional del software depende de prácticas formales de factibilidad, análisis de alternativas, testing, release management, change management y continuidad [page:1].
+
+| Tipo de variable | Variable | Definición conceptual | Dimensiones | Indicadores | Técnica / instrumento |
+|---|---|---|---|---|---|
+| Independiente | Nivel de adopción del framework SDLC institucional | Grado en que un proyecto aplica de manera formal los componentes mínimos del SDLC definidos por la política organizacional [page:1] | Feasibility; vendor risk assessment; requirements management; design; development; QA/testing; deployment; operations & maintenance [page:1] | Estudio de factibilidad realizado; evaluación de riesgo del proveedor; trazabilidad de requisitos; diseño documentado; uso de ambientes diferenciados; pruebas ejecutadas; plan de despliegue; monitoreo postproducción [page:1] | Análisis documental; checklist de cumplimiento |
+| Intermedia | Capacidad de evaluación, control y gestión del riesgo | Nivel de madurez con que la organización analiza alternativas, controla cambios, gestiona releases y mitiga riesgos operativos y tecnológicos [page:1] | Comparative analysis; change management; release management; segregation of duties; application inventory; compliance [page:1] | Matriz comparativa con puntajes; registro de cambios; mecanismos de rollback; controles de acceso por entorno; inventario de aplicaciones actualizado; cumplimiento de políticas relacionadas [page:1] | Rúbrica de madurez; revisión documental; entrevista |
+| Dependiente | Gobernanza y calidad del ciclo de vida del software | Capacidad del proyecto para entregar y sostener aplicaciones alineadas con valor organizacional, seguridad, continuidad y calidad operativa [page:1] | Calidad del software; continuidad; sostenibilidad; seguridad; alineación con el negocio; control organizacional [page:1] | Efectividad de pruebas; estabilidad en producción; continuidad operativa; cumplimiento de accesibilidad y seguridad; soporte a objetivos del negocio; evidencia documental completa [page:1] | Evaluación técnica; métricas de proyecto; análisis institucional |
+
+## Observación metodológica
+
+La fuente 24 es especialmente fuerte para operacionalizar variables relacionadas con gobernanza, trazabilidad y control del SDLC, porque define procesos mínimos, mecanismos de evaluación y responsabilidades institucionales [page:1]. Sin embargo, al ser una política normativa, debe complementarse con estudios comparativos o empíricos si se quiere medir impacto real frente a otros enfoques de desarrollo [page:1].

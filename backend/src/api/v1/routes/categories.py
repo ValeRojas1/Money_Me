@@ -14,6 +14,7 @@ router = APIRouter()
 async def list_categories(
     type_filter: str | None = Query(None, alias="type"),
     db: AsyncSession = Depends(get_db),
+    current_user: dict = Depends(get_current_user),
 ):
     use_case = CategoryUseCase()
     items = await use_case.list_categories(db, type_filter)

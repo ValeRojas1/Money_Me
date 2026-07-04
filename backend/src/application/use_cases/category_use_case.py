@@ -1,7 +1,7 @@
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from src.core.errors import NotFoundError
+from src.core.errors import ConflictError, NotFoundError
 from src.domain.models.category import Category, CategoryType
 from src.domain.schemas.category import CategoryCreate, CategoryUpdate
 
@@ -34,6 +34,12 @@ class CategoryUseCase:
         ]
 
     async def create_category(self, db: AsyncSession, data: CategoryCreate) -> dict:
+        existing = await db.execute(
+            select(Category).where(Category.name == data.name, Category.type == data.type)
+        )
+        if existing.scalar_one_or_none():
+            raise ConflictError("Category with this name and type already exists")
+
         category = Category(
             name=data.name,
             type=data.type,

@@ -1,0 +1,103 @@
+# Fuente 19
+
+**Author(s):** Samia Abdalhamid; Tahani Almabruk [page:1]  
+**Title of paper:** *Transforming Software Development: A Comparative Study of Traditional and AI-Integrated SDLC Approaches* [page:1]  
+**Journal:** American Journal of Engineering Research (AJER) [page:1]  
+**Volume (issue):** Volume 14, Issue 9 [page:1]  
+**pag – pag (year):** 07–13 (2025) [page:1]  
+
+## Estado del arte que hace el autor
+
+El artículo sitúa su estado del arte en la evolución del ciclo de vida del desarrollo de software desde metodologías tradicionales, como Waterfall y Agile, hacia enfoques enriquecidos con inteligencia artificial [page:1]. Los autores señalan que los métodos tradicionales han sido ampliamente adoptados, pero siguen dependiendo de procesos mayormente manuales, lo que provoca ineficiencias, imprecisiones y problemas de escalabilidad [page:1].
+
+A partir de esa base, el trabajo revisa cómo la inteligencia artificial ha empezado a incorporarse en distintas fases del SDLC, especialmente en levantamiento de requisitos, diseño, implementación, pruebas, despliegue y mantenimiento [page:1]. En la revisión de literatura se menciona que técnicas como el procesamiento de lenguaje natural permiten automatizar el análisis de requisitos, mientras que el aprendizaje automático ayuda a predecir defectos y mejorar procesos de testing [page:1].
+
+El estado del arte también incluye estudios comparativos previos entre enfoques tradicionales y enfoques impulsados por IA [page:1]. Los autores recuperan literatura que muestra que la IA puede automatizar tareas repetitivas, aumentar la productividad y mejorar la cobertura de pruebas, aunque también puede generar dependencia excesiva y requerir supervisión humana frente a problemas ambiguos o complejos [page:1].
+
+Además, el artículo incorpora el debate sobre el rol humano en un SDLC integrado con IA [page:1]. Según la revisión presentada, la IA puede potenciar creatividad, reconocimiento de patrones y toma de decisiones basada en datos, pero no reemplaza el juicio ético, la intuición ni la comprensión contextual de los desarrolladores [page:1].
+
+En conjunto, el estado del arte construido por los autores no se limita a enumerar herramientas, sino que compara dos paradigmas de desarrollo: uno centrado en ejecución manual y otro orientado a automatización inteligente con supervisión humana [page:1]. Esto hace que la fuente sea útil para investigaciones sobre transformación del SDLC y adopción de IA en ingeniería de software [page:1].
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+La motivación principal del artículo es que, pese al crecimiento de la literatura sobre IA en desarrollo de software, todavía faltaba una comparación más integral entre enfoques tradicionales y enfoques integrados con IA a lo largo de todas las etapas del SDLC [page:1]. Los autores señalan explícitamente que la investigación existente carece de una comparación comprensiva entre ambos enfoques en todas las fases del ciclo de vida [page:1].
+
+También identifican un vacío respecto al impacto de la IA en los roles humanos, en especial en creatividad, resolución de problemas y toma de decisiones [page:1]. Esta observación funciona como crítica a estudios previos que han enfatizado automatización y productividad, pero han explorado menos las implicancias humanas y éticas de la integración de IA [page:1].
+
+Otra motivación importante es que las metodologías tradicionales, aunque útiles, presentan lentitud, susceptibilidad al error y baja capacidad de escalar ante proyectos complejos [page:1]. Bajo esa lógica, el artículo se propone demostrar por qué la IA puede resolver varias de esas limitaciones, siempre que exista equilibrio entre automatización y supervisión humana [page:1].
+
+## Descripción del aporte del autor
+
+El aporte principal del artículo es una evaluación comparativa entre SDLC tradicional y SDLC integrado con IA, tomando como criterios productividad, eficiencia y calidad del software [page:1]. A diferencia de trabajos que analizan una sola fase o una sola herramienta, esta fuente compara de manera transversal cinco etapas del ciclo de vida: requisitos, diseño, implementación, pruebas y mantenimiento [page:1].
+
+Otro aporte central es que el estudio sistematiza ventajas y desventajas de los enfoques impulsados por IA en tres dimensiones: producción, efectividad y calidad [page:1]. En esa comparación, los autores muestran que la IA puede acelerar procesos, mejorar consistencia y reducir ciertos errores, pero también puede limitar creatividad, fallar en casos ambiguos y generar dependencia técnica si no existe validación humana [page:1].
+
+El artículo también aporta una discusión específica sobre el rol humano en el SDLC [page:1]. En lugar de plantear que la IA reemplaza a los desarrolladores, los autores sostienen que la IA debe complementar el trabajo humano, reforzando análisis de patrones, automatización de tareas repetitivas y soporte a decisiones, mientras los humanos conservan contexto, juicio ético y creatividad [page:1].
+
+En términos prácticos, el aporte es relevante para organizaciones que evalúan transformar sus procesos de desarrollo de software mediante IA [page:1]. La fuente ayuda a entender no solo en qué fases se puede integrar IA, sino también qué riesgos, límites y condiciones de uso deben considerarse [page:1].
+
+## Proceso para obtener el aporte que considera el autor
+
+El artículo desarrolla su aporte a partir de una revisión comparativa de literatura y de la organización del análisis alrededor de tres preguntas de investigación [page:1]. Estas preguntas se centran en comparar la optimización de las fases del SDLC, identificar ventajas y desventajas de la IA, y evaluar cómo cambia el rol humano en creatividad, resolución de problemas y toma de decisiones [page:1].
+
+Con base en esas preguntas, los autores estructuran el estudio por fases del SDLC [page:1]. Primero describen cómo operan los métodos tradicionales en requisitos, diseño, implementación, testing y mantenimiento; luego contrastan esas prácticas con técnicas impulsadas por IA como NLP, diseño generativo, asistentes de código, automatización de pruebas y mantenimiento predictivo [page:1].
+
+El proceso metodológico del artículo es analítico y comparativo, no experimental en sentido estricto [page:1]. Es decir, no construye un experimento propio con grupo control, sino que reúne hallazgos de literatura previa y los reorganiza para ofrecer una comparación estructurada entre ambos enfoques [page:1].
+
+## Proceso para resolver el problema considerado por el autor
+
+El problema que aborda el autor es cómo superar las limitaciones de los modelos tradicionales del SDLC mediante la integración de inteligencia artificial [page:1]. Para resolverlo, propone observar cada fase del ciclo de vida e identificar qué técnicas de IA pueden automatizar tareas, mejorar decisiones y aumentar escalabilidad [page:1].
+
+En la fase de requisitos, el artículo plantea el uso de NLP para analizar logs, correos y documentos con el fin de extraer y priorizar necesidades de manera más rápida [page:1]. En diseño, propone herramientas de diseño generativo y aprendizaje automático que sugieren plantillas o alternativas basadas en datos previos [page:1].
+
+En implementación, la fuente destaca asistentes de código y analizadores automáticos para generación, depuración y optimización de código [page:1]. En pruebas y aseguramiento de calidad, presenta automatización de casos de prueba, detección de defectos y análisis en tiempo real como mecanismos para ampliar cobertura y velocidad [page:1].
+
+Finalmente, en despliegue y mantenimiento, el artículo resalta mantenimiento predictivo y herramientas automáticas de detección de fallos para reducir tiempo de inactividad y anticipar incidentes [page:1]. Sin embargo, los autores insisten en que estas soluciones no eliminan la necesidad de supervisión humana, especialmente en problemas complejos, consideraciones éticas y alineamiento con expectativas de stakeholders [page:1].
+
+## Métricas que el autor usa y resultado que obtiene
+
+El artículo incorpora varias métricas y resultados comparativos tomados de estudios citados dentro de su análisis [page:1]. Entre ellos, menciona que una integración de IA observó ciclos de desarrollo 40% más rápidos, pero con un incremento de 15% en deuda técnica en código generado por IA, lo que subraya la necesidad de adopción equilibrada [page:1].
+
+En requisitos, el artículo señala que GPT-4 redujo el tiempo de levantamiento de requerimientos en 60%, aunque tuvo dificultades con entradas ambiguas y necesitó validación humana [page:1]. En diseño, reporta que enfoques generados por IA mejoraron la velocidad de prototipado en 3 veces, pero fueron evaluados como 20% menos amigables para el usuario que los diseños humanos [page:1].
+
+En implementación, se recoge que herramientas como GitHub Copilot permitieron escribir código 35% más rápido, aunque introdujeron 25% más vulnerabilidades de seguridad si no había revisión manual [page:1]. En mantenimiento y despliegue, el artículo menciona casos donde el uso de IA redujo el downtime en 40%, aunque incrementó preocupaciones éticas en sectores sensibles como salud y finanzas [page:1].
+
+Aun así, es importante notar que estos resultados no provienen de un experimento original del propio artículo, sino de estudios citados dentro de su revisión comparativa [page:1]. Por eso, el resultado principal de la fuente no es una validación experimental propia, sino una síntesis argumentada de beneficios, riesgos y condiciones de uso de la IA en el SDLC [page:1].
+
+## Comentar (los resultados son mejores respecto a otros)
+
+Los resultados presentados por el artículo favorecen en general a los enfoques integrados con IA en términos de velocidad, automatización, cobertura y capacidad predictiva [page:1]. Sin embargo, los autores no sostienen una superioridad absoluta, porque remarcan que la calidad final sigue dependiendo de supervisión humana, interpretación contextual y control ético [page:1].
+
+Desde una perspectiva crítica, la comparación es valiosa porque evita una postura tecnoutópica [page:1]. En vez de afirmar que la IA reemplaza por completo a las metodologías tradicionales, el artículo concluye que la mejor estrategia es una integración colaborativa entre automatización inteligente y experiencia humana [page:1].
+
+## Observaciones y/o críticas suyas al artículo
+
+Una observación positiva es que la fuente está bien orientada para una tesis que compare desarrollo tradicional con desarrollo apoyado por IA [page:1]. Su mayor fortaleza es la organización clara del análisis por fases del SDLC y por dimensiones de evaluación, lo que facilita reutilizar sus categorías en el marco teórico o en la operacionalización de variables [page:1].
+
+Como crítica, el artículo depende de literatura secundaria y no presenta un experimento propio con metodología empírica detallada [page:1]. Eso limita su fuerza probatoria si el objetivo es demostrar causalidad directa entre integración de IA y mejora cuantificable del rendimiento en un contexto específico [page:1].
+
+También puede criticarse que varios porcentajes y resultados provienen de referencias citadas dentro del artículo, por lo que conviene verificar esas fuentes primarias antes de usarlas como evidencia central en una tesis [page:1]. Aun así, como fuente de síntesis comparativa, sigue siendo muy útil para estructurar el problema de investigación y justificar hipótesis [page:1].
+
+## Aportes nuestros al artículo
+
+Consideramos que esta fuente es muy útil para fundamentar investigaciones sobre la transformación del ciclo de desarrollo de software mediante inteligencia artificial [page:1]. Su principal contribución para una tesis está en mostrar que la IA no impacta una sola fase del proceso, sino que puede alterar de forma transversal requisitos, diseño, implementación, pruebas y mantenimiento [page:1].
+
+Además, el artículo ofrece una base clara para distinguir entre beneficios operativos y riesgos asociados al uso de IA en el SDLC [page:1]. Eso permite formular variables relacionadas con productividad, calidad, supervisión humana, creatividad, seguridad y eficiencia del proceso [page:1].
+
+Desde nuestro análisis, la fuente 19 sirve especialmente bien para construir relaciones entre adopción de IA y desempeño del desarrollo de software, considerando como elemento mediador el papel de la validación humana [page:1]. Por ello, puede ser una de las fuentes más útiles para tu matriz de operacionalización, sobre todo si tu tesis busca comparar enfoques tradicionales con enfoques apoyados por IA [page:1][file:1].
+
+# Matriz de operacionalización de variables
+
+## Enfoque derivado de la fuente 19
+
+A partir del artículo, se puede proponer como **variable independiente** la integración de IA en el SDLC, como **variable dependiente** el desempeño del desarrollo de software, y como **variable intermedia** el nivel de supervisión y participación humana, porque la fuente sostiene que la IA mejora velocidad, cobertura y apoyo a decisiones, pero sus resultados dependen de validación humana, creatividad y juicio ético [page:1].
+
+| Tipo de variable | Variable | Definición conceptual | Dimensiones | Indicadores | Técnica / instrumento |
+|---|---|---|---|---|---|
+| Independiente | Integración de IA en el SDLC | Grado en que se incorporan técnicas de IA en las fases de requisitos, diseño, implementación, testing y mantenimiento del ciclo de vida del software [page:1] | Automatización de requisitos; diseño asistido; codificación asistida; testing automatizado; mantenimiento predictivo [page:1] | Uso de NLP para requisitos; uso de herramientas de diseño generativo; uso de asistentes de código; generación automática de pruebas; uso de analítica predictiva en mantenimiento [page:1] | Análisis documental; checklist técnico; entrevista |
+| Intermedia | Supervisión y participación humana | Nivel de intervención humana para validar resultados, resolver ambigüedades, aportar creatividad y controlar aspectos éticos en un SDLC integrado con IA [page:1] | Validación de resultados; juicio ético; creatividad; resolución de problemas complejos; alineamiento con stakeholders [page:1] | Revisión manual de requisitos; validación de código generado; intervención en decisiones críticas; evaluación de usabilidad; control de riesgos éticos [page:1] | Guía de observación; entrevista; rúbrica |
+| Dependiente | Desempeño del desarrollo de software | Nivel de mejora del proceso y del producto en términos de productividad, eficiencia y calidad dentro del SDLC [page:1] | Productividad; eficiencia; calidad; escalabilidad; confiabilidad [page:1] | Tiempo de desarrollo; cobertura de pruebas; número de errores detectados; reducción de downtime; consistencia del producto; vulnerabilidades encontradas [page:1] | Métricas de proyecto; evaluación técnica; análisis comparativo |
+
+## Observación metodológica
+
+La fuente 19 es especialmente útil para operacionalizar variables porque ya organiza la comparación en torno a productividad, eficiencia, calidad y rol humano [page:1]. Sin embargo, como su base es comparativa y de revisión, conviene complementar esta matriz con estudios empíricos o casos de implementación real antes de fijar indicadores definitivos para la tesis [page:1].

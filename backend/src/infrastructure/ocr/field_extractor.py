@@ -120,17 +120,25 @@ class FieldExtractor:
         re.compile(r"(?:concepto|descripci[oó]n|detalle|motivo|description|por)\s*:?\s*(.+)$", re.I | re.M),
     ]
 
-    # Transaction type keywords
+    # Transaction type keywords.
+    # NOTE: order matters — income/expense are checked before the generic
+    # "transferencia" so a Yape/Plin transfer is still classified by direction.
     INCOME_KEYWORDS = [
-        "recibiste", "recibido", "te enviaron", "depósito", "deposit", "abono",
-        "transferencia recibida", "cobro", "ingreso", "entrada",
+        # Yape / Plin (Peru): money received
+        "te yapearon", "yapearon", "te plinearon", "plinearon",
+        "recibiste", "recibido", "te enviaron", "te depositaron",
+        "depósito", "deposito", "deposit", "abono",
+        "transferencia recibida", "cobro", "ingreso", "entrada", "recibo de",
     ]
     EXPENSE_KEYWORDS = [
-        "enviaste", "enviado", "enviando", "pagaste", "pago", "compra",
-        "retiro", "withdrawal", "cargo", "salida",
+        # Yape / Plin (Peru): money sent
+        "yapeaste", "yapeando", "yapeó", "yapeo", "plineaste",
+        "enviaste", "enviado", "enviando", "pagaste", "pagado", "pago",
+        "compra", "compraste", "retiro", "retiraste", "withdrawal",
+        "cargo", "salida", "consumo",
     ]
     TRANSFER_KEYWORDS = [
-        "transferencia", "transfer", "envío", "envio",
+        "transferencia", "transfer", "envío", "envio", "transferiste",
     ]
 
     def extract_all(self, text: str) -> ExtractedFields:

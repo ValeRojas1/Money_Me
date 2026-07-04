@@ -1,0 +1,99 @@
+# Fuente 22
+
+**Author(s):** Cory Hymel [web:66]  
+**Title of paper:** *The AI-Native Software Development Lifecycle: A Theoretical and Practical New Methodology* [web:66]  
+**Journal / Source:** arXiv preprint [web:66]  
+**Volume (issue):** No aplica [web:66]  
+**pag – pag (year):** No especificado en el registro consultado; publicado en 2024 [web:66]  
+
+## Estado del arte que hace el autor
+
+El trabajo plantea que el avance de la inteligencia artificial está alterando cada fase del ciclo de vida del desarrollo de software, lo que genera la necesidad de un nuevo modelo de construcción de software verdaderamente nativo en IA [web:66]. En lugar de tratar la IA como una herramienta auxiliar limitada a programación o pruebas, el autor sostiene que debe integrarse de forma transversal desde la planificación hasta el despliegue [web:66].
+
+El estado del arte que presenta esta fuente parte del análisis del SDLC tradicional y de cómo la evolución reciente de la IA, especialmente en generación de código, uso de lenguaje natural y automatización de tareas, modifica las bases sobre las que se diseñaron los modelos clásicos [web:66]. A partir de ello, el autor formula la idea de un **AI-native SDLC**, es decir, un ciclo de desarrollo donde la IA no es un complemento, sino el motor principal de implementación y refinamiento [web:66].
+
+La propuesta se apoya en una adaptación del V-model llamada **V-Bounce model**, que incorpora IA de extremo a extremo y reconfigura la distribución del esfuerzo entre fases [web:66]. Según el resumen del artículo, este modelo reduce drásticamente el tiempo dedicado a implementación y traslada el énfasis hacia levantamiento de requisitos, diseño arquitectónico y validación continua [web:66].
+
+En ese sentido, el estado del arte no solo revisa la integración actual de IA en el desarrollo, sino que propone una evolución de paradigma [web:66]. Esta fuente es especialmente valiosa porque conceptualiza un escenario en el que la programación deja de ser el centro del trabajo humano y pasa a serlo la verificación, la estrategia y la validación de resultados generados por IA [web:66][web:74].
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+La motivación principal del autor es que los modelos tradicionales del SDLC fueron diseñados para un contexto donde los humanos eran los implementadores primarios del software, pero ese supuesto está cambiando con la capacidad creciente de la IA para generar artefactos en múltiples fases del desarrollo [web:66]. Por ello, el artículo argumenta que ya no basta con insertar herramientas de IA en procesos heredados, sino que hace falta rediseñar el proceso completo [web:66].
+
+De manera implícita, la fuente critica los enfoques que siguen considerando a la IA como una capa adicional sobre metodologías tradicionales [web:66]. La propuesta del AI-native SDLC surge precisamente porque esos modelos no reflejan adecuadamente la rapidez de generación de código, el uso de lenguaje natural como interfaz principal y el cambio en el rol humano dentro del proceso [web:66][web:74].
+
+Otra motivación relevante es la necesidad de responder a un entorno donde la eficiencia de implementación puede aumentar de forma significativa, pero también donde la ambigüedad, la validación y la seguridad se vuelven más críticas [web:66][web:74]. En consecuencia, el autor busca una metodología que reorganice el trabajo del equipo para aprovechar la IA sin perder control sobre calidad, consistencia ni alineamiento con requisitos [web:66].
+
+## Descripción del aporte del autor
+
+El principal aporte del artículo es proponer un nuevo marco metodológico llamado **AI-native SDLC**, acompañado del modelo **V-Bounce** como estructura operativa para integrarlo en la práctica [web:66]. Este modelo adapta el V-model clásico para un contexto donde la IA participa en todas las fases del proceso, desde requisitos hasta mantenimiento [web:66].
+
+Uno de los aportes más importantes es la redefinición del papel humano dentro del desarrollo de software [web:66]. El artículo sostiene que los humanos dejan de ser principalmente implementadores y pasan a ser validadores y verificadores, mientras la IA asume el rol de motor de implementación [web:66].
+
+Otro aporte significativo es la idea de que el lenguaje natural puede convertirse en la interfaz principal para programar y especificar software [web:66][web:74]. Esto transforma la relación entre requisitos, diseño y código, ya que los artefactos pueden generarse y refinarse de forma iterativa mediante interacción entre humanos y sistemas de IA [web:74].
+
+Además, el modelo propuesto incorpora principios de validación continua, generación de pruebas en tiempo real y retroalimentación iterativa [web:74]. De ese modo, el artículo no solo sugiere un cambio conceptual, sino también una metodología práctica para reorganizar tiempos, roles y artefactos dentro del SDLC [web:66][web:74].
+
+## Proceso para obtener el aporte que considera el autor
+
+El autor obtiene su aporte analizando cómo la IA afecta los factores que estructuran el SDLC actual y proyectando cómo esos factores cambian cuando la IA se integra de forma plena [web:66]. A partir de ese análisis, construye una nueva propuesta metodológica en vez de limitarse a describir herramientas aisladas [web:66].
+
+El proceso metodológico del trabajo es teórico y práctico a la vez, porque parte de un marco conceptual sobre la transformación del desarrollo y lo traduce en un modelo aplicable, el V-Bounce [web:66]. En este modelo, cada fase recibe entradas humanas o artefactos previos, la IA genera una salida, luego ocurre revisión humana, refinamiento, aprobación y acumulación de conocimiento para usos futuros [web:74].
+
+Por tanto, el “método” del autor no es un experimento estadístico tradicional, sino una formulación metodológica basada en análisis estructural del SDLC y en la incorporación sistemática de IA a cada fase [web:66][web:74]. Su valor está en ofrecer una arquitectura conceptual del proceso, útil para repensar cómo se organiza el desarrollo en entornos AI-native [web:66].
+
+## Proceso para resolver el problema considerado por el autor
+
+El problema central del artículo es que los modelos clásicos del SDLC no están optimizados para un contexto en el que la IA puede generar código, pruebas, documentación y otros artefactos casi de forma instantánea [web:66]. Para resolverlo, el autor propone el modelo V-Bounce, que reorganiza las fases y redistribuye el esfuerzo hacia requisitos, diseño y validación continua [web:66].
+
+Según las descripciones disponibles, el proceso del V-Bounce incluye al menos los siguientes pasos: entrada de requerimientos o artefactos previos, generación por IA, revisión humana, refinamiento rápido, aprobación final y captura del conocimiento generado durante el proceso [web:74]. Esta secuencia se repite en diferentes fases del ciclo de vida, permitiendo iteración constante y mejora incremental [web:74].
+
+El modelo también propone generación de pruebas en tiempo real a partir de los requisitos, con actualización dinámica si estos cambian [web:74]. Esto reduce la separación tradicional entre definición de requisitos y verificación, haciendo que la calidad se evalúe desde etapas mucho más tempranas [web:74].
+
+Asimismo, el proceso considera que la IA puede acelerar fuertemente la codificación, lo que obliga a fortalecer las etapas anteriores y posteriores para mantener coherencia, seguridad y valor del sistema [web:66]. Así, la solución del problema no consiste solo en automatizar, sino en rediseñar el equilibrio completo del ciclo de desarrollo [web:66][web:74].
+
+## Métricas que el autor usa y resultado que obtiene
+
+En el resumen consultado del artículo no se reportan métricas cuantitativas detalladas como accuracy, F1-score, defect density o tiempos medidos mediante un experimento formal [web:66]. El aporte del trabajo es principalmente metodológico y prospectivo, centrado en la propuesta del modelo V-Bounce y en la redistribución de roles y tiempos dentro del SDLC [web:66].
+
+Sí se afirma, no obstante, que el modelo busca reducir de manera significativa el tiempo dedicado a implementación y mover el foco hacia requisitos, arquitectura y validación continua [web:66]. Por tanto, el “resultado” principal del artículo es la formulación de un nuevo marco de desarrollo AI-native y no la demostración estadística de su rendimiento en múltiples organizaciones [web:66].
+
+Desde una perspectiva académica, esto significa que la fuente aporta mucho para el diseño conceptual de una tesis, pero debe complementarse con estudios empíricos si se necesita sustentar mejoras cuantificables con evidencia experimental [web:66][web:74].
+
+## Comentar (los resultados son mejores respecto a otros)
+
+El valor del artículo no está en presentar mejores métricas experimentales que otros estudios, sino en ofrecer una metodología más radicalmente adaptada al contexto de IA generativa dentro del SDLC [web:66]. Frente a enfoques que solo añaden herramientas de IA a ciclos tradicionales, esta fuente propone una reestructuración completa del proceso, lo cual constituye su principal ventaja conceptual [web:66].
+
+Sin embargo, como el artículo no presenta una validación empírica extensa en el resumen consultado, no puede afirmarse con rigor que el modelo V-Bounce sea superior en todos los contextos organizacionales o tipos de proyecto [web:66]. Su fortaleza está en abrir una línea metodológica potente y coherente, más que en cerrar la discusión con evidencia cuantitativa definitiva [web:66][web:74].
+
+## Observaciones y/o críticas suyas al artículo
+
+Una observación positiva es que esta fuente es muy valiosa para marcos teóricos sobre transformación del SDLC por IA, porque no se limita a describir herramientas, sino que redefine el proceso completo de desarrollo [web:66]. También es particularmente útil para investigaciones que quieran explorar el cambio de rol humano desde programador hacia verificador, validador y tomador de decisiones estratégicas [web:66].
+
+Como crítica, el artículo parece ser más una propuesta teórica-metodológica que una validación empírica consolidada [web:66]. Eso implica que su aplicación en una tesis debe hacerse con cautela, contrastando sus postulados con estudios que reporten resultados observables en proyectos reales [web:66][web:74].
+
+Otra observación es que la promesa de casi instantánea generación de código y fuerte reducción del esfuerzo de implementación puede resultar muy atractiva, pero también exige revisar cuidadosamente temas de seguridad, trazabilidad, ética y calidad [web:74]. Por ello, esta fuente es excelente para plantear hipótesis y estructuras conceptuales, aunque no debe asumirse como evidencia concluyente de eficacia universal [web:66][web:74].
+
+## Aportes nuestros al artículo
+
+Consideramos que esta fuente es especialmente potente para fundamentar una tesis sobre desarrollo de software **AI-native** o integración profunda de IA dentro del ciclo de vida del software [web:66]. Su mayor contribución radica en ofrecer una visión sistémica donde la IA afecta no solo una tarea, sino la lógica completa de planificación, diseño, construcción, prueba y validación [web:66][web:74].
+
+Desde nuestro análisis, el artículo permite estructurar variables relacionadas con adopción metodológica de IA, redistribución del trabajo humano, validación continua y madurez de un SDLC nativo en IA [web:66]. También resulta útil para justificar que el impacto de la IA no debe medirse solo en productividad, sino en cómo transforma roles, artefactos y fases del proceso [web:66].
+
+Por ello, proponemos usar esta fuente como uno de los ejes más fuertes para el marco conceptual y para la operacionalización de variables en investigaciones que comparen modelos tradicionales con ciclos AI-native [web:66][file:1].
+
+# Matriz de operacionalización de variables
+
+## Enfoque derivado de la fuente 22
+
+A partir del contenido del artículo, se puede plantear como **variable independiente** la adopción de un SDLC nativo en IA, como **variable dependiente** la eficiencia y efectividad del proceso de desarrollo de software, y como **variable intermedia** la redefinición del rol humano y la validación continua, porque el modelo V-Bounce propone que la mejora del proceso ocurre mediante generación automática por IA, revisión humana, refinamiento y aprobación iterativa [web:66][web:74].
+
+| Tipo de variable | Variable | Definición conceptual | Dimensiones | Indicadores | Técnica / instrumento |
+|---|---|---|---|---|---|
+| Independiente | Adopción de un SDLC nativo en IA | Grado en que el proceso de desarrollo incorpora IA de forma transversal en planificación, requisitos, diseño, implementación, testing y mantenimiento [web:66] | Integración de IA por fase; generación automática de artefactos; uso de lenguaje natural; automatización de pruebas; gestión de conocimiento [web:66][web:74] | Uso de IA en requisitos; generación de diseño o mockups; generación de código; pruebas automáticas en tiempo real; registro de conocimiento para reutilización [web:74] | Análisis documental; checklist metodológico; entrevista |
+| Intermedia | Redefinición del rol humano y validación continua | Nivel en que los desarrolladores asumen funciones de revisión, verificación, aprobación y refinamiento de salidas generadas por IA [web:66][web:74] | Supervisión humana; verificación; aprobación; refinamiento iterativo; control de calidad [web:74] | Revisión manual de salidas; número de iteraciones de refinamiento; aprobación por fase; validación de requisitos y pruebas; control de coherencia arquitectónica [web:74] | Rúbrica; guía de observación; entrevista |
+| Dependiente | Eficiencia y efectividad del proceso de desarrollo | Capacidad del equipo para desarrollar software más rápido, coherente y alineado con requisitos mediante un enfoque AI-native [web:66] | Reducción del tiempo de implementación; calidad del producto; trazabilidad; adaptabilidad; continuidad del proceso [web:66][web:74] | Menor tiempo de codificación; consistencia entre requisitos y pruebas; rapidez de iteración; calidad percibida del producto; facilidad de ajuste ante cambios [web:66][web:74] | Métricas de proyecto; evaluación técnica; análisis comparativo |
+
+## Observación metodológica
+
+La fuente 22 ofrece una base excelente para operacionalizar variables asociadas a una transformación metodológica profunda del SDLC, especialmente por su propuesta del modelo V-Bounce y por la explicitación del nuevo rol humano [web:66][web:74]. Sin embargo, al ser una propuesta principalmente teórica y de white paper, requiere contraste con estudios empíricos y casos reales antes de adoptar indicadores definitivos en una tesis formal [web:66].

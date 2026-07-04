@@ -1,0 +1,78 @@
+# Estado del Arte
+
+**Author(s):** Shih-Chieh Dai, Jun Xu, Guanhong Tao. [web:38]  
+**Title of paper:** A Comprehensive Study of LLM Secure Code Generation. [file:3][web:39]  
+**Journal / Venue:** El contenido recuperado muestra la versión ampliada titulada *Rethinking the Evaluation of Secure Code Generation*, aceptada en ICSE 2026, como evolución del estudio citado en tu lista. [web:38]  
+**Volume (issue):** No aplica. [web:38]  
+**pag – pag (year):** El estudio listado en tus referencias figura como 2025, pp. 1–12; la versión recuperada amplía el trabajo a 2026. [file:3][web:38]
+
+## Estado del arte que hace el autor
+
+Los autores parten de un estado del arte donde los LLMs ya son ampliamente usados para generar código, pero ese código suele contener vulnerabilidades de seguridad que pueden trasladarse directamente a sistemas reales. [web:38]  
+En esa revisión inicial identifican varias técnicas recientes de generación segura de código, entre ellas **SVEN**, **SafeCoder**, **CodeGuard+** y **PromSec**, que buscan reducir vulnerabilidades mediante *fine-tuning*, modificación de prompts o control del proceso de decodificación. [web:38]  
+Sin embargo, el artículo sostiene que la forma habitual de evaluar estas técnicas presenta una debilidad grave: la seguridad y la funcionalidad suelen medirse por separado, con datasets distintos y apoyándose casi siempre en un solo analizador estático, especialmente CodeQL. [web:38]  
+A partir de ello, el trabajo construye un estado del arte crítico que no solo revisa técnicas de secure code generation, sino también las limitaciones metodológicas de sus evaluaciones previas. [web:38]
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+La motivación central del estudio surge de dos críticas principales a la literatura previa. [web:38]  
+La primera es que usar un único escáner, como CodeQL, puede ocultar vulnerabilidades reales, ya que no cubre todo el espectro CWE y puede omitir fallos importantes. [web:38]  
+La segunda es que evaluar seguridad en un dataset y funcionalidad en otro genera una visión fragmentada que puede sobreestimar los beneficios de una técnica segura, porque un modelo puede “parecer” más seguro simplemente sacrificando funcionalidad. [web:38]  
+Los autores también cuestionan que varios benchmarks de seguridad carecen de unit tests, mientras que los benchmarks funcionales son demasiado simples para activar vulnerabilidades relevantes. [web:38]  
+Por eso justifican una evaluación más rigurosa, conjunta y a gran escala que permita analizar seguridad y funcionalidad sobre el mismo código generado. [web:38]
+
+## Descripción del aporte del autor
+
+El aporte principal del trabajo es una evaluación integral de técnicas de generación segura de código en LLMs, considerando al mismo tiempo seguridad y funcionalidad. [web:38]  
+El problema central que aborda es que los métodos actuales para “hacer seguro” el código generado por LLMs pueden mejorar algunos indicadores de seguridad, pero a costa de degradar seriamente la correctitud funcional del código. [web:38]  
+Ese problema tiene un impacto directo en empresas y equipos de desarrollo, porque una solución que produce código menos vulnerable pero inutilizable no mejora realmente el proceso de ingeniería de software. [web:38]  
+Para enfrentar este problema, el artículo propone un nuevo marco de evaluación con varios escáneres de vulnerabilidades, dos grandes datasets y una métrica nueva llamada **SAFE@k**, que integra seguridad y funcionalidad en un mismo cálculo. [web:38]  
+Además, el estudio construye **SecCodePLT+**, una versión extendida del dataset SecCodePLT con unit tests, de modo que pueda evaluarse la funcionalidad del mismo código usado para el análisis de seguridad. [web:38]
+
+## Proceso para obtener el aporte que considera el autor
+
+Los autores estructuran su aporte mediante un diseño experimental comparativo. [web:38]  
+Primero seleccionan cuatro técnicas recientes de secure code generation: SVEN, SafeCoder, CodeGuard+ y PromSec. [web:38]  
+Luego emplean dos datasets amplios, **BigCodeBench** con 1,140 tareas y **SecCodePLT+** con 1,201 tareas, ambos en Python, y preparan unit tests adicionales para SecCodePLT+ con apoyo de un LLM. [web:38]  
+Para evitar depender de un solo verificador, utilizan tres analizadores estáticos: **CodeQL**, **Bearer** y **Bandit**, además de dos LLMs como apoyo para detección de vulnerabilidades. [web:38]  
+Finalmente, comparan seguridad y funcionalidad de forma conjunta a través de **SAFE@k** y también mediante métricas como Secure-Pass@1 y Pass@1. [web:38]
+
+## Proceso para resolver el problema considerado por el autor
+
+El problema se resuelve evaluando las técnicas existentes bajo un esquema mucho más exigente que el tradicional. [web:38]  
+En lugar de preguntar solo si el código es seguro o solo si funciona, el estudio obliga a analizar ambas propiedades sobre la misma salida generada. [web:38]  
+Para ello, cada técnica se aplica sobre varios LLMs y luego el código producido se somete a escaneo de vulnerabilidades y validación funcional con unit tests en el mismo entorno experimental. [web:38]  
+Además, los autores analizan manualmente casos concretos para entender por qué algunas técnicas aparentan mejorar la seguridad cuando en realidad eliminan líneas útiles o generan “garbage code” irrelevante para la tarea. [web:38]  
+Ese proceso les permite demostrar que parte de la mejora reportada por estudios previos era metodológicamente engañosa. [web:38]
+
+## Métricas que el autor usa y resultado que obtiene. Comentar
+
+El trabajo usa varias métricas complementarias. [web:38]  
+Para seguridad emplea **Secure@1** con tres analizadores distintos y análisis manual; para funcionalidad usa **Pass@1** tanto a nivel de caso como a nivel de tarea; y para integrar ambos aspectos propone **SAFE@1**, una métrica que pondera el porcentaje de unit tests aprobados y la ausencia de vulnerabilidades. [web:38]  
+Los resultados muestran que las técnicas existentes pueden mejorar la seguridad en cierta medida, pero frecuentemente deterioran la funcionalidad del código generado. [web:38]  
+El estudio reporta incluso que varias técnicas degradan el rendimiento del LLM base en más de 50 % cuando se analiza seguridad y funcionalidad conjuntamente. [web:38]  
+También encuentra que CodeQL puede omitir más de 20 % de las vulnerabilidades y que distintos escáneres producen resultados inconsistentes o contradictorios. [web:38]  
+Considero que las métricas son muy sólidas porque superan el enfoque binario y separador usado en muchos trabajos anteriores. [web:38]  
+Como mejora futura, sería valioso extender la evaluación a otros lenguajes además de Python y medir también mantenibilidad, legibilidad y costo de reparación del código “asegurado”. [web:38]
+
+## Observaciones y/o críticas suyas al artículo
+
+El artículo es especialmente valioso porque no propone simplemente otra técnica de secure generation, sino que cuestiona críticamente cómo se estaban evaluando las técnicas existentes. [web:38]  
+Su principal fortaleza es la combinación de datasets grandes, varios escáneres, análisis manual y una nueva métrica compuesta. [web:38]  
+También destaca por mostrar que un aumento aparente de seguridad puede esconder una caída fuerte en utilidad real del código generado. [web:38]  
+Como crítica constructiva, aunque el estudio es muy robusto, sigue concentrándose en generación a nivel de función y no cubre de forma completa escenarios de repositorio o sistemas multiarchivo complejos. [web:38]  
+Además, la dependencia de analizadores estáticos y de unit tests sigue dejando abierta la necesidad de futuras evaluaciones dinámicas o semánticas más profundas. [web:38]
+
+## Aportes nuestros al artículo
+
+1. Esta fuente puede incorporarse como fundamento fuerte para la dimensión de seguridad del código en un ciclo de vida ágil AI-native. [web:38]  
+2. También permite justificar metodológicamente que la eficiencia del desarrollo con IA no debe evaluarse solo por velocidad o correctitud funcional, sino por un equilibrio entre funcionalidad y seguridad. [web:38]  
+3. En una tesis aplicada, su enfoque puede adaptarse para construir una métrica propia que combine productividad, calidad funcional y seguridad del código generado por IA. [web:38]
+
+## Matriz de operacionalización de variables
+
+| Variable | Tipo | Definición conceptual | Definición operacional | Dimensiones | Indicadores | Escala / fuente | Instrumento |
+|---|---|---|---|---|---|---|---|
+| Ciclo de vida de desarrollo de software (SDLC) | Independiente | Conjunto de prácticas y fases donde la IA puede intervenir en generación de código dentro del proceso de desarrollo. [web:38] | Se operacionaliza observando cómo las técnicas de secure code generation se integran en la fase de implementación y validación del software. [web:38] | Generación de código, validación, seguridad, funcionalidad. [web:38] | Tipo de técnica usada, presencia de validación conjunta, nivel de integración en implementación. [web:38] | Dai, Xu y Tao (2025/2026). [file:3][web:38] | Benchmark experimental, escaneo estático y pruebas unitarias. [web:38] |
+| Eficiencia del proceso de desarrollo de software | Dependiente | Rendimiento del proceso considerando utilidad real del código generado, seguridad y correctitud funcional. [web:38] | Se mide mediante métricas conjuntas que comparan seguridad y funcionalidad del código producido por LLMs. [web:38] | Seguridad, funcionalidad, utilidad práctica, degradación del rendimiento. [web:38] | SAFE@1, Secure-Pass@1, Pass@1, % de vulnerabilidades detectadas, reducción o mejora frente al modelo base. [web:38] | Resultados experimentales del estudio. [web:38] | Análisis con CodeQL, Bearer, Bandit, LLMs evaluadores y unit tests. [web:38] |
+| Nuevo ciclo de vida ágil AI-native | Intermedia | Modelo de tesis que integra IA en generación de código bajo criterios simultáneos de calidad, seguridad y desempeño. [file:1][web:38] | Se expresa mediante el uso de evaluación integrada de outputs generados por IA antes de aceptarlos en el flujo de desarrollo. [web:38] | Integración de IA, validación automática, seguridad del código, control de calidad. [web:38] | Presencia de métricas compuestas, uso de múltiples escáneres, aceptación condicionada del código generado. [web:38] | Adaptación conceptual basada en SAFE y SecCodePLT+. [web:38] | Síntesis analítica y diseño de evaluación AI-native segura. [web:38] |

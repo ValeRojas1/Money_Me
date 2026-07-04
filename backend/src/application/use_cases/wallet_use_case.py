@@ -73,6 +73,30 @@ class WalletUseCase:
             "institution": wallet.institution,
         }
 
+    async def get_wallet(self, db: AsyncSession, user_id: int, wallet_id: int) -> dict:
+        stmt = select(Wallet).where(
+            Wallet.id == wallet_id,
+            Wallet.user_id == user_id,
+        )
+        result = await db.execute(stmt)
+        wallet = result.scalar_one_or_none()
+        if not wallet:
+            raise NotFoundError("Wallet not found")
+        return {
+            "id": wallet.id,
+            "name": wallet.name,
+            "type": wallet.type.value,
+            "currency": wallet.currency,
+            "balance_cents": wallet.balance_cents,
+            "credit_limit_cents": wallet.credit_limit_cents,
+            "status": wallet.status.value,
+            "is_default": wallet.is_default,
+            "color": wallet.color,
+            "icon": wallet.icon,
+            "institution": wallet.institution,
+            "created_at": wallet.created_at.isoformat(),
+        }
+
     async def update_wallet(
         self, db: AsyncSession, user_id: int, wallet_id: int, data: WalletUpdate
     ) -> dict:

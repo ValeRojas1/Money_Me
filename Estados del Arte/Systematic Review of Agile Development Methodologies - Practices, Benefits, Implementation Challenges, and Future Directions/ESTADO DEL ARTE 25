@@ -1,0 +1,98 @@
+# Fuente 26
+
+**Author(s):** Rania Aleryani; Ayman Alsabry; Eman Alramada [web:109]  
+**Title of paper:** *Systematic Review of Agile Development Methodologies: Practices, Benefits, Implementation Challenges, and Future Directions* [web:109]  
+**Journal:** *Sana’a University Journal of Applied Sciences and Technology* [web:109]  
+**Volume (issue):** 3(6) [web:109]  
+**pag – pag (year):** 1429–1451 (2025) [web:109]  
+**DOI:** 10.59628/jast.v3i6.1912 [web:109]  
+
+## Estado del arte que hace el autor
+
+El artículo presenta una revisión sistemática de metodologías ágiles con el objetivo de sintetizar prácticas centrales, beneficios, desafíos de implementación y direcciones futuras en el desarrollo de software [web:109]. La revisión cubre 47 estudios revisados por pares y abarca múltiples marcos ágiles, entre ellos Scrum, Kanban, Extreme Programming, Lean, Crystal, DSDM, Feature-Driven Development, Agile Unified Process y Behavior-Driven Development [web:109].
+
+El estado del arte elaborado por los autores muestra que el desarrollo ágil ya no se entiende como una metodología única, sino como una familia de enfoques adaptativos con prácticas recurrentes que mejoran la colaboración, la calidad y la capacidad de respuesta al cambio [web:109]. Entre las prácticas recurrentes identificadas están sprint planning, continuous integration, pair programming, WIP limits y test-driven development, las cuales contribuyen a mayor calidad del software y eficiencia en la entrega [web:109].
+
+Además, la revisión reporta evidencia proveniente de sectores como educación, salud, gobierno y comercio electrónico, lo que confirma la adaptabilidad del enfoque ágil en contextos diversos [web:109]. El estado del arte también destaca una tendencia creciente hacia modelos híbridos que combinan Agile con enfoques tradicionales para responder mejor a proyectos complejos, de alto riesgo o regulados [web:109].
+
+Otro aspecto importante del estado del arte es la proyección hacia nuevas formas de integración, especialmente Agile–DevOps, uso de herramientas de automatización y expansión de principios ágiles más allá del desarrollo de software [web:109]. En ese sentido, la fuente es útil para ubicar Agile como un antecedente metodológico clave frente a transformaciones posteriores como DevOps, MLOps o AI-native SDLC [web:109].
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+La motivación principal del artículo es ofrecer una síntesis estructurada de la literatura sobre metodologías ágiles, debido a que el conocimiento existente se encontraba distribuido en múltiples estudios con énfasis parciales [web:109]. Los autores buscan integrar prácticas, beneficios, desafíos y tendencias futuras en una sola revisión que sirva tanto a investigadores como a profesionales [web:109].
+
+La fuente también responde a la necesidad de comprender por qué, a pesar de la popularidad de Agile, persisten obstáculos significativos en su implementación [web:109]. Entre ellos se señalan resistencia cultural, escasez de practicantes con experiencia, desalineación de stakeholders y limitaciones de escalabilidad, lo cual evidencia que la adopción ágil no es automática ni universalmente exitosa [web:109].
+
+De manera implícita, el artículo critica enfoques simplificados que presentan Agile solo como un conjunto de ceremonias o una solución universal [web:109]. En lugar de ello, la revisión resalta la importancia de seleccionar y adaptar la metodología según el contexto organizacional, técnico y regulatorio [web:109].
+
+## Descripción del aporte del autor
+
+El principal aporte del artículo es sistematizar evidencia científica reciente sobre el uso de metodologías ágiles, organizando el análisis en cuatro ejes: prácticas, beneficios, desafíos de implementación y direcciones futuras [web:109]. Esto permite una visión integral que va más allá de describir marcos como Scrum o XP de manera aislada [web:109].
+
+Uno de sus aportes más relevantes es la identificación de prácticas que aparecen de forma consistente en la literatura y que están asociadas a mejoras tangibles del proceso [web:109]. Entre ellas figuran planificación iterativa, integración continua, límites de trabajo en progreso, programación en pares y desarrollo guiado por pruebas [web:109].
+
+Otro aporte importante es la consolidación de beneficios recurrentes, como mejora de colaboración del equipo, mayor involucramiento de stakeholders y mejor adaptabilidad a requisitos cambiantes [web:109]. Estos hallazgos permiten entender por qué Agile se ha consolidado como enfoque dominante en contextos dinámicos [web:109].
+
+Además, el artículo aporta al identificar límites y tensiones de la adopción ágil, especialmente cuando se enfrenta a barreras culturales, falta de capacidades, misalignment entre actores y problemas de escalabilidad [web:109]. En consecuencia, el trabajo no solo celebra Agile, sino que lo analiza con una perspectiva crítica y contextualizada [web:109].
+
+## Proceso para obtener el aporte que considera el autor
+
+El artículo obtiene su aporte mediante una revisión sistemática de 47 estudios revisados por pares [web:109]. Su metodología se basa en síntesis temática y análisis comparativo para identificar patrones comunes, beneficios reportados, retos persistentes y tendencias emergentes [web:109].
+
+A partir de ese proceso, los autores clasifican y comparan diferentes metodologías ágiles y sus prácticas principales [web:109]. Luego conectan estos hallazgos con casos de aplicación en distintos sectores, lo que fortalece la interpretación de la evidencia en contextos reales [web:109].
+
+El método de la fuente no es experimental, sino secundario y sintético [web:109]. Su valor está en reunir evidencia dispersa y transformarla en un marco analítico útil para comprender el estado actual y las proyecciones de Agile en el desarrollo de software [web:109].
+
+## Proceso para resolver el problema considerado por el autor
+
+El problema que aborda el artículo es cómo comprender de manera integral el papel actual de Agile en el desarrollo de software y qué factores explican tanto sus beneficios como sus dificultades de implementación [web:109]. Para resolverlo, la revisión compara múltiples enfoques ágiles y organiza la evidencia según patrones recurrentes [web:109].
+
+La fuente identifica que prácticas como sprint planning, integración continua, programación en pares y TDD ayudan a mejorar calidad y eficiencia de entrega [web:109]. Al mismo tiempo, muestra que la efectividad de estas prácticas depende de factores organizacionales como cultura, capacidades del equipo, alineación de stakeholders y contexto del proyecto [web:109].
+
+La revisión también resuelve parcialmente el problema de la diversidad metodológica al sostener que no existe una única receta ágil válida para todos los casos [web:109]. En cambio, propone una selección y personalización contextual de metodologías, además de un creciente uso de enfoques híbridos [web:109].
+
+## Métricas que el autor usa y resultado que obtiene
+
+La revisión no presenta un experimento propio con métricas numéricas únicas como accuracy o reducción porcentual del tiempo de entrega medidas en un solo entorno controlado [web:109]. Sin embargo, sí reporta de manera consolidada que las prácticas ágiles contribuyen a mejorar calidad del software, eficiencia en la entrega, colaboración y adaptabilidad [web:109].
+
+El resultado principal del estudio es la síntesis de evidencia que confirma beneficios consistentes de Agile y, al mismo tiempo, identifica desafíos persistentes en su adopción [web:109]. También concluye que hay un desplazamiento hacia modelos híbridos y hacia integraciones con DevOps y herramientas de automatización, lo que sugiere una evolución del paradigma ágil tradicional [web:109].
+
+Desde una perspectiva académica, el hallazgo más importante no es una cifra aislada, sino la consolidación de patrones repetidos en 47 estudios [web:109]. Por ello, esta fuente es muy útil para fundamentar dimensiones conceptuales y metodológicas dentro de una tesis [web:109].
+
+## Comentar (los resultados son mejores respecto a otros)
+
+Los resultados del artículo favorecen a las metodologías ágiles en contextos dinámicos, especialmente por su capacidad de mejorar colaboración, involucramiento de stakeholders y adaptación al cambio [web:109]. Sin embargo, los autores no sostienen que Agile sea superior en todos los contextos, ya que enfatizan la necesidad de personalización y la utilidad de modelos híbridos en proyectos complejos o regulados [web:109].
+
+Desde una lectura crítica, esta revisión es valiosa porque evita una visión dogmática de Agile [web:109]. En vez de presentar el enfoque ágil como solución absoluta, lo posiciona como una familia metodológica poderosa pero dependiente del contexto, la cultura y la madurez organizacional [web:109].
+
+## Observaciones y/o críticas suyas al artículo
+
+Una observación positiva es que la fuente está bien alineada con investigaciones que analizan metodologías de desarrollo desde una perspectiva comparativa y evolutiva [web:109]. Su amplitud de marcos revisados y la cobertura de beneficios, desafíos y tendencias futuras la hacen especialmente útil para construir el estado del arte [web:109].
+
+Como crítica, al tratarse de una revisión sistemática, su evidencia es secundaria y depende de la calidad de los estudios incluidos [web:109]. Esto significa que, aunque ofrece una gran base conceptual y comparativa, debe complementarse con estudios empíricos cuando se busque demostrar efectos causales en un contexto particular [web:109].
+
+También puede señalarse que la información resumida públicamente no detalla en profundidad la estrategia metodológica completa de selección o exclusión de estudios [web:109]. Por ello, en una tesis conviene usar esta fuente como soporte estructural del marco teórico y contrastarla con artículos empíricos sobre implementación ágil en contextos reales [web:109].
+
+## Aportes nuestros al artículo
+
+Consideramos que esta fuente es muy útil para fundamentar el papel de Agile como metodología central dentro de la evolución del desarrollo de software [web:109]. Permite mostrar que las prácticas ágiles han generado beneficios sostenidos en colaboración, adaptabilidad y calidad, pero también que su adopción enfrenta limitaciones organizacionales y de escalabilidad [web:109].
+
+Desde nuestro análisis, el artículo aporta dimensiones claras para construir variables asociadas a prácticas ágiles, madurez organizacional y desempeño del proceso de desarrollo [web:109]. También ayuda a justificar por qué modelos híbridos y su integración con DevOps o automatización están ganando importancia en el panorama actual [web:109].
+
+Por ello, proponemos usar esta fuente como antecedente clave para comparar enfoques tradicionales, ágiles y posteriormente enfoques reforzados por IA en el ciclo de vida del software [web:109][file:1].
+
+# Matriz de operacionalización de variables
+
+## Enfoque derivado de la fuente 26
+
+A partir de esta revisión, se puede plantear como **variable independiente** la adopción de prácticas de metodologías ágiles, como **variable dependiente** el desempeño del proceso de desarrollo de software, y como **variable intermedia** la madurez organizacional para implementar Agile, porque la revisión muestra que los beneficios de Agile dependen de prácticas concretas, pero también de cultura, capacidades del equipo, alineación de stakeholders y adaptación contextual [web:109].
+
+| Tipo de variable | Variable | Definición conceptual | Dimensiones | Indicadores | Técnica / instrumento |
+|---|---|---|---|---|---|
+| Independiente | Adopción de prácticas de metodologías ágiles | Grado en que un proyecto incorpora prácticas propias de Scrum, Kanban, XP, Lean u otros marcos ágiles [web:109] | Sprint planning; integración continua; pair programming; WIP limits; TDD; colaboración iterativa [web:109] | Existencia de sprints; uso de CI; programación en pares; límites de trabajo en progreso; uso de pruebas guiadas por desarrollo; reuniones de seguimiento [web:109] | Análisis documental; checklist metodológico; entrevista |
+| Intermedia | Madurez organizacional para implementar Agile | Nivel de preparación cultural, técnica y de coordinación de la organización para adoptar metodologías ágiles de forma efectiva [web:109] | Cultura organizacional; experiencia del equipo; alineación de stakeholders; escalabilidad; adaptación contextual [web:109] | Resistencia al cambio; nivel de capacitación; participación de stakeholders; capacidad para escalar prácticas; personalización de la metodología [web:109] | Rúbrica de madurez; encuesta; entrevista |
+| Dependiente | Desempeño del proceso de desarrollo de software | Capacidad del proyecto para entregar software con mayor calidad, eficiencia y adaptabilidad mediante prácticas ágiles [web:109] | Calidad del software; eficiencia de entrega; colaboración; adaptabilidad; satisfacción de stakeholders [web:109] | Tiempo de entrega; mejora de colaboración; respuesta al cambio; percepción de calidad; involucramiento del cliente o usuario [web:109] | Métricas de proyecto; encuesta; evaluación técnica |
+
+## Observación metodológica
+
+La fuente 26 es especialmente útil para operacionalizar variables relacionadas con prácticas ágiles y contexto organizacional, porque sintetiza evidencia de 47 estudios y resalta tanto beneficios como barreras [web:109]. Sin embargo, al ser una revisión sistemática, sus indicadores deben complementarse con estudios empíricos si se requiere validar relaciones causales en un escenario específico de tesis [web:109].

@@ -1,0 +1,76 @@
+# Estado del Arte
+
+**Author(s):** Bowen Li, Wenhan Wu, Ziwei Tang, Lin Shi, John Yang, Jinyang Li, Shunyu Yao, Chen Qian, Binyuan Hui, Qicheng Zhang, Zhiyin Yu, He Du, Ping Yang, Dahua Lin, Chao Peng, Kai Chen. [web:23]  
+**Title of paper:** Prompting Large Language Models to Tackle the Full Software Development Lifecycle: A Case Study. [web:23][file:3]  
+**Journal:** arXiv preprint. [file:3][web:23]  
+**Volume (issue):** No aplica. [web:23]  
+**pag – pag (year):** pp. 1–21 (2024). [file:3]
+
+## Estado del arte que hace el autor
+
+Los autores construyen un estado del arte centrado en la evaluación de LLMs para tareas de programación más allá de la generación de código de un solo archivo o de funciones aisladas. [web:23]  
+Explican que benchmarks previos como HumanEval, APPS, SWE-bench y RepoBench amplían progresivamente la complejidad, pero todavía dejan una brecha porque no cubren de forma integral todas las fases del ciclo de vida del software. [web:23]  
+A partir de esa limitación, presentan **DevEval**, un framework que evalúa diseño de software, configuración de entorno, implementación, pruebas de aceptación y pruebas unitarias. [web:23]  
+El artículo ubica así su aporte en una necesidad concreta del estado del arte: medir la capacidad real de los LLMs para participar en el SDLC completo y no solo en tareas de codificación aisladas. [web:23]
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+La motivación principal del artículo surge de una crítica clara a la literatura previa: los benchmarks existentes se concentran en aspectos simplificados o parciales del desarrollo, por lo que no reflejan adecuadamente los desafíos de la ingeniería de software real. [web:23]  
+Los autores sostienen que incluso los benchmarks a nivel repositorio siguen siendo estrechos porque no abarcan actividades como diseño de software o setup del entorno. [web:23]  
+También argumentan que existe escasez de repositorios públicos que incluyan artefactos completos de desarrollo, especialmente documentos de diseño y suites de pruebas bien verificadas. [web:23]  
+Por ello, justifican la creación de un caso de estudio integral que permita analizar con más realismo las fortalezas y limitaciones de los modelos actuales. [web:23]
+
+## Descripción del aporte del autor
+
+El aporte principal del artículo es **DevEval**, un marco de evaluación integral del SDLC orientado a medir la capacidad de los LLMs para construir artefactos de software a partir de un PRD detallado. [web:23]  
+El problema central que aborda es que los modelos actuales parecen rendir bien en tareas simples de programación, pero no existe suficiente evidencia de que puedan resolver procesos complejos y encadenados de desarrollo de software. [web:23]  
+Ese problema afecta a empresas y equipos porque una adopción prematura de LLMs sin evaluación realista puede generar expectativas infladas sobre automatización, productividad y calidad. [web:23]  
+Como respuesta, el artículo propone un benchmark con 22 repositorios curados en cuatro lenguajes, múltiples dominios y métricas específicas por tarea. [web:23]  
+El aporte es relevante porque permite identificar con mayor precisión en qué partes del SDLC los LLMs ayudan, fallan o requieren soporte adicional. [web:23]
+
+## Proceso para obtener el aporte que considera el autor
+
+Los autores estructuran DevEval siguiendo una lógica modular inspirada en el modelo tradicional Waterfall. [web:23]  
+El framework divide el proceso en cinco tareas: diseño de software, configuración de entorno, implementación, pruebas de aceptación y pruebas unitarias. [web:23]  
+Para construir el dataset, seleccionan repositorios de alta calidad, limpian el código, verifican su funcionamiento, preparan pruebas y generan documentos de diseño estandarizados como diagramas UML y arquitectura. [web:23]  
+El conjunto final contiene 22 repositorios distribuidos en Python, C/C++, Java y JavaScript, cubriendo dominios como machine learning, web services y herramientas de línea de comandos. [web:23]  
+Ese proceso permite evaluar de forma controlada y comparable el desempeño de distintos modelos en varias fases del ciclo de desarrollo. [web:23]
+
+## Proceso para resolver el problema considerado por el autor
+
+El artículo resuelve el problema mediante una evaluación empírica y desagregada de modelos en cada etapa del SDLC. [web:23]  
+Para ello, utiliza varios modelos preentrenados, entre ellos GPT-3.5-Turbo, GPT-4-Turbo, CodeLlama-Instruct y DeepSeek-Coder-Instruct, además de distintos métodos de prompting como No-Review, Normal-Review y Execution-Feedback. [web:23]  
+Cada tarea se evalúa con métricas propias: evaluación subjetiva para diseño, tasa de éxito de ejecución para environment setup, pass rate sobre tests de referencia para implementación, oracle tests para acceptance testing y oracle test más cobertura para unit testing. [web:23]  
+Con ello, los autores no solo comparan modelos, sino que identifican limitaciones recurrentes en contexto largo, estructura multiarchivo, manejo de dependencias, parámetros, tipos y alucinaciones. [web:23]
+
+## Métricas que el autor usa y resultado que obtiene. Comentar
+
+Las métricas del estudio son variadas y están alineadas con cada fase del SDLC evaluada. [web:23]  
+En diseño usan criterios de *general principles* y *faithfulness* con enfoque LLM-as-a-judge; en environment setup usan pass rate de ejemplos; en implementación usan pass rate sobre acceptance y unit tests; y en unit testing añaden cobertura de código. [web:23]  
+Los resultados muestran que GPT-4-Turbo fue el mejor modelo evaluado, pero aun así obtuvo menos de 10 % en la tarea de implementación a nivel repositorio y menos de 40 % en varias tareas complejas. [web:23]  
+En environment setup, GPT-4-Turbo alcanzó 41.7 % de pass rate, mientras que en unit testing la cobertura llegó hasta 79.4 % en casos ejecutables, aunque con bajos resultados globales de oracle test. [web:23]  
+Los autores también reportan que prompts con información externa y feedback de ejecución mejoran de forma notable y consistente el rendimiento frente a variantes más simples. [web:23]  
+Considero que las métricas son correctas y superiores a muchas evaluaciones previas porque conectan los resultados con artefactos reales de ingeniería de software y no solo con generación de código aislada. [web:23]  
+Como mejora futura, sería útil ampliar el número de repositorios y combinar estas métricas con medidas de mantenibilidad, deuda técnica y esfuerzo de corrección posterior. [web:23]
+
+## Observaciones y/o críticas suyas al artículo
+
+El artículo es una contribución muy fuerte porque introduce un benchmark verdaderamente más cercano al desarrollo de software real que los enfoques simplificados anteriores. [web:23]  
+Su principal fortaleza es evaluar el SDLC completo con tareas encadenadas, múltiples lenguajes y métricas especializadas. [web:23]  
+También es valioso que evidencie de forma empírica que incluso modelos avanzados todavía están lejos de automatizar procesos complejos de desarrollo. [web:23]  
+Como crítica constructiva, el propio artículo reconoce que el dataset aún es limitado, ya que solo incluye 22 repositorios, lo cual puede restringir la generalización de los hallazgos. [web:23]  
+Además, aunque el framework es muy útil para evaluación, no propone directamente una estrategia de mejora integral del rendimiento de los modelos más allá de insights y prompting con feedback. [web:23]
+
+## Aportes nuestros al artículo
+
+1. Este artículo puede incorporarse como fundamento metodológico para evaluar un ciclo de vida ágil AI-native en varias fases y no solo en implementación. [web:23]  
+2. DevEval sirve como referencia directa para diseñar instrumentos de evaluación empírica sobre diseño, codificación, pruebas y configuración en una tesis aplicada. [web:23]  
+3. Su enfoque permite justificar que la eficiencia del desarrollo con IA debe medirse con indicadores por fase y no únicamente con velocidad de generación de código. [web:23]
+
+## Matriz de operacionalización de variables
+
+| Variable | Tipo | Definición conceptual | Definición operacional | Dimensiones | Indicadores | Escala / fuente | Instrumento |
+|---|---|---|---|---|---|---|---|
+| Ciclo de vida de desarrollo de software (SDLC) | Independiente | Conjunto de fases y prácticas que estructuran diseño, implementación, pruebas y operación del software. [web:23] | Se observa mediante la ejecución de tareas de diseño, setup, implementación, acceptance testing y unit testing dentro de DevEval. [web:23] | Diseño, entorno, implementación, pruebas de aceptación, pruebas unitarias. [web:23] | Desempeño por tarea; calidad de artefactos generados; capacidad por fase. [web:23] | Artículo de Li et al. (2024). [web:23][file:3] | Benchmark DevEval, pruebas automatizadas y evaluación de diseño. [web:23] |
+| Eficiencia del proceso de desarrollo de software | Dependiente | Rendimiento del proceso en términos de funcionalidad, cobertura, precisión y capacidad de completar tareas complejas. [web:23] | Se mide con pass rate, oracle test, cobertura de código y desempeño comparado entre métodos de prompting y modelos. [web:23] | Correctitud funcional, cobertura, ejecutabilidad, fidelidad al requerimiento. [web:23] | Pass@acceptance, Pass@unit, oracle test, coverage, success rate de environment setup. [web:23] | Resultados experimentales de DevEval. [web:23] | Testing automatizado, LLM-as-a-judge y análisis comparativo. [web:23] |
+| Nuevo ciclo de vida ágil AI-native | Intermedia | Modelo de tesis que integra IA de forma estructural en varias fases del desarrollo. [file:1][web:23] | Se operacionaliza por el uso de LLMs asistiendo diseño, setup, implementación y pruebas dentro de un flujo iterativo medible. [web:23] | Integración transversal de IA, prompting, validación por fase, retroalimentación de ejecución. [web:23] | Número de fases asistidas por IA; mejora por prompting; consistencia entre artefactos generados. [web:23] | Adaptación conceptual basada en DevEval. [web:23] | Síntesis analítica y diseño de evaluación AI-native. [web:23] |

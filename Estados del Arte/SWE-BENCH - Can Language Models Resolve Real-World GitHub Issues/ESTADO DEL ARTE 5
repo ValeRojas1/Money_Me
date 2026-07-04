@@ -1,0 +1,76 @@
+# Estado del Arte
+
+**Author(s):** Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik R. Narasimhan. [web:25][web:26]  
+**Title of paper:** SWE-bench: Can Language Models Resolve Real-World GitHub Issues? [web:25][web:26]  
+**Journal / Venue:** The Twelfth International Conference on Learning Representations (ICLR 2024). [web:26]  
+**Volume (issue):** No aplica. [web:26]  
+**pag – pag (year):** pp. 1–52 (2024). [file:3]
+
+## Estado del arte que hace el autor
+
+Los autores construyen su estado del arte alrededor de una idea central: la capacidad de los modelos de lenguaje ha crecido más rápido que nuestra capacidad de evaluarlos de manera realista en ingeniería de software. [web:25]  
+Sostienen que los escenarios de software del mundo real representan un banco de pruebas más sostenible y desafiante que los benchmarks clásicos de generación de código. [web:25]  
+En lugar de centrarse en funciones pequeñas o tareas cerradas, el artículo posiciona los issues reales de GitHub como una forma más exigente de evaluar comprensión de código, edición multiarchivo, razonamiento y uso de contexto extenso. [web:25][web:26]  
+Así, el estado del arte que presentan desplaza el foco desde generación sintáctica de código hacia resolución de problemas reales en repositorios existentes. [web:25][web:26]
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+La motivación del trabajo parte de la crítica de que los benchmarks previos no capturan bien la complejidad de la ingeniería de software real. [web:25]  
+Los autores consideran que hace falta una evaluación donde el modelo no solo genere código nuevo, sino que entienda una base de código existente, interprete un issue y aplique cambios correctos que hagan pasar pruebas. [web:25][web:26]  
+También remarcan que resolver estos problemas exige coordinar cambios entre varias funciones, clases e incluso archivos, además de interactuar con entornos de ejecución y contextos largos. [web:25]  
+Esa necesidad justifica la creación de SWE-bench como benchmark para medir capacidades más prácticas, inteligentes y autónomas de los modelos. [web:25]
+
+## Descripción del aporte del autor
+
+El aporte principal del artículo es **SWE-bench**, un framework de evaluación compuesto por 2,294 problemas de ingeniería de software extraídos de issues y pull requests reales de 12 repositorios populares de Python. [web:25][web:26]  
+El problema central que aborda es la falta de benchmarks realistas para medir si un modelo puede resolver incidencias reales en proyectos existentes. [web:25]  
+Este problema tiene impacto empresarial porque, sin evaluaciones realistas, los equipos pueden sobrestimar la utilidad práctica de los modelos para mantenimiento, corrección de bugs y evolución de sistemas. [web:25]  
+También tiene impacto científico porque limita el desarrollo de modelos más útiles para tareas autónomas de software engineering. [web:25]  
+El artículo propone entonces un entorno donde el modelo recibe el texto del issue, modifica el código base y es evaluado con pruebas fail-to-pass para verificar si realmente resolvió el problema. [web:26]
+
+## Proceso para obtener el aporte que considera el autor
+
+Los autores construyen SWE-bench a partir del rastreo de pull requests e issues en GitHub. [web:26]  
+El benchmark reúne 2,294 instancias y cada una se basa en un pull request asociado a un issue y con modificaciones en uno o más archivos relacionados con pruebas. [web:26]  
+Para cada instancia, preparan un entorno de ejecución en Docker con el repositorio instalado en el commit base del pull request. [web:26]  
+Antes de aplicar los cambios reales del pull request, ciertas pruebas fallan; después del merge, esas mismas pruebas pasan, y ese comportamiento se usa como señal principal de evaluación. [web:26]  
+Este proceso convierte problemas reales de mantenimiento de software en tareas reproducibles para comparar modelos. [web:26]
+
+## Proceso para resolver el problema considerado por el autor
+
+El artículo resuelve el problema mediante una evaluación basada en issues reales y pruebas ejecutables. [web:25][web:26]  
+En cada tarea, el sistema de IA recibe el texto del issue y debe modificar el código del repositorio para resolverlo. [web:26]  
+Luego se ejecutan las pruebas fail-to-pass para verificar si la solución producida efectivamente arregla el problema sin usar la solución humana como respuesta directa. [web:26]  
+Además, el trabajo evalúa tanto modelos propietarios como un modelo afinado por los autores, SWE-Llama, para observar hasta qué punto los LLMs actuales pueden manejar tareas reales de edición de repositorios. [web:25][web:26]
+
+## Métricas que el autor usa y resultado que obtiene. Comentar
+
+La métrica central del benchmark es la tasa de resolución efectiva de issues, verificada mediante las pruebas fail-to-pass ejecutadas en el entorno de cada repositorio. [web:26]  
+Los resultados iniciales muestran que incluso modelos de punta resuelven solo una fracción muy pequeña de los problemas. [web:25]  
+En particular, el mejor modelo reportado en el trabajo original, Claude 2, logra resolver apenas 1.96 % de los issues. [web:25]  
+El sitio oficial también indica que el baseline inicial basado en RAG obtuvo ese mismo 1.96 %, mientras que un trabajo posterior con SWE-agent alcanzó 12.47 % sobre SWE-bench. [web:26]  
+Estas métricas son muy valiosas porque se basan en comportamiento ejecutable y no solo en similitud textual o exactitud superficial. [web:26]  
+Considero que el benchmark es superior a muchos anteriores en realismo, ya que obliga a razonar sobre contexto largo, cambios estructurales y consistencia funcional. [web:25][web:26]  
+Como posible ampliación, sería útil complementar esta métrica con esfuerzo computacional, tiempo por resolución, mantenibilidad del patch y grado de minimalidad del cambio propuesto. [web:25][web:26]
+
+## Observaciones y/o críticas suyas al artículo
+
+El artículo es una contribución sobresaliente porque convierte problemas reales de GitHub en un benchmark reproducible y altamente desafiante. [web:25][web:26]  
+Su principal fortaleza es que mide capacidades útiles para mantenimiento de software, no solo generación aislada de código. [web:25]  
+También es valioso porque evidencia con claridad que los LLMs todavía tienen un desempeño muy bajo en tareas reales de corrección sobre repositorios existentes. [web:25][web:26]  
+Como crítica constructiva, el benchmark original se limita a 12 repositorios populares de Python, lo que puede restringir la diversidad de lenguajes y arquitecturas evaluadas. [web:25][web:26]  
+Además, aunque su métrica funcional es fuerte, el benchmark no prioriza por sí mismo la calidad interna del patch más allá de si resuelve o no el issue. [web:26]
+
+## Aportes nuestros al artículo
+
+1. Esta fuente puede utilizarse como base para sustentar la evaluación empírica de IA aplicada a mantenimiento y corrección de software en repositorios reales. [web:25][web:26]  
+2. SWE-bench permite justificar que un ciclo AI-native serio debe medirse también en tareas de edición, debugging y resolución de incidencias, no solo en generación inicial de código. [web:25][web:26]  
+3. En una tesis, su lógica puede adaptarse para diseñar pruebas de validación sobre issues reales o casos controlados dentro de un proyecto de software. [web:26]
+
+## Matriz de operacionalización de variables
+
+| Variable | Tipo | Definición conceptual | Definición operacional | Dimensiones | Indicadores | Escala / fuente | Instrumento |
+|---|---|---|---|---|---|---|---|
+| Ciclo de vida de desarrollo de software (SDLC) | Independiente | Conjunto de procesos de desarrollo y mantenimiento del software, incluyendo corrección de incidencias sobre repositorios reales. [web:25][web:26] | Se operacionaliza mediante tareas de resolución de issues, edición de código y validación con pruebas sobre proyectos existentes. [web:26] | Mantenimiento, corrección de bugs, edición multiarchivo, validación funcional. [web:25][web:26] | Número de issues abordados; capacidad de modificar repositorios; éxito en pruebas fail-to-pass. [web:26] | SWE-bench, Jimenez et al. (2024). [web:25][web:26] | Benchmark ejecutable con repositorios, issues y tests. [web:26] |
+| Eficiencia del proceso de desarrollo de software | Dependiente | Capacidad del proceso asistido por IA para resolver problemas reales con precisión funcional y utilidad práctica. [web:25] | Se mide por la tasa de issues resueltos correctamente mediante parches que hacen pasar las pruebas asociadas. [web:26] | Correctitud funcional, resolución real de incidencias, desempeño en contexto largo. [web:25][web:26] | % de issues resueltos; pass rate fail-to-pass; comparación entre modelos. [web:25][web:26] | Resultados del benchmark original y derivados. [web:25][web:26] | Ejecución automatizada de pruebas y análisis comparativo de modelos. [web:26] |
+| Nuevo ciclo de vida ágil AI-native | Intermedia | Modelo de tesis que integra IA en tareas continuas de desarrollo, mantenimiento y mejora del software. [file:1][web:25] | Se expresa por la capacidad de la IA de intervenir en debugging, issue fixing y evolución incremental del código en flujos iterativos. [web:25][web:26] | Asistencia en mantenimiento, reparación automática, razonamiento sobre repositorios, validación continua. [web:25][web:26] | Nivel de éxito en issue resolution; número de fases de mantenimiento apoyadas por IA; consistencia del patch generado. [web:26] | Adaptación conceptual basada en SWE-bench. [web:25][web:26] | Síntesis analítica y diseño de evaluación para mantenimiento AI-native. [web:26] |

@@ -1,0 +1,73 @@
+# Estado del Arte
+
+**Author(s):** Yuan Jiang, Yujian Zhang, Liang Lu, Christoph Treude, Xiaohong Su, Shan Huang, Tiantian Wang  
+**Title of paper:** Enhancing High-Quality Code Generation in Large Language Models with Comparative Prefix-Tuning  
+**Journal:** arXiv preprint (cs.SE)  
+**Volume (issue):** No aplica  
+**pag – pag (year):** pp. 1–19 (2025)
+
+## Estado del arte que hace el autor
+
+Los autores realizan una revisión crítica del estado actual de los modelos de lenguaje aplicados a la generación de código. Señalan que, aunque modelos como Code Llama, Phi-2 y StarCoder2 han incrementado la productividad de los desarrolladores, todavía presentan una limitación importante: pueden generar código funcionalmente correcto, pero con baja calidad en aspectos como estilo, mantenibilidad y adhesión a buenas prácticas.
+
+En su revisión del estado del arte, identifican que la mayoría de enfoques anteriores se concentran en maximizar la corrección funcional mediante métricas como `pass@k`, dejando en segundo plano atributos clave de calidad interna del software. También observan que algunos métodos previos, como el *full fine-tuning* o variantes simples de *prefix-tuning*, requieren altos costos de entrenamiento o no logran distinguir de manera efectiva entre código de alta y baja calidad.
+
+A partir de ello, el artículo se posiciona en una brecha concreta del conocimiento: faltan técnicas eficientes, ligeras y comparativas que permitan guiar a los LLM hacia la generación de código de alta calidad sin modificar completamente el modelo base y sin sacrificar la funcionalidad.
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+La motivación principal del trabajo surge de una crítica directa a la literatura previa: los enfoques existentes priorizan si el código “funciona”, pero no si ese código es mantenible, limpio o alineado con estándares profesionales. Esta visión limitada es problemática porque, en contextos reales de desarrollo, el costo de corregir código deficiente puede neutralizar las ganancias de productividad que prometen los LLM.
+
+Los autores también cuestionan dos limitaciones metodológicas del estado del arte previo. Primero, el *full fine-tuning* es costoso y puede deteriorar conocimiento previamente aprendido por el modelo. Segundo, los enfoques de *prefix-tuning* simples, o con prefijos opuestos, procesan muestras individuales pero no comparan explícitamente código de alta y baja calidad, por lo que no aprenden de forma directa la diferencia entre ambos. Finalmente, señalan la falta de datasets con anotaciones explícitas de calidad de código, lo que dificulta construir soluciones más precisas.
+
+## Descripción del aporte del autor
+
+El aporte central del artículo es la propuesta de un método llamado **comparative prefix-tuning**, diseñado para mejorar la calidad del código generado por LLMs sin alterar sus parámetros base. Este enfoque utiliza pares contrastivos de código de alta y baja calidad para enseñar al modelo a preferir salidas mejor estructuradas, más legibles y más mantenibles.
+
+El problema que buscan resolver es relevante tanto para empresas como para la comunidad de ingeniería de software. Si un LLM genera código funcional pero desordenado, con malas prácticas o difícil de mantener, la organización termina asumiendo costos adicionales en revisión, refactorización, deuda técnica y mantenimiento. En ese sentido, el artículo conecta directamente la calidad del código generado con la eficiencia real del proceso de desarrollo.
+
+El método propuesto se apoya en tres componentes clave: un pipeline para construir pares de código *high-quality/low-quality*, una función de pérdida de ranking a nivel de secuencia para aprender diferencias de calidad, y mecanismos adicionales para preservar la corrección funcional. El trabajo muestra que es posible elevar la calidad del código sin tener que reentrenar por completo el modelo, lo cual representa un aporte técnico y práctico importante.
+
+## Proceso para obtener el aporte que considera el autor
+
+Para obtener su aporte, los autores diseñan un pipeline metodológico basado en datos contrastivos. Parten del dataset APPS y generan múltiples soluciones para cada tarea usando un LLM base. Luego filtran esas soluciones mediante puntuaciones de calidad (por ejemplo, `pylint`), miden similitud léxica y seleccionan pares que presentan una diferencia clara de calidad pero una estructura comparable.
+
+Con esos pares, entrenan un único prefijo reparametrizado usando una combinación de pérdidas: una *ranking loss* enmascarada, una *language modeling loss* sobre código de alta calidad y una divergencia KL para evitar degradar la corrección funcional del modelo. Como refinamiento opcional, añaden una fase de entrenamiento adicional usando solo muestras de alta calidad, con el fin de estabilizar aún más el desempeño funcional.
+
+Este proceso es metodológicamente valioso porque no requiere modificar el modelo base completo. Según el artículo, solo se entrena una fracción mínima de parámetros, lo que vuelve al enfoque eficiente y más fácil de integrar en entornos reales.
+
+## Proceso para resolver el problema considerado por el autor
+
+El problema se resuelve haciendo que el modelo aprenda explícitamente a preferir código de mayor calidad frente a alternativas de menor calidad. La *ranking loss* obliga al modelo a asignar más probabilidad a las soluciones mejor evaluadas, mientras que la KL divergence y la pérdida de modelado de lenguaje ayudan a conservar la funcionalidad y estabilidad del modelo original.
+
+Para validar esta solución, los autores evalúan el método sobre Code Llama 7B y luego prueban su generalización en otros modelos como Phi-2 y StarCoder2. Además, realizan ablaciones para comprobar el efecto de cada componente del método y ejecutan evaluaciones automáticas y humanas para verificar tanto la corrección funcional como la calidad del código.
+
+El resultado es un esquema de ajuste ligero que puede incorporarse en la fase de implementación del SDLC cuando se emplean herramientas de IA generativa para producir código fuente.
+
+## Métricas que el autor usa y resultado que obtiene. Comentar
+
+Los autores usan tres grupos principales de métricas. Primero, métricas de calidad de código basadas en `pylint`, incluyendo valores **Mean**, **Max** y **Min**, además de categorías vinculadas a errores, refactorización, convenciones y advertencias. Segundo, usan métricas de corrección funcional como `pass@k` (por ejemplo, k = 5, 10 y 100). Tercero, incorporan evaluación humana ciega para medir preferencia sobre la calidad del código generado.
+
+Los resultados reportados son sólidos. En Code Llama 7B obtienen mejoras de hasta 36 puntos en algunas medidas medias de calidad y hasta 100 puntos en el mínimo de `pylint`, manteniendo o incluso mejorando `pass@k`. También reportan generalización exitosa a otros modelos y una preferencia humana aproximada del 67.3 % por las salidas mejoradas.
+
+Estas métricas son apropiadas porque no se limitan a la funcionalidad. Combinan análisis estático, verificación funcional y percepción humana, lo cual ofrece una evaluación más realista que los trabajos previos centrados solo en `pass@k`. Como observación adicional, habría sido útil incorporar también herramientas complementarias como SonarQube u otras métricas semánticas de mantenibilidad en múltiples lenguajes.
+
+## Observaciones y/o críticas suyas al artículo
+
+El artículo es una contribución fuerte porque aborda una necesidad práctica real: no basta con que el código generado por IA funcione, también debe ser mantenible y alineado con estándares de calidad. Su principal fortaleza es proponer una técnica eficiente, liviana y con buena capacidad de generalización.
+
+Como crítica constructiva, la evaluación depende en buena parte de `pylint`, que es una herramienta útil pero parcial. No captura todos los aspectos semánticos de calidad y, además, la validación se centra en Python. En futuras extensiones sería deseable evaluar el método en otros lenguajes y con herramientas adicionales de análisis estático y arquitectónico.
+
+## Aportes nuestros al artículo
+
+1. Este artículo puede incorporarse en la tesis como fundamento técnico de la dimensión relacionada con IA generativa aplicada a la fase de implementación del SDLC.
+2. Su método de **comparative prefix-tuning** puede servir para sustentar cómo un ciclo de vida ágil AI-native puede mejorar no solo la velocidad de desarrollo, sino también la calidad del código entregado.
+3. A nivel de aplicación empírica, se puede adaptar este enfoque para medir reducción de deuda técnica, tiempo de refactorización y mejora en mantenibilidad dentro de un caso real de desarrollo de software.
+
+## Matriz de operacionalización de variables
+
+| Variable | Tipo | Definición conceptual | Definición operacional | Dimensiones | Indicadores | Escala / fuente | Instrumento |
+|---|---|---|---|---|---|---|---|
+| Ciclo de vida de desarrollo de software (SDLC) | Independiente | Conjunto de fases, modelos y prácticas que rigen la creación, implementación y mantenimiento del software | Se observa en qué medida la fase de implementación incorpora técnicas de IA generativa orientadas a producir código de alta calidad | Fases del proceso, integración de IA, generación de código | Presencia de IA en implementación, tipo de ajuste usado, nivel de automatización | Artículo de Jiang et al. (2025) | Revisión documental y análisis técnico del método |
+| Eficiencia del proceso de desarrollo de software | Dependiente | Rendimiento del proceso de desarrollo en términos de tiempo, costo, calidad y reducción de retrabajo | Se mide mediante cambios en calidad del código, necesidad de refactorización y preservación de corrección funcional | Calidad, productividad, mantenibilidad, retrabajo | Mean/Max/Min pylint, pass@k, preferencia humana, tiempo de corrección posterior | Resultados experimentales del artículo | Análisis de métricas, pruebas funcionales y evaluación humana |
+| Nuevo ciclo de vida ágil AI-native | Intermedia | Modelo de desarrollo que integra IA generativa como motor principal de apoyo en fases clave del SDLC | Se operacionaliza por la incorporación de mecanismos de prompting y ajuste ligero para generar código más limpio y reutilizable en cada iteración | Integración AI-native, calidad de generación, iteración ágil | Uso de prefix-tuning comparativo, reducción de deuda técnica, consistencia con estándares | Relación conceptual derivada del artículo | Síntesis analítica y adaptación al modelo de tesis |

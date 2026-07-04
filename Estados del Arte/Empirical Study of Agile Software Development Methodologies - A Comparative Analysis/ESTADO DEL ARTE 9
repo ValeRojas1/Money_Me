@@ -1,0 +1,72 @@
+# Estado del Arte
+
+**Author(s):** Samuel Gbli Tetteh. [file:3][web:53]  
+**Title of paper:** Empirical Study of Agile Software Development Methodologies: A Comparative Analysis. [file:3][web:53]  
+**Journal:** Asian Journal of Research in Computer Science. [file:3][web:53]  
+**Volume (issue):** Vol. 17, No. 5. [file:3][web:53]  
+**pag – pag (year):** pp. 30–42 (2024). [file:3][web:53]
+
+## Estado del arte que hace el autor
+
+El autor construye un estado del arte sobre metodologías ágiles dentro del panorama más amplio del SDLC. [web:53]  
+Parte señalando que, además de modelos clásicos como prototyping, spiral development y Rapid Application Development, las metodologías ágiles han ganado fuerte relevancia por su flexibilidad, adaptabilidad y capacidad de entregar software de alta calidad en plazos definidos. [web:53]  
+Dentro de ese universo, el estudio enfoca seis modelos ágiles que han recibido particular atención: **ASD, DSDM, XP, FDD, Kanban y Scrum**. [web:53]  
+El estado del arte que plantea busca esclarecer funciones, fortalezas y debilidades de estos seis enfoques para orientar la toma de decisiones en la industria. [web:53]
+
+## Motivación del autor (críticas del autor a otros trabajos)
+
+La motivación del estudio surge del carácter dinámico del campo de la ingeniería de software y de la necesidad de comparar enfoques ágiles que se utilizan con frecuencia pero no siempre se distinguen claramente en la práctica. [web:53]  
+El autor justifica su trabajo porque, aunque existen múltiples metodologías ágiles disponibles, los desarrolladores y las industrias necesitan criterios más claros para decidir cuál adoptar según sus necesidades de proyecto. [web:53]  
+La crítica implícita a trabajos previos es que la discusión cotidiana sobre modelos de desarrollo no siempre ofrece una comparación suficientemente estructurada de funcionalidades, fortalezas y debilidades. [web:53]  
+Por ello, el artículo se plantea como una comparación empírica que ayude a mejorar la selección metodológica. [web:53]
+
+## Descripción del aporte del autor
+
+El aporte central del artículo es una comparación de seis metodologías ágiles prominentes: ASD, DSDM, XP, FDD, Kanban y Scrum. [web:53]  
+El problema central que aborda es la dificultad de seleccionar el enfoque ágil más adecuado para un proyecto cuando existen múltiples alternativas con características distintas. [web:53]  
+Este problema afecta a empresas y equipos porque una elección metodológica incorrecta puede repercutir en calidad, coordinación, tiempos y resultados del proyecto. [web:53]  
+El artículo pretende entonces aportar evidencia comparativa que permita alinear requerimientos de proyecto con la metodología más conveniente. [web:53]  
+Según el resumen disponible, el estudio busca proporcionar información útil para optimizar resultados de proyecto y calidad del software. [web:53]
+
+## Proceso para obtener el aporte que considera el autor
+
+El autor desarrolla una examinación comparativa de seis modelos ágiles. [web:53]  
+La información recuperada indica que el estudio realiza una comparación comprehensiva de funcionalidades, fortalezas y debilidades de ASD, DSDM, XP, FDD, Kanban y Scrum. [web:53]  
+Aunque el resumen accesible no detalla en profundidad el protocolo metodológico completo, sí deja claro que se trata de un análisis comparativo estructurado con propósito orientado a la toma de decisiones. [web:53]  
+Ese proceso se enmarca como un estudio empírico comparativo dentro de la discusión sobre selección de metodologías ágiles. [web:53]
+
+## Proceso para resolver el problema considerado por el autor
+
+El artículo aborda el problema mediante una comparación entre modelos ágiles representativos. [web:53]  
+En lugar de promover una sola metodología, el estudio intenta mostrar las diferencias funcionales entre varias alternativas para que desarrolladores y actores de la industria puedan elegir con mayor criterio. [web:53]  
+La resolución del problema se basa entonces en hacer explícitas las fortalezas, debilidades y características distintivas de cada enfoque. [web:53]  
+Desde una perspectiva aplicada, el artículo ayuda a relacionar necesidades de proyecto con prácticas ágiles específicas. [web:53]
+
+## Métricas que el autor usa y resultado que obtiene. Comentar
+
+Con la información recuperada, no se observan métricas numéricas detalladas ni resultados estadísticos específicos en el resumen disponible. [web:53]  
+Sí se indica que el estudio es una comparación empírica orientada a examinar funcionalidades, fortalezas y debilidades de seis metodologías ágiles. [web:53]  
+En consecuencia, el resultado principal accesible es una síntesis comparativa que busca apoyar la toma de decisiones de la industria respecto al método más adecuado para futuros proyectos. [web:53]  
+Considero que el estudio es útil como base panorámica y de clasificación, pero para una tesis conviene complementarlo con fuentes que midan efectos concretos de cada metodología sobre tiempo, productividad, defectos o satisfacción del equipo. [web:53]  
+Aun así, su valor está en ofrecer un marco claro para discutir selección de metodologías ágiles en relación con el tipo de proyecto. [web:53]
+
+## Observaciones y/o críticas suyas al artículo
+
+La principal fortaleza del artículo es que compara en un mismo análisis seis metodologías ágiles relevantes, algo útil para trabajos académicos y para decisión profesional. [web:53]  
+También es valioso porque reubica el debate metodológico dentro del contexto del SDLC y no solo como una preferencia de gestión de equipos. [web:53]  
+Como crítica constructiva, la información accesible no muestra métricas empíricas detalladas ni evidencia cuantitativa fuerte sobre superioridad de una metodología frente a otra. [web:53]  
+Por ello, el artículo funciona mejor como referencia comparativa general que como demostración concluyente de impacto operacional. [web:53]
+
+## Aportes nuestros al artículo
+
+1. Esta fuente puede emplearse para sustentar la dimensión metodológica ágil dentro del modelo de tesis. [web:53]  
+2. También ayuda a justificar que el nuevo ciclo AI-native no surge en vacío, sino sobre una base comparativa de enfoques ágiles ya consolidados. [web:53]  
+3. En una tesis aplicada, este artículo puede servir para seleccionar o combinar principios ágiles compatibles con la integración de IA generativa. [web:53]
+
+## Matriz de operacionalización de variables
+
+| Variable | Tipo | Definición conceptual | Definición operacional | Dimensiones | Indicadores | Escala / fuente | Instrumento |
+|---|---|---|---|---|---|---|---|
+| Ciclo de vida de desarrollo de software (SDLC) | Independiente | Conjunto de modelos y metodologías que orientan la creación de software, incluyendo enfoques ágiles. [web:53] | Se operacionaliza comparando las características de ASD, DSDM, XP, FDD, Kanban y Scrum en relación con necesidades de proyecto. [web:53] | Flexibilidad, adaptabilidad, estructura del proceso, orientación al cambio. [web:53] | Número de metodologías analizadas, fortalezas por método, debilidades por método, alineación con proyecto. [web:53] | Tetteh (2024). [file:3][web:53] | Análisis comparativo y revisión de metodologías. [web:53] |
+| Eficiencia del proceso de desarrollo de software | Dependiente | Capacidad del proceso metodológico para optimizar resultados del proyecto y calidad del software. [web:53] | Se mide indirectamente por la adecuación entre metodología seleccionada y requerimientos del proyecto, según la comparación del estudio. [web:53] | Calidad, adaptabilidad, toma de decisiones, ajuste al proyecto. [web:53] | Correspondencia entre método y tipo de proyecto; fortalezas funcionales; limitaciones identificadas. [web:53] | Hallazgos comparativos del artículo. [web:53] | Síntesis comparativa y análisis metodológico. [web:53] |
+| Nuevo ciclo de vida ágil AI-native | Intermedia | Modelo de tesis que integra principios ágiles con soporte estructural de IA generativa. [file:1][web:53] | Se expresa mediante la selección de principios ágiles compatibles con automatización, iteración rápida y validación continua asistida por IA. [web:53] | Agilidad, iteración, adaptación, soporte de IA. [web:53] | Presencia de principios ágiles reutilizables; compatibilidad con integración de IA; capacidad de respuesta a cambios. [web:53] | Adaptación conceptual a partir del análisis comparativo. [web:53] | Síntesis analítica y diseño del modelo de tesis. [web:53] |
